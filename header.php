@@ -36,17 +36,17 @@
             </span>
 
             <!-- Redes alineadas a la derecha -->
-            <div class="ml-auto flex items-center gap-3">
-                <a href="<?php echo esc_url(ryt_whatsapp_url()); ?>" target="_blank" rel="noopener" aria-label="WhatsApp" class="hover:text-ryt-mint">
+            <div class="ml-auto flex items-center gap-1">
+                <a href="<?php echo esc_url(ryt_whatsapp_url()); ?>" target="_blank" rel="noopener" aria-label="WhatsApp" class="ryt-social-icon">
                     <?php ryt_icon('whatsapp', 'w-4 h-4'); ?>
                 </a>
-                <a href="<?php echo esc_url(RYT_INSTAGRAM); ?>" target="_blank" rel="noopener" aria-label="Instagram" class="hover:text-ryt-mint">
+                <a href="<?php echo esc_url(RYT_INSTAGRAM); ?>" target="_blank" rel="noopener" aria-label="Instagram" class="ryt-social-icon">
                     <?php ryt_icon('instagram', 'w-4 h-4'); ?>
                 </a>
-                <a href="<?php echo esc_url(RYT_FACEBOOK); ?>" target="_blank" rel="noopener" aria-label="Facebook" class="hover:text-ryt-mint">
+                <a href="<?php echo esc_url(RYT_FACEBOOK); ?>" target="_blank" rel="noopener" aria-label="Facebook" class="ryt-social-icon">
                     <?php ryt_icon('facebook', 'w-4 h-4'); ?>
                 </a>
-                <a href="<?php echo esc_url(RYT_YOUTUBE); ?>" target="_blank" rel="noopener" aria-label="YouTube" class="hover:text-ryt-mint">
+                <a href="<?php echo esc_url(RYT_YOUTUBE); ?>" target="_blank" rel="noopener" aria-label="YouTube" class="ryt-social-icon">
                     <?php ryt_icon('youtube', 'w-4 h-4'); ?>
                 </a>
             </div>
@@ -55,7 +55,7 @@
 
     <!-- Main bar: logo izquierda · menú · botón PREINSCRIPCIÓN -->
     <div class="container mx-auto px-4 py-4 flex items-center justify-between gap-4">
-        <div class="flex-shrink-0">
+        <div class="flex-shrink-0 ryt-logo-wrap">
             <?php ryt_the_logo('h-11 md:h-14 w-auto'); ?>
         </div>
 
@@ -64,8 +64,8 @@
         </nav>
 
         <div class="flex items-center gap-3">
-            <a href="<?php echo esc_url(RYT_PREINSCRIPCION_URL); ?>" target="_blank" rel="noopener" class="btn btn-primary hidden sm:inline-flex">
-                <?php esc_html_e('Preinscripción', 'ryt'); ?>
+            <a href="<?php echo esc_url(RYT_PREINSCRIPCION_URL); ?>" target="_blank" rel="noopener" class="btn btn-primary btn-preinscripcion hidden sm:inline-flex">
+                <span class="relative z-10"><?php esc_html_e('Preinscripción', 'ryt'); ?></span>
             </a>
             <button type="button" id="ryt-menu-toggle"
                     class="lg:hidden inline-flex items-center justify-center h-10 w-10 rounded-md border border-paper-alt"
