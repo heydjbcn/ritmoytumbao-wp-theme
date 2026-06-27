@@ -8,67 +8,78 @@
     font-size: 16px;
   }
 
-  /* Headings: Libre Baskerville (igual que prod) */
+  /* Headings: Libre Baskerville */
   h1, h2, h3, h4 {
     @apply font-serif text-ink-heading;
     font-weight: 800;
   }
 
   h1 { @apply text-3xl md:text-4xl lg:text-5xl leading-tight; }
-  h2 { @apply text-3xl md:text-4xl lg:text-[50px] leading-tight; }
+  h2 { @apply text-3xl md:text-4xl lg:text-[40px] leading-[1.12]; }
   h3 { @apply text-xl md:text-2xl; }
 
-  /* Links por defecto */
   a {
     @apply transition-colors;
   }
 }
 
 @layer components {
-  /* Botón: TODOS los CTAs en prod son verde menta, pill 50px, mayúsculas, semibold */
+  /* Botón base — pill, mayúsculas, semibold, letter-spacing amplio. */
   .btn {
-    @apply inline-flex items-center justify-center px-7 py-3 rounded-pill font-sans font-semibold text-sm uppercase tracking-wide transition-all duration-200;
+    @apply inline-flex items-center justify-center px-8 py-[15px] rounded-pill font-sans font-bold text-[13.5px] uppercase tracking-[0.06em] transition-all duration-200;
   }
+  /* Botón primario (mint con texto verde-bosque + sombra flotante). */
   .btn-primary {
-    @apply bg-ryt-mint text-white hover:bg-ryt-mint-dark hover:-translate-y-0.5;
+    @apply bg-ryt-mint text-ryt-forest shadow-cta hover:bg-ryt-mint-dark hover:-translate-y-0.5;
   }
+  /* Botón outline mint sobre claro. */
   .btn-outline {
-    @apply bg-white text-ryt-mint border-2 border-ryt-mint hover:bg-ryt-mint hover:text-white;
+    @apply bg-white text-ryt-forest border-2 border-ryt-mint hover:bg-ryt-mint hover:text-ryt-forest;
   }
+  /* Botón outline blanco (sobre fondo oscuro). */
   .btn-outline-white {
-    @apply bg-transparent text-white border-2 border-white hover:bg-white hover:text-ryt-mint;
+    @apply bg-transparent text-white border-[1.5px] border-white/30 hover:bg-white hover:text-ryt-forest;
   }
+  /* Botón blanco (sobre fondo mint). */
+  .btn-on-mint {
+    @apply bg-white text-ryt-mint hover:bg-paper-alt;
+  }
+  /* Botón oscuro. */
   .btn-dark {
     @apply bg-ink-dark text-white hover:bg-ink;
   }
 
-  /* Pre-headings tipo "RESEÑAS" / "NUESTRA ESCUELA" */
+  /* Eyebrow tipo "RESEÑAS" / "NUESTRA ESCUELA". */
   .eyebrow {
-    @apply uppercase tracking-[0.25em] text-xs font-bold text-ryt-mint;
+    @apply uppercase tracking-[0.22em] text-xs font-bold text-ryt-mint;
   }
 
-  /* Pricing price (ADLaM Display sobre fondo gris claro como en prod) */
+  /* Precio grande ADLaM Display (cards de pricing). */
   .price {
-    @apply font-display text-6xl md:text-7xl text-paper-soft leading-none;
-    font-weight: 800;
+    @apply font-display text-[62px] leading-[.9] text-ink-heading;
   }
 
-  /* Card básica */
+  /* Card básica — más redondeada, borde sutil, sombra difusa. */
   .card {
-    @apply bg-white rounded-2xl shadow-card overflow-hidden;
+    @apply bg-white rounded-[22px] border border-[#EFEBE6] shadow-card overflow-hidden;
   }
 
-  /* Section spacing — prod usa secciones grandes con padding generoso */
+  /* Badge "Más popular" — verde bosque con texto blanco. */
+  .badge-popular {
+    @apply inline-block bg-ryt-forest text-white text-[10px] uppercase tracking-[0.1em] font-bold px-[11px] py-[5px] rounded-pill;
+  }
+
+  /* Spacing de sección. */
   .section {
-    @apply py-16 md:py-24;
+    @apply py-16 md:py-[88px];
   }
 
-  /* "Pretitle pequeño" en mayus verde antes del h2 */
+  /* Pre-title en mayúsculas mint antes del h2. */
   .pre-title {
-    @apply font-sans text-base font-bold uppercase tracking-widest text-ryt-mint mb-3;
+    @apply font-sans text-xs font-bold uppercase tracking-[0.22em] text-ryt-mint mb-[14px];
   }
 
-  /* Estilo "prose" para legales, contenido WP, posts del blog */
+  /* Prose para contenido WP (legales, blog). */
   .prose-ryt {
     @apply text-ink-soft leading-relaxed;
   }

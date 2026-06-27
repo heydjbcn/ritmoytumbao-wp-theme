@@ -43,7 +43,7 @@ $profes = [
         <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             <?php foreach ($profes as $p): ?>
             <article class="bg-paper-soft rounded-2xl shadow-card overflow-hidden flex flex-col">
-                <div class="relative aspect-square bg-ryt-mint flex items-center justify-center overflow-hidden">
+                <div class="relative aspect-square bg-mint-grad flex items-center justify-center overflow-hidden">
                     <?php if ($p['img']): ?>
                         <img src="<?php echo esc_url(RYT_URI . $p['img']); ?>"
                              alt="<?php echo esc_attr($p['name']); ?>"

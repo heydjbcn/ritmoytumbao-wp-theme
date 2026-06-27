@@ -10,7 +10,7 @@ $estilos = [
     ['t' => 'Coreográfico',      'd' => 'Formación de ritmos latinos, perfeccionamiento y técnica de giro.',           'img' => 'Coreografico-Ritmo-y-tumbao.png',       'url' => home_url('/baile-nupcial/')],
 ];
 ?>
-<section class="section bg-white">
+<section class="section bg-paper">
     <div class="container mx-auto px-4">
         <header class="text-center max-w-3xl mx-auto mb-12">
             <span class="pre-title">Clases de Salsa y Bachata en Mataró</span>
@@ -27,15 +27,22 @@ $estilos = [
         <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             <?php foreach ($estilos as $e): ?>
             <a href="<?php echo esc_url($e['url']); ?>" class="card group block hover:-translate-y-1 transition-transform">
-                <div class="aspect-square bg-paper-soft flex items-center justify-center p-6">
+                <div class="aspect-square bg-paper-soft flex items-center justify-center p-6 relative">
+                    <span class="absolute top-4 left-5 font-display text-[42px] leading-none text-ryt-mint-glow select-none pointer-events-none">
+                        0<?php echo (int) array_search($e, $estilos) + 1; ?>
+                    </span>
                     <img src="<?php echo esc_url(RYT_URI . '/assets/img/' . $e['img']); ?>"
                          alt="<?php echo esc_attr($e['t']); ?>"
                          class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                          loading="lazy">
                 </div>
-                <div class="p-5 text-center">
-                    <h3 class="text-ink-heading mb-2 text-xl"><?php echo esc_html($e['t']); ?></h3>
-                    <p class="text-sm text-ink-soft leading-relaxed"><?php echo esc_html($e['d']); ?></p>
+                <div class="p-6 text-center">
+                    <h3 class="text-ink-heading mb-2 text-xl leading-[1.25]"><?php echo esc_html($e['t']); ?></h3>
+                    <p class="text-[13.5px] text-ink-soft leading-[1.65] mb-5"><?php echo esc_html($e['d']); ?></p>
+                    <span class="inline-flex items-center gap-2 text-[11.5px] font-bold uppercase tracking-[0.12em] text-ryt-mint">
+                        Ver más
+                        <span class="w-[22px] h-[1.5px] bg-ryt-mint inline-block"></span>
+                    </span>
                 </div>
             </a>
             <?php endforeach; ?>

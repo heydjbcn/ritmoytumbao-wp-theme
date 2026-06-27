@@ -47,7 +47,7 @@
                 <div class="absolute -top-12 left-1/2 -translate-x-1/2 w-32 h-32 rounded-full bg-ryt-mint shadow-lg flex items-center justify-center ring-8 ring-paper-alt">
                     <span class="font-display text-3xl text-white leading-none">260€</span>
                 </div>
-                <span class="absolute top-4 right-4 bg-ryt-mint text-white text-[10px] uppercase font-bold tracking-widest px-3 py-1 rounded-pill">Recomendado</span>
+                <span class="absolute top-4 right-4 badge-popular">Recomendado</span>
                 <h3 class="font-serif text-2xl text-ink-heading mb-2">Pack Premium</h3>
                 <p class="text-sm text-ryt-mint uppercase tracking-widest font-bold mb-5">Qué incluye</p>
                 <ul class="text-sm text-ink-soft space-y-2 mb-6 text-left mx-auto max-w-sm">
