@@ -4,6 +4,24 @@ Theme custom de WordPress para [ritmoytumbao-ds.es](https://ritmoytumbao-ds.es) 
 
 Sin Elementor. Sin page builders. Sin plugins extra. PHP nativo + Tailwind CSS + JS vanilla.
 
+## Capturas
+
+| Home | Horarios y Tarifas |
+|---|---|
+| ![Home](screenshots/home.jpeg) | ![Horarios](screenshots/horarios.jpeg) |
+
+| Instalaciones | Equipo |
+|---|---|
+| ![Instalaciones](screenshots/instalaciones.jpeg) | ![Equipo](screenshots/equipo.jpeg) |
+
+| Clases de Salsa | Baile Nupcial |
+|---|---|
+| ![Salsa](screenshots/salsa.jpeg) | ![Nupcial](screenshots/nupcial.jpeg) |
+
+| Blog | Legal (Política Privacidad) |
+|---|---|
+| ![Blog](screenshots/blog.jpeg) | ![Legal](screenshots/legal.jpeg) |
+
 ## Stack
 
 - **PHP** 8.1+
