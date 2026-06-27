@@ -32,9 +32,9 @@ $estilos = [
         <div class="grid gap-7 sm:grid-cols-2 lg:grid-cols-4">
             <?php foreach ($estilos as $i => $e): ?>
             <a href="<?php echo esc_url($e['url']); ?>"
-               class="group relative bg-white border border-[#EFEBE6] rounded-[22px] px-[30px] pt-9 pb-[30px] flex flex-col shadow-card cursor-pointer overflow-hidden hover:-translate-y-1 transition-all duration-200 hover:shadow-card-lg">
+               class="group relative bg-white border border-[#EFEBE6] rounded-[22px] p-8 pt-9 flex flex-col shadow-card cursor-pointer hover:-translate-y-1 transition-all duration-200 hover:shadow-card-lg">
                 <!-- Número grande mint-glow arriba a la izquierda -->
-                <span class="font-display text-[42px] leading-none text-ryt-mint-glow mb-[22px] select-none">
+                <span class="font-display text-[42px] leading-none text-ryt-mint-glow mb-6 select-none">
                     <?php echo str_pad((string) ($i + 1), 2, '0', STR_PAD_LEFT); ?>
                 </span>
 
@@ -42,13 +42,13 @@ $estilos = [
                     <?php echo esc_html($e['t']); ?>
                 </h3>
 
-                <p class="text-[13.5px] text-ink-soft leading-[1.65] flex-1">
+                <p class="text-[13.5px] text-ink-soft leading-[1.65] flex-1 mb-6">
                     <?php echo esc_html($e['d']); ?>
                 </p>
 
-                <span class="mt-6 inline-flex items-center gap-2 text-[11.5px] font-bold uppercase tracking-[0.12em] text-ryt-mint">
+                <span class="inline-flex items-center gap-2.5 text-[11.5px] font-bold uppercase tracking-widest text-ryt-mint">
                     Ver más
-                    <span class="w-[22px] h-[1.5px] bg-ryt-mint inline-block transition-[width] duration-200 group-hover:w-[32px]"></span>
+                    <span class="w-[22px] h-[1.5px] bg-ryt-mint inline-block transition-[width] duration-200 group-hover:w-8"></span>
                 </span>
             </a>
             <?php endforeach; ?>
