@@ -95,9 +95,11 @@
   .ryt-nav > li > a {
     @apply relative font-sans font-bold text-[13px] uppercase tracking-[0.08em] text-ink-heading inline-flex items-center gap-1.5 px-4 py-3 transition-colors duration-200;
   }
+  /* Rayita fina mint que crece desde el centro */
   .ryt-nav > li > a::before {
     content: "";
-    @apply absolute left-1/2 -translate-x-1/2 bottom-1.5 h-[2px] w-0 bg-ryt-mint rounded-full transition-[width] duration-300 ease-out;
+    @apply absolute left-1/2 -translate-x-1/2 bottom-0.5 h-[2px] w-0 bg-ryt-mint rounded-full opacity-0 transition-all duration-300 ease-out;
+    box-shadow: 0 0 8px rgba(98,216,172,0.6);
   }
   .ryt-nav > li:hover > a,
   .ryt-nav > li.current-menu-item > a,
@@ -107,7 +109,8 @@
   .ryt-nav > li:hover > a::before,
   .ryt-nav > li.current-menu-item > a::before,
   .ryt-nav > li.current-menu-parent > a::before {
-    @apply w-[60%];
+    width: calc(100% - 2rem);
+    @apply opacity-100;
   }
   /* Indicador ▾ para items con submenú */
   .ryt-nav > li.menu-item-has-children > a::after {
@@ -236,6 +239,33 @@
     transform: scale(1.15) translateY(-1px);
   }
 
+
+  /* ─────────────────────────────────────────────────────────────
+     Footer — enlaces y redes con micro-efectos
+     ───────────────────────────────────────────────────────────── */
+  .ryt-foot-link {
+    @apply relative text-sm text-[#A39D98] transition-colors duration-200 inline-block;
+  }
+  .ryt-foot-link::before {
+    content: "";
+    @apply absolute left-0 -bottom-0.5 h-px w-0 bg-ryt-mint transition-[width] duration-300 ease-out;
+  }
+  .ryt-foot-link:hover {
+    @apply text-ryt-mint;
+  }
+  .ryt-foot-link:hover::before {
+    @apply w-full;
+  }
+
+  /* Redes sociales del footer — círculos verdes con bounce */
+  .ryt-foot-social {
+    @apply inline-flex items-center justify-center w-[42px] h-[42px] rounded-full bg-ryt-mint text-ryt-forest transition-all duration-200;
+  }
+  .ryt-foot-social:hover {
+    @apply bg-ryt-mint-dark text-white;
+    transform: scale(1.1) translateY(-2px);
+    box-shadow: 0 8px 20px rgba(98,216,172,0.4);
+  }
 
   /* Prose para contenido WP (legales, blog). */
   .prose-ryt {

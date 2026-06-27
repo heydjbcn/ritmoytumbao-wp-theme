@@ -36,19 +36,28 @@
 
             <!-- Texto -->
             <div>
-                <h1 class="text-white leading-tight mb-6">
+                <span class="inline-block text-xs font-bold uppercase tracking-[0.22em] text-ryt-mint mb-5">
+                    Escuela de baile en Mataró · desde 2010
+                </span>
+                <h1 class="text-white leading-[1.08] mb-6 text-4xl md:text-5xl lg:text-[54px]">
                     <?php esc_html_e('Clases de', 'ryt'); ?>
                     <span class="text-ryt-mint"><?php esc_html_e('Salsa y Bachata', 'ryt'); ?></span>
                     <?php esc_html_e('en Mataró', 'ryt'); ?>
                 </h1>
-                <p class="text-base md:text-lg text-paper-alt leading-relaxed mb-8 max-w-xl">
-                    <?php esc_html_e('En Ritmo y Tumbao llevamos más de 15 años impartiendo clases. Recientemente hemos abierto nuestras nuevas', 'ryt'); ?>
-                    <strong class="text-white"><?php esc_html_e('clases de salsa y bachata en Mataró', 'ryt'); ?></strong>,
-                    <?php esc_html_e('en nuestra nueva escuela. También te ofrecemos clases de Rueda de Casino, Reggaetón, Zumba Kids y otras disciplinas.', 'ryt'); ?>
+                <p class="text-base md:text-[17px] text-[#D9D4CF] leading-[1.7] mb-[34px] max-w-[520px]">
+                    <?php esc_html_e('En Ritmo y Tumbao llevamos más de 15 años impartiendo clases. Hemos abierto nuestras nuevas', 'ryt'); ?>
+                    <strong class="text-white font-semibold"><?php esc_html_e('clases de salsa y bachata en Mataró', 'ryt'); ?></strong>.
+                    <?php esc_html_e('También Rueda de Casino, Reggaetón, Zumba Kids y otras disciplinas.', 'ryt'); ?>
                 </p>
-                <a href="<?php echo esc_url(home_url('/horarios-y-tarifas/')); ?>" class="btn btn-primary">
-                    <?php esc_html_e('Ver horarios', 'ryt'); ?>
-                </a>
+                <div class="flex flex-wrap gap-3.5">
+                    <a href="<?php echo esc_url(home_url('/horarios-y-tarifas/')); ?>" class="btn btn-primary">
+                        <?php esc_html_e('Ver horarios', 'ryt'); ?>
+                    </a>
+                    <a href="<?php echo esc_url(ryt_whatsapp_url('Hola! Quiero reservar mi primera clase GRATIS')); ?>"
+                       target="_blank" rel="noopener" class="btn btn-outline-white">
+                        <?php esc_html_e('Reservar clase gratis', 'ryt'); ?>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

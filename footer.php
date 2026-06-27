@@ -1,104 +1,143 @@
 <?php
 /**
- * Footer — replica el de prod.
+ * Footer v7 — réplica del mockup Cloud Design.
  *
- * Estructura real:
- *   - Cita "El trabajo de los pies es caminar, pero su afición es bailar."
- *   - Newsletter (EMAIL + SUBSCRÍBETE)
- *   - Dirección Josep Vicenç Foix 51, 08301 Mataró (Barcelona)
- *   - 4 redes: WhatsApp, Instagram, Facebook, YouTube
- *   - QR code de contacto
- *   - Logo recto
- *   - Legales: Política privacidad · Aviso legal · Política cookies · Política devoluciones
- *   - Créditos "®2022 Ritmo y Tumbao by Desarrollo Web Barcelona"
+ * Estructura:
+ *   - Banda newsletter (sobre fondo oscuro #262524): pre-title mint + cita serif XL + input + botón
+ *   - Grid 4 columnas: Brand + Explora + Contacto + QR
+ *   - Bottom bar más oscuro (#1F1E1D): legales + copyright
  */
 ?>
-<footer class="bg-paper text-ink mt-0">
-    <!-- Top: cita + newsletter (fondo blanco) -->
-    <div class="border-b border-paper-alt">
-        <div class="container mx-auto px-4 py-12 text-center max-w-3xl">
-            <p class="font-serif italic text-xl md:text-2xl text-ink-heading leading-relaxed mb-8">
+<footer class="bg-ink-dark text-[#C5BFB9] mt-0">
+    <!-- Banda newsletter -->
+    <div class="border-b border-white/10">
+        <div class="max-w-[760px] mx-auto px-6 py-[72px] text-center">
+            <span class="inline-block text-xs font-bold uppercase tracking-[0.24em] text-ryt-mint mb-5">Ritmo y Tumbao</span>
+            <p class="font-serif italic text-2xl md:text-[27px] leading-[1.5] text-[#F4F1EC] mb-[34px]">
                 "El trabajo de los pies es caminar, pero su afición es bailar."
             </p>
-
-            <form class="flex flex-col sm:flex-row gap-3 max-w-xl mx-auto" action="#" onsubmit="event.preventDefault(); alert('Suscripción pendiente de integración');">
+            <form class="flex flex-col sm:flex-row gap-3 max-w-[460px] mx-auto"
+                  action="#" onsubmit="event.preventDefault(); alert('Suscripción pendiente de integración');">
                 <label for="ryt-newsletter" class="sr-only">Email</label>
                 <input id="ryt-newsletter" type="email" required placeholder="Tu email"
-                       class="flex-1 px-5 py-3 rounded-pill bg-paper-soft text-ink-heading placeholder-ink-mute border border-paper-alt focus:outline-none focus:border-ryt-mint">
-                <button type="submit" class="btn btn-primary">Subscríbete</button>
+                       class="flex-1 px-[22px] py-[14px] rounded-pill border border-white/15 bg-white/5 text-[#F4F1EC] placeholder-white/40 text-sm focus:outline-none focus:border-ryt-mint">
+                <button type="submit"
+                        class="px-[26px] py-[14px] rounded-pill bg-ryt-mint text-ryt-forest text-[13px] font-bold uppercase tracking-[0.05em] hover:bg-ryt-mint-dark transition-colors whitespace-nowrap"
+                        style="box-shadow: 0 10px 24px rgba(98,216,172,0.22);">
+                    Subscríbete
+                </button>
             </form>
-            <p class="text-xs text-ink-mute mt-3">
-                *Suscríbete a nuestro boletín para recibir ofertas de descuentos, eventos, actualizaciones e información sobre nuevos cursos.
+            <p class="text-xs text-[#8E8884] mt-3.5">
+                Recibe ofertas, eventos e información sobre nuevos cursos.
             </p>
         </div>
     </div>
 
-    <!-- Middle: contacto + redes + qr + logo -->
-    <div class="container mx-auto px-4 py-12 grid gap-10 md:grid-cols-4 items-start">
-        <!-- Contacto -->
-        <div class="md:col-span-2">
-            <h3 class="font-serif text-xl mb-4 text-ink-heading">Contacto</h3>
-            <p class="text-sm text-ink-soft mb-2"><?php echo esc_html(RYT_ADDRESS); ?></p>
-            <p class="text-sm text-ink-soft mb-2">
-                <a href="<?php echo esc_attr(ryt_tel_link(RYT_PHONE_1)); ?>" class="hover:text-ryt-mint"><?php echo esc_html(RYT_PHONE_1); ?></a>
-                ·
-                <a href="<?php echo esc_attr(ryt_tel_link(RYT_PHONE_2)); ?>" class="hover:text-ryt-mint"><?php echo esc_html(RYT_PHONE_2); ?></a>
-            </p>
-            <p class="text-sm text-ink-soft mb-5">
-                <a href="mailto:<?php echo esc_attr(RYT_EMAIL); ?>" class="hover:text-ryt-mint"><?php echo esc_html(RYT_EMAIL); ?></a>
-            </p>
+    <!-- Grid principal -->
+    <div class="max-w-[1280px] mx-auto px-6 py-16 grid gap-12 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1.2fr_1fr] items-start">
 
-            <!-- Redes -->
-            <div class="flex items-center gap-3">
-                <a href="<?php echo esc_url(ryt_whatsapp_url()); ?>" target="_blank" rel="noopener" aria-label="WhatsApp" class="h-10 w-10 inline-flex items-center justify-center rounded-full bg-ryt-mint text-white hover:bg-ryt-mint-dark transition-colors">
-                    <?php ryt_icon('whatsapp', 'w-5 h-5'); ?>
+        <!-- Brand + redes -->
+        <div>
+            <img src="<?php echo esc_url(RYT_URI . '/assets/img/logo-sello.webp'); ?>"
+                 alt="Ritmo y Tumbao Dance School"
+                 class="w-24 h-auto mb-5"
+                 loading="lazy">
+            <p class="text-sm leading-[1.7] text-[#A39D98] mb-[22px] max-w-[280px]">
+                Escuela de salsa y bachata en Mataró. Más de 15 años enseñando a bailar con ritmo y tumbao.
+            </p>
+            <div class="flex items-center gap-[11px]">
+                <a href="<?php echo esc_url(ryt_whatsapp_url()); ?>" target="_blank" rel="noopener"
+                   aria-label="WhatsApp" class="ryt-foot-social">
+                    <?php ryt_icon('whatsapp', 'w-[18px] h-[18px]'); ?>
                 </a>
-                <a href="<?php echo esc_url(RYT_INSTAGRAM); ?>" target="_blank" rel="noopener" aria-label="Instagram" class="h-10 w-10 inline-flex items-center justify-center rounded-full bg-ryt-mint text-white hover:bg-ryt-mint-dark transition-colors">
-                    <?php ryt_icon('instagram', 'w-5 h-5'); ?>
+                <a href="<?php echo esc_url(RYT_INSTAGRAM); ?>" target="_blank" rel="noopener"
+                   aria-label="Instagram" class="ryt-foot-social">
+                    <?php ryt_icon('instagram', 'w-[18px] h-[18px]'); ?>
                 </a>
-                <a href="<?php echo esc_url(RYT_FACEBOOK); ?>" target="_blank" rel="noopener" aria-label="Facebook" class="h-10 w-10 inline-flex items-center justify-center rounded-full bg-ryt-mint text-white hover:bg-ryt-mint-dark transition-colors">
-                    <?php ryt_icon('facebook', 'w-5 h-5'); ?>
+                <a href="<?php echo esc_url(RYT_FACEBOOK); ?>" target="_blank" rel="noopener"
+                   aria-label="Facebook" class="ryt-foot-social">
+                    <?php ryt_icon('facebook', 'w-[18px] h-[18px]'); ?>
                 </a>
-                <a href="<?php echo esc_url(RYT_YOUTUBE); ?>" target="_blank" rel="noopener" aria-label="YouTube" class="h-10 w-10 inline-flex items-center justify-center rounded-full bg-ryt-mint text-white hover:bg-ryt-mint-dark transition-colors">
-                    <?php ryt_icon('youtube', 'w-5 h-5'); ?>
+                <a href="<?php echo esc_url(RYT_YOUTUBE); ?>" target="_blank" rel="noopener"
+                   aria-label="YouTube" class="ryt-foot-social">
+                    <?php ryt_icon('youtube', 'w-[18px] h-[18px]'); ?>
                 </a>
             </div>
         </div>
 
-        <!-- QR -->
-        <div class="flex flex-col items-center md:items-start">
-            <h3 class="font-serif text-xl mb-4 text-ink-heading">Escanéame</h3>
-            <?php
-            $qr = RYT_DIR . '/assets/img/qrcode-1.png';
-            if (file_exists($qr)):
-            ?>
-            <img src="<?php echo esc_url(RYT_URI . '/assets/img/qrcode-1.png'); ?>"
-                 alt="QR contacto Ritmo y Tumbao"
-                 class="w-28 h-28 bg-white p-2 rounded-lg ring-1 ring-paper-alt" loading="lazy">
-            <?php else: ?>
-            <div class="w-28 h-28 bg-paper-soft rounded-lg flex items-center justify-center text-xs text-ink-mute text-center px-3">QR pendiente</div>
-            <?php endif; ?>
+        <!-- Explora -->
+        <div>
+            <h3 class="text-[13px] font-bold uppercase tracking-[0.16em] text-[#F4F1EC] mb-5 font-sans">
+                Explora
+            </h3>
+            <ul class="flex flex-col gap-[13px]">
+                <li><a href="<?php echo esc_url(home_url('/')); ?>" class="ryt-foot-link">Inicio</a></li>
+                <li><a href="<?php echo esc_url(home_url('/horarios-y-tarifas/')); ?>" class="ryt-foot-link">Horarios y tarifas</a></li>
+                <li><a href="<?php echo esc_url(home_url('/clases-de-salsa/')); ?>" class="ryt-foot-link">Clases de salsa</a></li>
+                <li><a href="<?php echo esc_url(home_url('/clases-de-bachata/')); ?>" class="ryt-foot-link">Clases de bachata</a></li>
+                <li><a href="<?php echo esc_url(home_url('/baile-nupcial/')); ?>" class="ryt-foot-link">Baile nupcial</a></li>
+                <li><a href="<?php echo esc_url(home_url('/instalaciones/')); ?>" class="ryt-foot-link">Instalaciones</a></li>
+                <li><a href="<?php echo esc_url(home_url('/blog/')); ?>" class="ryt-foot-link">Blog</a></li>
+            </ul>
         </div>
 
-        <!-- Logo -->
-        <div class="flex flex-col items-center md:items-end">
-            <img src="<?php echo esc_url(RYT_URI . '/assets/img/logo-sello.webp'); ?>"
-                 alt="Ritmo y Tumbao Dance School"
-                 class="w-32 h-auto"
-                 loading="lazy">
+        <!-- Contacto -->
+        <div>
+            <h3 class="text-[13px] font-bold uppercase tracking-[0.16em] text-[#F4F1EC] mb-5 font-sans">
+                Contacto
+            </h3>
+            <p class="text-sm text-[#A39D98] leading-[1.7] mb-[14px]">
+                Josep Vicenç Foix 51,<br>08301 Mataró (Barcelona)
+            </p>
+            <p class="text-sm text-[#A39D98] leading-[1.8] mb-1">
+                <a href="<?php echo esc_attr(ryt_tel_link(RYT_PHONE_1)); ?>" class="hover:text-ryt-mint transition-colors">
+                    <?php echo esc_html(RYT_PHONE_1); ?>
+                </a>
+            </p>
+            <p class="text-sm text-[#A39D98] leading-[1.8] mb-[14px]">
+                <a href="<?php echo esc_attr(ryt_tel_link(RYT_PHONE_2)); ?>" class="hover:text-ryt-mint transition-colors">
+                    <?php echo esc_html(RYT_PHONE_2); ?>
+                </a>
+            </p>
+            <p class="text-sm text-ryt-mint mb-[14px]">
+                <a href="mailto:<?php echo esc_attr(RYT_EMAIL); ?>" class="hover:underline">
+                    <?php echo esc_html(RYT_EMAIL); ?>
+                </a>
+            </p>
+            <p class="text-[13px] text-[#7C7672]">Lun–Vie · 18h–23h</p>
+        </div>
+
+        <!-- QR -->
+        <div class="flex flex-col items-start">
+            <h3 class="text-[13px] font-bold uppercase tracking-[0.16em] text-[#F4F1EC] mb-5 font-sans">
+                Escanéame
+            </h3>
+            <?php $qr = RYT_DIR . '/assets/img/qrcode-1.png'; if (file_exists($qr)): ?>
+                <img src="<?php echo esc_url(RYT_URI . '/assets/img/qrcode-1.png'); ?>"
+                     alt="QR contacto Ritmo y Tumbao"
+                     class="w-[118px] h-[118px] bg-white p-[9px] rounded-[14px]"
+                     loading="lazy">
+            <?php else: ?>
+                <div class="w-[118px] h-[118px] rounded-[14px] bg-white/5 flex items-center justify-center text-xs text-white/40 text-center px-3">
+                    QR pendiente
+                </div>
+            <?php endif; ?>
+            <p class="text-xs text-[#7C7672] mt-3 max-w-[140px] leading-[1.5]">
+                Guarda nuestro contacto al instante.
+            </p>
         </div>
     </div>
 
-    <!-- Bottom: legales + créditos -->
-    <div class="border-t border-paper-alt bg-paper-soft">
-        <div class="container mx-auto px-4 py-5 flex flex-col md:flex-row md:items-center md:justify-between gap-3 text-xs text-ink-soft">
-            <ul class="flex flex-wrap items-center gap-x-5 gap-y-2">
-                <li><a href="<?php echo esc_url(home_url('/politica-de-privacidad/')); ?>" class="hover:text-ink-heading">Política de privacidad</a></li>
-                <li><a href="<?php echo esc_url(home_url('/aviso-legal/')); ?>" class="hover:text-ink-heading">Aviso legal</a></li>
-                <li><a href="<?php echo esc_url(home_url('/politica-de-cookies/')); ?>" class="hover:text-ink-heading">Política De Cookies</a></li>
-                <li><a href="<?php echo esc_url(home_url('/politica-de-devoluciones/')); ?>" class="hover:text-ink-heading">Política De Devoluciones</a></li>
+    <!-- Bottom bar -->
+    <div class="border-t border-white/10 bg-[#1F1E1D]">
+        <div class="max-w-[1280px] mx-auto px-6 py-[22px] flex flex-wrap items-center justify-between gap-[14px] text-xs text-[#8E8884]">
+            <ul class="flex flex-wrap gap-x-[22px] gap-y-2 m-0 p-0 list-none">
+                <li><a href="<?php echo esc_url(home_url('/politica-de-privacidad/')); ?>" class="ryt-foot-link">Política de privacidad</a></li>
+                <li><a href="<?php echo esc_url(home_url('/aviso-legal/')); ?>" class="ryt-foot-link">Aviso legal</a></li>
+                <li><a href="<?php echo esc_url(home_url('/politica-de-cookies/')); ?>" class="ryt-foot-link">Política de cookies</a></li>
+                <li><a href="<?php echo esc_url(home_url('/politica-de-devoluciones/')); ?>" class="ryt-foot-link">Política de devoluciones</a></li>
             </ul>
-            <p>®<?php echo esc_html(date('Y')); ?> Ritmo y Tumbao</p>
+            <span class="text-[#6E6864]">®<?php echo esc_html(date('Y')); ?> Ritmo y Tumbao · Dance School</span>
         </div>
     </div>
 </footer>

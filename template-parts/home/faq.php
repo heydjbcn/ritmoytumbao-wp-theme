@@ -22,9 +22,8 @@ $status = $_GET['contact'] ?? '';
         <!-- Accordion -->
         <div class="lg:col-span-3">
             <header class="mb-8">
-                <span class="pre-title">Clases de Salsa y Bachata en Mataró</span>
+                <span class="pre-title">Te irá bien saber</span>
                 <h2 class="text-ink-heading uppercase">Preguntas frecuentes</h2>
-                <p class="text-base text-ink-soft mt-3">Te irá bien saber</p>
             </header>
 
             <div class="space-y-3">
@@ -49,9 +48,9 @@ $status = $_GET['contact'] ?? '';
 
         <!-- Form -->
         <div class="lg:col-span-2">
-            <div class="bg-paper-soft rounded-2xl p-6 md:p-8 sticky top-24">
-                <h3 class="font-serif text-2xl text-ink-heading mb-2">¿Tienes una duda más concreta?</h3>
-                <p class="text-sm text-ink-soft mb-5">Escríbenos y te respondemos en menos de 24h.</p>
+            <div class="bg-paper-alt rounded-[22px] p-6 md:p-8 sticky top-24 border border-[#EFEBE6]">
+                <h3 class="font-serif italic text-[24px] text-ink-heading mb-2 leading-[1.25]">¿Tienes una duda más concreta?</h3>
+                <p class="text-sm text-ink-soft mb-6">Escríbenos y te respondemos en menos de 24h.</p>
 
                 <?php if ($status === 'sent'): ?>
                     <div class="bg-ryt-mint/15 border border-ryt-mint text-ink-heading rounded-xl p-3 text-sm mb-4">
