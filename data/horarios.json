@@ -1,0 +1,227 @@
+[
+  {
+    "estilo": "Salsa",
+    "nivel": "Básico/Intermedio",
+    "dia": "lunes",
+    "hora_inicio": "19:00",
+    "hora_fin": "19:55",
+    "profesores": "Miguel & Sandra",
+    "sala": "Sala 2"
+  },
+  {
+    "estilo": "Salsa",
+    "nivel": "Inicio 3",
+    "dia": "lunes",
+    "hora_inicio": "20:00",
+    "hora_fin": "20:55",
+    "profesores": "Miguel & Ivet",
+    "sala": "Sala 2"
+  },
+  {
+    "estilo": "Salsa",
+    "nivel": "Básico 2",
+    "dia": "lunes",
+    "hora_inicio": "20:15",
+    "hora_fin": "21:10",
+    "profesores": "Michael & Sandra",
+    "sala": "Sala 1"
+  },
+  {
+    "estilo": "Salsa",
+    "nivel": "Inicio 3",
+    "dia": "martes",
+    "hora_inicio": "19:00",
+    "hora_fin": "19:55",
+    "profesores": "Michael & Jeni",
+    "sala": "Sala 2"
+  },
+  {
+    "estilo": "Bachata",
+    "nivel": "Iniciación",
+    "dia": "martes",
+    "hora_inicio": "19:00",
+    "hora_fin": "19:55",
+    "profesores": "Aleix & Belén",
+    "sala": "Sala 1"
+  },
+  {
+    "estilo": "Bachata",
+    "nivel": "Inicio 3",
+    "dia": "martes",
+    "hora_inicio": "20:00",
+    "hora_fin": "20:55",
+    "profesores": "Aleix & Belén",
+    "sala": "Sala 2"
+  },
+  {
+    "estilo": "Salsa",
+    "nivel": "Inicio 1",
+    "dia": "miercoles",
+    "hora_inicio": "19:00",
+    "hora_fin": "19:55",
+    "profesores": "Miguel & Jeni",
+    "sala": "Sala 2"
+  },
+  {
+    "estilo": "Bachata Fusión",
+    "nivel": "Iniciación",
+    "dia": "miercoles",
+    "hora_inicio": "19:15",
+    "hora_fin": "20:10",
+    "profesores": "Gio & Judit",
+    "sala": "Sala 1"
+  },
+  {
+    "estilo": "Pasos Libres",
+    "nivel": "Intermedio",
+    "dia": "miercoles",
+    "hora_inicio": "20:00",
+    "hora_fin": "20:55",
+    "profesores": "Miguel",
+    "sala": "Sala 2"
+  },
+  {
+    "estilo": "Bachata Fusión",
+    "nivel": "Inicio 2",
+    "dia": "miercoles",
+    "hora_inicio": "20:15",
+    "hora_fin": "21:10",
+    "profesores": "Gio & Judit",
+    "sala": "Sala 1"
+  },
+  {
+    "estilo": "Salsa",
+    "nivel": "Básico 3",
+    "dia": "miercoles",
+    "hora_inicio": "21:00",
+    "hora_fin": "21:55",
+    "profesores": "Jeni & Miguel",
+    "sala": "Sala 2"
+  },
+  {
+    "estilo": "Bachata",
+    "nivel": "Lady Style Bachata",
+    "dia": "miercoles",
+    "hora_inicio": "21:15",
+    "hora_fin": "22:10",
+    "profesores": "Judit",
+    "sala": "Sala 1"
+  },
+  {
+    "estilo": "Bachata",
+    "nivel": "Básico",
+    "dia": "jueves",
+    "hora_inicio": "18:50",
+    "hora_fin": "19:45",
+    "profesores": "Mario & Nia",
+    "sala": "Sala 1"
+  },
+  {
+    "estilo": "Salsa",
+    "nivel": "Iniciación",
+    "dia": "jueves",
+    "hora_inicio": "19:00",
+    "hora_fin": "19:55",
+    "profesores": "Miguel & Thais",
+    "sala": "Sala 2"
+  },
+  {
+    "estilo": "Bachata",
+    "nivel": "Iniciación",
+    "dia": "jueves",
+    "hora_inicio": "19:50",
+    "hora_fin": "20:45",
+    "profesores": "Mario & Nia",
+    "sala": "Sala 1"
+  },
+  {
+    "estilo": "Casino",
+    "nivel": "Intermedio",
+    "dia": "jueves",
+    "hora_inicio": "20:00",
+    "hora_fin": "20:55",
+    "profesores": "Miguel & Thais",
+    "sala": "Sala 2"
+  },
+  {
+    "estilo": "Casino con Timba",
+    "nivel": "Intermedio/Avanzado",
+    "dia": "jueves",
+    "hora_inicio": "21:00",
+    "hora_fin": "21:55",
+    "profesores": "Miguel & Thais",
+    "sala": "Sala 2"
+  },
+  {
+    "estilo": "Bachata",
+    "nivel": "Básico 3",
+    "dia": "viernes",
+    "hora_inicio": "18:50",
+    "hora_fin": "19:45",
+    "profesores": "Michael & Jeni",
+    "sala": "Sala 2"
+  },
+  {
+    "estilo": "Salsa",
+    "nivel": "Intermedio",
+    "dia": "viernes",
+    "hora_inicio": "19:50",
+    "hora_fin": "20:45",
+    "profesores": "Ivet & Miguel",
+    "sala": "Sala 1"
+  },
+  {
+    "estilo": "Lady Style",
+    "nivel": "Intermedio",
+    "dia": "viernes",
+    "hora_inicio": "20:00",
+    "hora_fin": "20:55",
+    "profesores": "Jeni",
+    "sala": "Sala 2"
+  },
+  {
+    "estilo": "Bachata",
+    "nivel": "Básico",
+    "dia": "viernes",
+    "hora_inicio": "20:50",
+    "hora_fin": "21:45",
+    "profesores": "Ivet & Michael",
+    "sala": "Sala 1"
+  },
+  {
+    "estilo": "Casino",
+    "nivel": "Avanzado",
+    "dia": "viernes",
+    "hora_inicio": "21:00",
+    "hora_fin": "21:55",
+    "profesores": "Miguel & Jeni",
+    "sala": "Sala 2"
+  },
+  {
+    "estilo": "Salsa",
+    "nivel": "Inicio 2",
+    "dia": "domingo",
+    "hora_inicio": "17:00",
+    "hora_fin": "17:55",
+    "profesores": "Michael & Ivet",
+    "sala": "Sala 2"
+  },
+  {
+    "estilo": "Bachata Fusión",
+    "nivel": "Inicio 3",
+    "dia": "domingo",
+    "hora_inicio": "18:00",
+    "hora_fin": "18:55",
+    "profesores": "Michael & Ivet",
+    "sala": "Sala 2"
+  },
+  {
+    "estilo": "Bachata Fusión",
+    "nivel": "Inicio 1",
+    "dia": "domingo",
+    "hora_inicio": "19:00",
+    "hora_fin": "19:55",
+    "profesores": "Michael & Ivet",
+    "sala": "Sala 2"
+  }
+]

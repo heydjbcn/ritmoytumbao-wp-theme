@@ -1,0 +1,16 @@
+/*
+Theme Name: Ritmo y Tumbao 2026
+Theme URI: https://ritmoytumbao-ds.es
+Author: Hey DJ Mauri
+Author URI: https://ritmoytumbao-ds.es
+Description: Tema custom de Ritmo y Tumbao Dance School (Mataró). PHP nativo + Tailwind CSS, sin Elementor ni page builders. Paleta verde mint #62D8AC sobre tinta #373636, tipografías Libre Baskerville + ADLaM Display + Source Sans Pro.
+Version: 1.0.0
+Requires at least: 6.4
+Requires PHP: 8.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: ryt
+Tags: custom-logo, custom-menu, featured-images, responsive
+*/
+
+/* Tailwind compilado vive en assets/css/main.css. Este archivo solo lleva la cabecera del tema. */

@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans text-ink bg-paper;
+    font-size: 16px;
+  }
+
+  /* Headings: Libre Baskerville (igual que prod) */
+  h1, h2, h3, h4 {
+    @apply font-serif text-ink-heading;
+    font-weight: 800;
+  }
+
+  h1 { @apply text-3xl md:text-4xl lg:text-5xl leading-tight; }
+  h2 { @apply text-3xl md:text-4xl lg:text-[50px] leading-tight; }
+  h3 { @apply text-xl md:text-2xl; }
+
+  /* Links por defecto */
+  a {
+    @apply transition-colors;
+  }
+}
+
+@layer components {
+  /* Botón: TODOS los CTAs en prod son verde menta, pill 50px, mayúsculas, semibold */
+  .btn {
+    @apply inline-flex items-center justify-center px-7 py-3 rounded-pill font-sans font-semibold text-sm uppercase tracking-wide transition-all duration-200;
+  }
+  .btn-primary {
+    @apply bg-ryt-mint text-white hover:bg-ryt-mint-dark hover:-translate-y-0.5;
+  }
+  .btn-outline {
+    @apply bg-white text-ryt-mint border-2 border-ryt-mint hover:bg-ryt-mint hover:text-white;
+  }
+  .btn-outline-white {
+    @apply bg-transparent text-white border-2 border-white hover:bg-white hover:text-ryt-mint;
+  }
+  .btn-dark {
+    @apply bg-ink-dark text-white hover:bg-ink;
+  }
+
+  /* Pre-headings tipo "RESEÑAS" / "NUESTRA ESCUELA" */
+  .eyebrow {
+    @apply uppercase tracking-[0.25em] text-xs font-bold text-ryt-mint;
+  }
+
+  /* Pricing price (ADLaM Display sobre fondo gris claro como en prod) */
+  .price {
+    @apply font-display text-6xl md:text-7xl text-paper-soft leading-none;
+    font-weight: 800;
+  }
+
+  /* Card básica */
+  .card {
+    @apply bg-white rounded-2xl shadow-card overflow-hidden;
+  }
+
+  /* Section spacing — prod usa secciones grandes con padding generoso */
+  .section {
+    @apply py-16 md:py-24;
+  }
+
+  /* "Pretitle pequeño" en mayus verde antes del h2 */
+  .pre-title {
+    @apply font-sans text-base font-bold uppercase tracking-widest text-ryt-mint mb-3;
+  }
+
+  /* Estilo "prose" para legales, contenido WP, posts del blog */
+  .prose-ryt {
+    @apply text-ink-soft leading-relaxed;
+  }
+  .prose-ryt h2 { @apply text-2xl md:text-3xl mt-10 mb-4 text-ink-heading; font-weight: 800; }
+  .prose-ryt h3 { @apply text-xl mt-8 mb-3 text-ink-heading; }
+  .prose-ryt p { @apply mb-5; }
+  .prose-ryt a { @apply text-ryt-mint underline hover:text-ryt-mint-dark; }
+  .prose-ryt ul { @apply mb-5 ml-6 list-disc; }
+  .prose-ryt ol { @apply mb-5 ml-6 list-decimal; }
+  .prose-ryt li { @apply mb-2; }
+  .prose-ryt blockquote { @apply border-l-4 border-ryt-mint pl-5 my-6 italic text-ink-heading font-serif; }
+  .prose-ryt img { @apply my-6 rounded-2xl; }
+  .prose-ryt strong { @apply text-ink-heading; font-weight: 700; }
+}
