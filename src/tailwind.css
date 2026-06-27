@@ -79,6 +79,35 @@
     @apply font-sans text-xs font-bold uppercase tracking-[0.22em] text-ryt-mint mb-[14px];
   }
 
+  /* Navegación WP — wp_nav_menu (estilo hover dropdown). */
+  .ryt-nav {
+    @apply flex items-center gap-8 list-none m-0 p-0;
+  }
+  .ryt-nav > li {
+    @apply relative;
+  }
+  .ryt-nav > li > a {
+    @apply font-sans font-bold text-[13px] uppercase tracking-[0.06em] text-ink-heading hover:text-ryt-mint inline-flex items-center gap-1 py-2;
+  }
+  .ryt-nav > li.menu-item-has-children > a::after {
+    content: "▾";
+    @apply text-[10px] text-ink-mute ml-1;
+  }
+  .ryt-nav .sub-menu {
+    @apply absolute left-0 top-full mt-1 min-w-[220px] bg-white rounded-2xl border border-[#EFEBE6] shadow-card-lg py-3 list-none m-0 p-0 opacity-0 invisible translate-y-1 transition-all duration-150 z-50;
+  }
+  .ryt-nav .sub-menu {
+    padding: 12px 0;
+  }
+  .ryt-nav > li:hover > .sub-menu,
+  .ryt-nav > li:focus-within > .sub-menu {
+    @apply opacity-100 visible translate-y-0;
+  }
+  .ryt-nav .sub-menu li a {
+    @apply block px-5 py-2.5 text-[13.5px] font-sans font-medium text-ink-soft hover:text-ryt-mint hover:bg-paper-alt whitespace-nowrap normal-case;
+    letter-spacing: 0;
+  }
+
   /* Prose para contenido WP (legales, blog). */
   .prose-ryt {
     @apply text-ink-soft leading-relaxed;

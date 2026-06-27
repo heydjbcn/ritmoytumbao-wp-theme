@@ -60,7 +60,7 @@
         </div>
 
         <nav class="hidden lg:block" aria-label="<?php esc_attr_e('Menú principal', 'ryt'); ?>">
-            <?php ryt_nav_menu('primary', 'flex items-center gap-8'); ?>
+            <?php ryt_nav_menu('primary', 'ryt-nav'); ?>
         </nav>
 
         <div class="flex items-center gap-3">
