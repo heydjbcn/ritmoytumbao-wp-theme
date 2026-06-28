@@ -276,30 +276,40 @@
   .ryt-th {
     @apply font-sans font-bold uppercase text-[11px] tracking-[0.14em] text-ink-mute py-4 px-5 bg-paper-soft border-b-2 border-ryt-mint/30;
   }
+
+  /* Cabecera de grupo (día) */
+  .ryt-tr-grupo {
+    /* fila completa que separa cada día */
+  }
+  .ryt-td-grupo {
+    @apply pt-8 pb-2 px-5 bg-white;
+  }
+  .ryt-grupo-dia {
+    @apply font-serif italic text-[20px] text-ink-heading inline-flex items-center gap-3;
+  }
+  .ryt-grupo-dia::before {
+    content: "";
+    @apply inline-block w-1.5 h-1.5 rounded-full bg-ryt-mint;
+  }
+  .ryt-grupo-dia::after {
+    content: "";
+    @apply inline-block flex-1 h-px bg-[#E8E2DA] min-w-[40px];
+    margin-left: 8px;
+    width: 120px;
+  }
+  /* Primera cabecera sin padding-top extra */
+  .ryt-tabla tbody > .ryt-tr-grupo:first-child .ryt-td-grupo {
+    @apply pt-3;
+  }
+
   .ryt-tr {
     @apply transition-colors duration-150;
-  }
-  .ryt-tr:nth-child(even) {
-    @apply bg-paper-soft/40;
   }
   .ryt-tr:hover {
     @apply bg-ryt-mint-soft/40;
   }
-  /* Separador grueso entre días — animable via JS (.ryt-tr-dia-inicio-active) */
-  .ryt-tr-dia-inicio-active .ryt-td {
-    @apply border-t-2 border-t-[#E8E2DA];
-    padding-top: 22px;
-  }
-  /* Quitar separador en la primera fila visible total */
-  .ryt-tr-dia-inicio-active:first-child .ryt-td,
-  .ryt-tabla tbody > .ryt-tr-dia-inicio-active:not(.is-hidden):first-of-type .ryt-td {
-    /* Las primeras filas mantienen el separador para uniformidad — comentar este selector si quieres quitar */
-  }
   .ryt-td {
     @apply py-3.5 px-5 border-b border-[#F2EDE6] align-middle;
-  }
-  .ryt-td-dia {
-    @apply align-top pt-4;
   }
   .ryt-td-hora {
     @apply leading-tight;
@@ -308,8 +318,16 @@
     @apply inline-block w-2 h-2 rounded-full mr-2.5 align-middle;
     transform: translateY(-1px);
   }
-  /* Fila oculta por filtro */
-  .ryt-tr.is-hidden {
+
+  /* Badge sala — no romper en 2 líneas */
+  .ryt-badge-sala {
+    @apply inline-block bg-paper-alt text-ink-heading rounded-full text-[10.5px] font-bold uppercase tracking-[0.06em] whitespace-nowrap;
+    padding: 4px 12px;
+  }
+
+  /* Fila/cabecera oculta por filtro */
+  .ryt-tr.is-hidden,
+  .ryt-tr-grupo.is-hidden {
     display: none;
   }
   /* Tabular nums para horas */

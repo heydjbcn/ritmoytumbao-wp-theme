@@ -172,11 +172,10 @@ $total_clases = count($clases);
                 <table class="ryt-tabla w-full" id="ryt-horario-grid">
                     <thead>
                         <tr>
-                            <th class="ryt-th text-left w-[130px]">Día</th>
-                            <th class="ryt-th text-left w-[105px]">Hora</th>
+                            <th class="ryt-th text-left w-[110px]">Hora</th>
                             <th class="ryt-th text-left">Clase</th>
                             <th class="ryt-th text-left">Profesores</th>
-                            <th class="ryt-th text-center w-[80px]">Sala</th>
+                            <th class="ryt-th text-center w-[100px]">Sala</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -189,19 +188,21 @@ $total_clases = count($clases);
                             $color = ryt_estilo_color($c['estilo']);
                             $profes_slugs = array_map('ryt_slug', preg_split('/\s*&\s*/u', $c['profesores']));
                         ?>
-                            <tr class="ryt-tr<?php echo $primera_fila_del_dia ? ' ryt-tr-dia-inicio' : ''; ?>"
+                            <?php if ($primera_fila_del_dia): ?>
+                            <tr class="ryt-tr-grupo" data-dia-grupo="<?php echo esc_attr(ryt_slug($d_key)); ?>">
+                                <td class="ryt-td-grupo" colspan="4">
+                                    <span class="ryt-grupo-dia"><?php echo esc_html($dias_label[$d_key]); ?></span>
+                                </td>
+                            </tr>
+                            <?php endif; ?>
+                            <tr class="ryt-tr"
                                 data-estilo="<?php echo esc_attr(ryt_slug($c['estilo'])); ?>"
                                 data-nivel="<?php echo esc_attr(ryt_slug($c['nivel'])); ?>"
                                 data-dia="<?php echo esc_attr(ryt_slug($d_key)); ?>"
                                 data-profesores="<?php echo esc_attr(implode(' ', $profes_slugs)); ?>">
 
-                                <td class="ryt-td ryt-td-dia">
-                                    <?php if ($primera_fila_del_dia): ?>
-                                        <span class="font-serif italic text-[16px] text-ink-heading"><?php echo esc_html($dias_label[$d_key]); ?></span>
-                                    <?php endif; ?>
-                                </td>
                                 <td class="ryt-td ryt-td-hora">
-                                    <span class="text-[13px] font-bold tabular-nums tracking-tight text-ink-heading">
+                                    <span class="text-[14px] font-bold tabular-nums tracking-tight text-ink-heading">
                                         <?php echo esc_html($c['hora_inicio']); ?>
                                     </span>
                                     <span class="text-[11px] text-ink-mute block tabular-nums">
@@ -217,7 +218,7 @@ $total_clases = count($clases);
                                     <?php echo esc_html($c['profesores']); ?>
                                 </td>
                                 <td class="ryt-td text-center">
-                                    <span class="inline-block bg-paper-alt text-ink-heading rounded-full px-2.5 py-[3px] text-[10.5px] font-bold uppercase tracking-[0.06em]">
+                                    <span class="ryt-badge-sala">
                                         <?php echo esc_html($c['sala']); ?>
                                     </span>
                                 </td>
@@ -273,30 +274,24 @@ $total_clases = count($clases);
         });
 
         let total = 0;
-        let prevDia = null;
-        const filas = tabla.querySelectorAll('.ryt-tr');
-        // Primero, determinar visibilidad
-        const visibilidad = [];
-        filas.forEach(tr => {
+        // Visibles por día (para esconder la cabecera de grupo si está vacío)
+        const visiblesPorDia = {};
+        tabla.querySelectorAll('.ryt-tr').forEach(tr => {
             const okDia    = !vals.dia      || tr.dataset.dia === vals.dia;
             const okEstilo = !vals.estilo   || tr.dataset.estilo === vals.estilo;
             const okNivel  = !vals.nivel    || tr.dataset.nivel === vals.nivel;
             const okProf   = !vals.profesor || (tr.dataset.profesores || '').split(' ').includes(vals.profesor);
             const ok = okDia && okEstilo && okNivel && okProf;
-            visibilidad.push(ok);
-            if (ok) total++;
-        });
-        // Aplicar visibilidad y recalcular "ryt-tr-dia-inicio"
-        filas.forEach((tr, i) => {
-            tr.classList.toggle('is-hidden', !visibilidad[i]);
-            // Si es visible, comprobar si es la primera visible de su día
-            if (visibilidad[i]) {
-                const esPrimero = (tr.dataset.dia !== prevDia);
-                tr.classList.toggle('ryt-tr-dia-inicio-active', esPrimero);
-                prevDia = tr.dataset.dia;
-            } else {
-                tr.classList.remove('ryt-tr-dia-inicio-active');
+            tr.classList.toggle('is-hidden', !ok);
+            if (ok) {
+                total++;
+                visiblesPorDia[tr.dataset.dia] = (visiblesPorDia[tr.dataset.dia] || 0) + 1;
             }
+        });
+        // Ocultar cabecera de grupo si el día no tiene visibles
+        tabla.querySelectorAll('.ryt-tr-grupo').forEach(g => {
+            const dia = g.dataset.diaGrupo;
+            g.classList.toggle('is-hidden', !visiblesPorDia[dia]);
         });
 
         if (countEl) countEl.textContent = total;
