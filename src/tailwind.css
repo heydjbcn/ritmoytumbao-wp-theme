@@ -271,10 +271,10 @@
      Widget horarios TABLA CLÁSICA (v7.6)
      ───────────────────────────────────────────────────────────── */
   .ryt-tabla {
-    @apply border-collapse w-full text-[14px];
+    @apply border-collapse w-full text-[16px];
   }
   .ryt-th {
-    @apply font-sans font-bold uppercase text-[11px] tracking-[0.14em] text-ink-mute py-4 px-5 bg-paper-soft border-b-2 border-ryt-mint/30;
+    @apply font-sans font-bold uppercase text-[12px] tracking-[0.16em] text-ink-mute py-5 px-6 bg-paper-soft border-b-2 border-ryt-mint/30;
   }
 
   /* Cabecera de grupo (día) */
@@ -282,24 +282,24 @@
     /* fila completa que separa cada día */
   }
   .ryt-td-grupo {
-    @apply pt-8 pb-2 px-5 bg-white;
+    @apply pt-9 pb-3 px-6 bg-white;
   }
   .ryt-grupo-dia {
-    @apply font-serif italic text-[20px] text-ink-heading inline-flex items-center gap-3;
+    @apply font-serif italic text-[26px] text-ink-heading inline-flex items-center gap-3;
   }
   .ryt-grupo-dia::before {
     content: "";
-    @apply inline-block w-1.5 h-1.5 rounded-full bg-ryt-mint;
+    @apply inline-block w-2 h-2 rounded-full bg-ryt-mint;
   }
   .ryt-grupo-dia::after {
     content: "";
     @apply inline-block flex-1 h-px bg-[#E8E2DA] min-w-[40px];
-    margin-left: 8px;
-    width: 120px;
+    margin-left: 10px;
+    width: 160px;
   }
   /* Primera cabecera sin padding-top extra */
   .ryt-tabla tbody > .ryt-tr-grupo:first-child .ryt-td-grupo {
-    @apply pt-3;
+    @apply pt-4;
   }
 
   .ryt-tr {
@@ -309,20 +309,20 @@
     @apply bg-ryt-mint-soft/40;
   }
   .ryt-td {
-    @apply py-3.5 px-5 border-b border-[#F2EDE6] align-middle;
+    @apply py-5 px-6 border-b border-[#F2EDE6] align-middle;
   }
   .ryt-td-hora {
     @apply leading-tight;
   }
   .ryt-dot {
-    @apply inline-block w-2 h-2 rounded-full mr-2.5 align-middle;
+    @apply inline-block w-2.5 h-2.5 rounded-full mr-3 align-middle;
     transform: translateY(-1px);
   }
 
   /* Badge sala — no romper en 2 líneas */
   .ryt-badge-sala {
-    @apply inline-block bg-paper-alt text-ink-heading rounded-full text-[10.5px] font-bold uppercase tracking-[0.06em] whitespace-nowrap;
-    padding: 4px 12px;
+    @apply inline-block bg-paper-alt text-ink-heading rounded-full text-[12px] font-bold uppercase tracking-[0.06em] whitespace-nowrap;
+    padding: 6px 14px;
   }
 
   /* Fila/cabecera oculta por filtro */

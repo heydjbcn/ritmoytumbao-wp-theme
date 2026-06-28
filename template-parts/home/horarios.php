@@ -172,10 +172,10 @@ $total_clases = count($clases);
                 <table class="ryt-tabla w-full" id="ryt-horario-grid">
                     <thead>
                         <tr>
-                            <th class="ryt-th text-left w-[110px]">Hora</th>
+                            <th class="ryt-th text-left w-[130px]">Hora</th>
                             <th class="ryt-th text-left">Clase</th>
                             <th class="ryt-th text-left">Profesores</th>
-                            <th class="ryt-th text-center w-[100px]">Sala</th>
+                            <th class="ryt-th text-center w-[120px]">Sala</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -202,10 +202,10 @@ $total_clases = count($clases);
                                 data-profesores="<?php echo esc_attr(implode(' ', $profes_slugs)); ?>">
 
                                 <td class="ryt-td ryt-td-hora">
-                                    <span class="text-[14px] font-bold tabular-nums tracking-tight text-ink-heading">
+                                    <span class="text-[18px] font-bold tabular-nums tracking-tight text-ink-heading">
                                         <?php echo esc_html($c['hora_inicio']); ?>
                                     </span>
-                                    <span class="text-[11px] text-ink-mute block tabular-nums">
+                                    <span class="text-[13px] text-ink-mute block tabular-nums">
                                         <?php echo esc_html($c['hora_fin']); ?>
                                     </span>
                                 </td>
