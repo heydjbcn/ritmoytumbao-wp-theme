@@ -13,7 +13,7 @@ $salas = [
         'num'   => '01',
         'name'  => 'Sala 1',
         'm2'    => '100',
-        'img'   => 'sala-1.webp',
+        'img'   => 'sala-1.jpg',
         'desc'  => 'Amplia, diáfana y luminosa. La sala principal de la escuela, donde se imparten la mayoría de grupos de salsa y bachata y se montan los workshops.',
         'specs' => ['Parquet flotante', 'Insonorizada', 'Climatizada (frío/calor)', 'Equipo de sonido profesional', 'Espejo gran formato'],
     ],
@@ -21,7 +21,7 @@ $salas = [
         'num'   => '02',
         'name'  => 'Sala 2',
         'm2'    => '45',
-        'img'   => 'sala-2.webp',
+        'img'   => 'sala-2.jpg',
         'desc'  => 'Espaciosa y polivalente. Pensada para grupos reducidos, niveles avanzados, particulares y ensayos de coreográfico.',
         'specs' => ['Insonorizada', 'Climatizada (frío/calor)', 'Equipo de sonido', 'Espejo'],
     ],
@@ -55,7 +55,7 @@ $stats = [
 
 <!-- Hero foto cover -->
 <section class="relative overflow-hidden text-white" style="min-height: 480px;">
-    <img src="<?php echo esc_url(RYT_URI . '/assets/img/instalaciones/escuela.webp'); ?>"
+    <img src="<?php echo esc_url(RYT_URI . '/assets/img/instalaciones/escuela.jpg'); ?>"
          alt="Instalaciones de Ritmo y Tumbao en Mataró"
          class="absolute inset-0 w-full h-full object-cover" loading="eager">
     <div aria-hidden="true" class="absolute inset-0"
@@ -104,7 +104,7 @@ $stats = [
             </p>
         </div>
         <div>
-            <img src="<?php echo esc_url(RYT_URI . '/assets/img/instalaciones/escuela.webp'); ?>"
+            <img src="<?php echo esc_url(RYT_URI . '/assets/img/instalaciones/escuela-grupo.jpg'); ?>"
                  alt="Vista de las instalaciones de Ritmo y Tumbao"
                  class="rounded-[22px] shadow-[0_24px_60px_rgba(38,37,36,0.16)] w-full h-auto" loading="lazy">
         </div>

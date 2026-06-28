@@ -4,7 +4,7 @@
  *
  * Hero con foto cover full-bleed + gradient overlay y H1 58px con "Salsa" italic mint.
  */
-$hero_img = RYT_URI . '/assets/img/instalaciones/sala-1.webp';
+$hero_img = RYT_URI . '/assets/img/instalaciones/sala-1.jpg';
 ?>
 <!-- Hero foto cover -->
 <section class="relative overflow-hidden text-white" style="min-height: 520px;">

@@ -4,7 +4,7 @@
  *
  * Hero foto cover + 3 estilos de bachata (Tradicional, Sensual, Fusión).
  */
-$hero_img = RYT_URI . '/assets/img/instalaciones/sala-2.webp';
+$hero_img = RYT_URI . '/assets/img/instalaciones/sala-2.jpg';
 ?>
 <!-- Hero foto cover -->
 <section class="relative overflow-hidden text-white" style="min-height: 520px;">

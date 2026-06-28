@@ -37,7 +37,7 @@
 <section class="section bg-paper-alt">
     <div class="container mx-auto px-4 grid gap-6 md:grid-cols-2 max-w-5xl mx-auto">
         <article class="bg-white rounded-2xl shadow-card overflow-hidden">
-            <img src="<?php echo esc_url(RYT_URI . '/assets/img/instalaciones/sala-1.webp'); ?>"
+            <img src="<?php echo esc_url(RYT_URI . '/assets/img/instalaciones/sala-1.jpg'); ?>"
                  alt="Sala 1" class="w-full aspect-video object-cover" loading="lazy">
             <div class="p-6">
                 <h3 class="font-serif text-xl text-ink-heading mb-2">Sala 1</h3>
@@ -45,7 +45,7 @@
             </div>
         </article>
         <article class="bg-white rounded-2xl shadow-card overflow-hidden">
-            <img src="<?php echo esc_url(RYT_URI . '/assets/img/instalaciones/sala-2.webp'); ?>"
+            <img src="<?php echo esc_url(RYT_URI . '/assets/img/instalaciones/sala-2.jpg'); ?>"
                  alt="Sala 2" class="w-full aspect-video object-cover" loading="lazy">
             <div class="p-6">
                 <h3 class="font-serif text-xl text-ink-heading mb-2">Sala 2</h3>
