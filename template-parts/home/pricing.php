@@ -46,13 +46,21 @@ $cards = [
     ],
 ];
 ?>
-<section class="section bg-paper" id="tarifas">
-    <div class="container mx-auto px-4">
-        <header class="text-center max-w-2xl mx-auto mb-[52px]">
-            <span class="pre-title">Tarifas sin permanencia</span>
-            <h2 class="text-ink-heading">Empieza a bailar hoy mismo</h2>
-        </header>
-        <div class="grid gap-7 md:grid-cols-3 max-w-[1140px] mx-auto items-stretch">
+<section class="bg-paper py-[104px] px-6" id="tarifas">
+    <div class="max-w-[1180px] mx-auto">
+        <!-- Header grid 2-col -->
+        <div class="grid grid-cols-1 lg:grid-cols-[1.3fr_1fr] gap-[48px] items-end mb-[56px]">
+            <div>
+                <?php ryt_eyebrow('02', 'Tarifas sin permanencia'); ?>
+                <h2 class="text-ink-heading" style="font-size: 46px; line-height: 1.08;">
+                    Empieza a bailar<br>hoy mismo
+                </h2>
+            </div>
+            <p class="text-[16px] leading-[1.7] text-ink-soft">
+                Tu primera clase es gratis y evaluamos tu nivel sin compromiso. Sin matrícula. Sin permanencia.
+            </p>
+        </div>
+        <div class="grid gap-[26px] md:grid-cols-3 items-stretch">
             <?php foreach ($cards as $c): ?>
             <article class="relative rounded-[24px] border px-[34px] pt-10 pb-9 flex flex-col shadow-card-lg overflow-hidden"
                      style="background: <?php echo esc_attr($c['cardBg']); ?>; border-color: <?php echo esc_attr($c['cardBorder']); ?>;">

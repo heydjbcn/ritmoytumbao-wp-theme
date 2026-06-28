@@ -151,6 +151,14 @@
     </div>
 </footer>
 
+<!-- WhatsApp float button v9 (Cloud Design v2) — visible en todas las páginas -->
+<a href="<?php echo esc_url(ryt_whatsapp_url()); ?>"
+   target="_blank" rel="noopener"
+   class="ryt-wa-float"
+   aria-label="Escríbenos por WhatsApp">
+    <?php ryt_icon('whatsapp', 'w-7 h-7'); ?>
+</a>
+
 <?php wp_footer(); ?>
 </body>
 </html>

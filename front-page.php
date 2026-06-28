@@ -20,12 +20,13 @@ get_header();
 <main id="content" class="bg-white">
     <?php
     get_template_part('template-parts/home/hero');
+    get_template_part('template-parts/home/pilares');       // v9 NUEVO
+    get_template_part('template-parts/home/estilos');
     get_template_part('template-parts/home/pricing');
     get_template_part('template-parts/home/horarios');
-    get_template_part('template-parts/home/banner-mid');
-    get_template_part('template-parts/home/estilos');
     get_template_part('template-parts/home/profesores');
     get_template_part('template-parts/home/instalaciones');
+    get_template_part('template-parts/home/app-alumno');    // v9 NUEVO
     get_template_part('template-parts/home/resenas');
     get_template_part('template-parts/home/cta');
     get_template_part('template-parts/home/faq');

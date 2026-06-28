@@ -1,9 +1,12 @@
 <?php
 /**
- * FAQ — accordion + formulario de contacto al lado (replica el layout de prod).
+ * FAQ + form v9 (Cloud Design v2).
  *
- * Form: action admin-post.php?action=ryt_contact, nonce + honeypot.
- * Notas: WP_Mail está bien para volúmenes bajos; si llega spam pasamos a CF7 + Turnstile.
+ * Cambios:
+ *   - Grid 3:2 (FAQ izquierda más ancho, form derecha más estrecho).
+ *   - Form lateral con `sticky top-[130px]`.
+ *   - Accordion con `+` mint en lugar de chevron.
+ *   - Header con eyebrow "07 — Preguntas frecuentes" + h2 46px.
  */
 $faqs = [
     [ 'q' => '¿Necesito traer pareja para unirme a las clases?',                          'a' => 'No es necesario. En clase rotamos para que practiques con distintos compañeros, hayas venido solo o acompañado.' ],
@@ -16,40 +19,42 @@ $faqs = [
 
 $status = $_GET['contact'] ?? '';
 ?>
-<section class="section bg-white" id="faq">
-    <div class="container mx-auto px-4 grid gap-12 lg:grid-cols-5">
+<section class="bg-white py-[104px] px-6" id="faq">
+    <div class="max-w-[1220px] mx-auto grid gap-[56px] lg:grid-cols-[3fr_2fr] items-start">
 
         <!-- Accordion -->
-        <div class="lg:col-span-3">
-            <header class="mb-8">
-                <span class="pre-title">Te irá bien saber</span>
-                <h2 class="text-ink-heading uppercase">Preguntas frecuentes</h2>
+        <div>
+            <header class="mb-[40px]">
+                <?php ryt_eyebrow('07', 'Preguntas frecuentes'); ?>
+                <h2 class="text-ink-heading" style="font-size: 46px; line-height: 1.08;">
+                    Te <span class="italic font-display">irá bien</span> saberlo
+                </h2>
             </header>
 
-            <div class="space-y-3">
+            <div class="flex flex-col gap-3">
                 <?php foreach ($faqs as $i => $f): ?>
-                <details class="bg-paper-soft rounded-xl p-5 group" <?php echo $i === 0 ? 'open' : ''; ?>>
-                    <summary class="font-sans font-semibold text-ink cursor-pointer list-none flex items-center justify-between gap-4">
+                <details class="ryt-faq-item bg-paper rounded-[16px] border border-[#EFEBE6]" <?php echo $i === 0 ? 'open' : ''; ?>>
+                    <summary class="font-sans font-semibold text-ink-heading cursor-pointer list-none flex items-center justify-between gap-4 p-[20px_24px] text-[15.5px]">
                         <span><?php echo esc_html($f['q']); ?></span>
-                        <svg class="h-5 w-5 text-ryt-mint shrink-0 transition-transform group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                        <span class="ryt-faq-plus" aria-hidden="true">+</span>
                     </summary>
-                    <p class="mt-3 text-sm text-ink-soft leading-relaxed"><?php echo esc_html($f['a']); ?></p>
+                    <p class="px-[24px] pb-[22px] -mt-1 text-[14.5px] text-ink-soft leading-[1.7]"><?php echo esc_html($f['a']); ?></p>
                 </details>
                 <?php endforeach; ?>
             </div>
 
-            <p class="mt-8 text-sm text-ink-soft">
-                <span class="uppercase font-bold tracking-widest text-ryt-mint block mb-2">¿Alguna duda más?</span>
-                <a href="<?php echo esc_url(ryt_whatsapp_url()); ?>" target="_blank" rel="noopener" class="btn btn-primary mt-2">
+            <p class="mt-[34px] text-sm text-ink-soft">
+                <span class="uppercase font-bold tracking-[0.12em] text-ryt-mint block mb-3 text-[11.5px]">¿Alguna duda más?</span>
+                <a href="<?php echo esc_url(ryt_whatsapp_url()); ?>" target="_blank" rel="noopener" class="btn btn-primary">
                     Escríbenos por WhatsApp
                 </a>
             </p>
         </div>
 
-        <!-- Form -->
-        <div class="lg:col-span-2">
-            <div class="bg-paper-alt rounded-[22px] p-6 md:p-8 sticky top-24 border border-[#EFEBE6]">
-                <h3 class="font-serif italic text-[24px] text-ink-heading mb-2 leading-[1.25]">¿Tienes una duda más concreta?</h3>
+        <!-- Form sticky -->
+        <div>
+            <div class="bg-paper rounded-[22px] p-[28px] md:p-[34px] border border-[#EFEBE6] lg:sticky lg:top-[130px]">
+                <h3 class="font-serif italic text-[26px] text-ink-heading mb-2 leading-[1.2]">¿Tienes una duda más concreta?</h3>
                 <p class="text-sm text-ink-soft mb-6">Escríbenos y te respondemos en menos de 24h.</p>
 
                 <?php if ($status === 'sent'): ?>
@@ -70,20 +75,20 @@ $status = $_GET['contact'] ?? '';
                     <input type="text" name="web" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true">
 
                     <label class="block">
-                        <span class="text-xs uppercase tracking-widest font-bold text-ink-soft">Nombre</span>
-                        <input name="nombre" type="text" required class="mt-1 w-full rounded-pill border border-paper-alt bg-white px-4 py-3 text-sm focus:outline-none focus:border-ryt-mint">
+                        <span class="text-[11px] uppercase tracking-[0.12em] font-bold text-ink-soft">Nombre</span>
+                        <input name="nombre" type="text" required class="mt-1 w-full rounded-pill border border-[#EFEBE6] bg-white px-4 py-3 text-sm focus:outline-none focus:border-ryt-mint">
                     </label>
                     <label class="block">
-                        <span class="text-xs uppercase tracking-widest font-bold text-ink-soft">Email</span>
-                        <input name="email" type="email" required class="mt-1 w-full rounded-pill border border-paper-alt bg-white px-4 py-3 text-sm focus:outline-none focus:border-ryt-mint">
+                        <span class="text-[11px] uppercase tracking-[0.12em] font-bold text-ink-soft">Email</span>
+                        <input name="email" type="email" required class="mt-1 w-full rounded-pill border border-[#EFEBE6] bg-white px-4 py-3 text-sm focus:outline-none focus:border-ryt-mint">
                     </label>
                     <label class="block">
-                        <span class="text-xs uppercase tracking-widest font-bold text-ink-soft">Teléfono (opcional)</span>
-                        <input name="tel" type="tel" class="mt-1 w-full rounded-pill border border-paper-alt bg-white px-4 py-3 text-sm focus:outline-none focus:border-ryt-mint">
+                        <span class="text-[11px] uppercase tracking-[0.12em] font-bold text-ink-soft">Teléfono (opcional)</span>
+                        <input name="tel" type="tel" class="mt-1 w-full rounded-pill border border-[#EFEBE6] bg-white px-4 py-3 text-sm focus:outline-none focus:border-ryt-mint">
                     </label>
                     <label class="block">
-                        <span class="text-xs uppercase tracking-widest font-bold text-ink-soft">Tu mensaje</span>
-                        <textarea name="mensaje" rows="4" required class="mt-1 w-full rounded-2xl border border-paper-alt bg-white px-4 py-3 text-sm focus:outline-none focus:border-ryt-mint"></textarea>
+                        <span class="text-[11px] uppercase tracking-[0.12em] font-bold text-ink-soft">Tu mensaje</span>
+                        <textarea name="mensaje" rows="4" required class="mt-1 w-full rounded-2xl border border-[#EFEBE6] bg-white px-4 py-3 text-sm focus:outline-none focus:border-ryt-mint"></textarea>
                     </label>
 
                     <button type="submit" class="btn btn-primary w-full">Enviar mensaje</button>

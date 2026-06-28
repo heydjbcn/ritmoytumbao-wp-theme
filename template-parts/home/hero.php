@@ -1,64 +1,111 @@
 <?php
 /**
- * Hero — fondo casi negro + texto decorativo gigante outline + logo sello redondo.
+ * Hero v9 — Rediseño Cloud Design v2.
  *
- * Estructura real (medido en prod):
- *   - Fondo bg-ink-dark (#373636)
- *   - Capa de texto fantasma "Salsa y Bachata" en outline mint, gigante
- *   - Izquierda: logo redondo "Dance School" (Lofo-Ritmo-y-Tumbao)
- *   - Derecha: H1 "Clases de Salsa y Bachata en Mataró" + intro + CTA "VER HORARIOS"
+ * Cambios respecto v8:
+ *   - Marquee animation con texto fantasma "Salsa · Bachata · " repetido.
+ *   - Eyebrow con línea (sin número, es el hero).
+ *   - H1 62px line-height 1.04 + Salsa y Bachata en italic mint.
+ *   - 3 stats numéricos (15+ años · 8 profesores · 5.0★ Google).
+ *   - Ticker bar debajo del hero con mensajes en marquee.
+ *   - Logo redondo grande a la derecha con radial gradient mint.
+ *   - CTAs con text-ryt-deep (verde profundo).
  */
+$hero_stats = [
+    ['n' => '15+', 'l' => 'Años enseñando'],
+    ['n' => '8',   'l' => 'Profesores'],
+    ['n' => '5.0★','l' => 'En Google'],
+];
+
+$ticker_msgs = [
+    'Primera clase gratis',
+    'Sin pareja',
+    'Sin matrícula',
+    'Sin permanencia',
+    'Salsa cubana',
+    'Bachata sensual',
+    'Rueda de casino',
+    'Lady style',
+    'Reggaetón',
+    'Zumba kids',
+];
 ?>
 <section class="relative overflow-hidden bg-ink-dark text-white">
-    <!-- Texto decorativo de fondo (outline mint, opacidad baja) -->
-    <div aria-hidden="true" class="absolute inset-0 pointer-events-none select-none flex flex-col justify-center z-0">
-        <span class="block whitespace-nowrap font-serif italic font-bold leading-none uppercase
-                     text-[12vw] tracking-tight text-transparent"
-              style="-webkit-text-stroke: 1px rgba(98, 216, 172, 0.22); transform: translateX(-3%);">
-            Salsa y Bachata
-        </span>
-        <span class="block whitespace-nowrap font-serif italic font-bold leading-none uppercase
-                     text-[12vw] tracking-tight text-transparent -mt-4 md:-mt-6"
-              style="-webkit-text-stroke: 1px rgba(98, 216, 172, 0.16); transform: translateX(8%);">
-            Aprende Salsa y Bachata
-        </span>
+    <!-- Marquee texto fantasma de fondo -->
+    <div aria-hidden="true" class="absolute top-[-2%] inset-x-0 pointer-events-none z-0 opacity-55">
+        <div class="ryt-marquee">
+            <?php for ($i = 0; $i < 2; $i++): ?>
+                <span class="whitespace-nowrap font-serif italic font-bold uppercase text-[18vw] leading-none pr-[.3em]"
+                      style="color: transparent; -webkit-text-stroke: 1px rgba(98, 216, 172, 0.22);">
+                    Salsa · Bachata · Salsa · Bachata ·
+                </span>
+            <?php endfor; ?>
+        </div>
     </div>
 
-    <div class="container mx-auto px-4 py-16 md:py-24 relative z-10">
-        <div class="grid gap-10 md:grid-cols-2 items-center">
-            <!-- Logo sello redondo -->
-            <div class="flex justify-center md:justify-start">
-                <img src="<?php echo esc_url(RYT_URI . '/assets/img/logo-sello.webp'); ?>"
-                     alt="<?php esc_attr_e('Logo Ritmo y Tumbao Dance School', 'ryt'); ?>"
-                     class="w-64 md:w-80 lg:w-[22rem] h-auto drop-shadow-2xl"
-                     loading="eager" fetchpriority="high">
+    <div class="ryt-hero-grid max-w-[1320px] mx-auto px-6 py-[84px] pb-[76px] relative z-10 grid items-center gap-[56px]"
+         style="grid-template-columns: 1.18fr 0.82fr;">
+
+        <!-- Texto -->
+        <div>
+            <span class="ryt-eyebrow">
+                <span class="ryt-eyebrow-line ryt-eyebrow-line-mint" style="width:30px"></span>
+                Escuela de baile en Mataró · desde 2010
+            </span>
+            <h1 class="text-white mb-6"
+                style="font-size: 62px; line-height: 1.04; letter-spacing: -0.01em;">
+                <?php esc_html_e('Clases de', 'ryt'); ?>
+                <span class="text-ryt-mint italic"><?php esc_html_e('Salsa y Bachata', 'ryt'); ?></span><br>
+                <?php esc_html_e('en Mataró', 'ryt'); ?>
+            </h1>
+            <p class="text-[17px] leading-[1.75] text-[#D2CDC8] max-w-[500px] mb-[34px]">
+                <?php esc_html_e('Más de 15 años enseñando a bailar. Empieza', 'ryt'); ?>
+                <strong class="text-white font-semibold"><?php esc_html_e('sin pareja, sin matrícula y sin permanencia', 'ryt'); ?></strong>.
+                <?php esc_html_e('También Rueda de Casino, Reggaetón y Zumba Kids.', 'ryt'); ?>
+            </p>
+            <div class="flex flex-wrap gap-3.5 mb-[42px]">
+                <a href="<?php echo esc_url(home_url('/horarios-y-tarifas/')); ?>" class="btn btn-primary">
+                    <?php esc_html_e('Ver horarios', 'ryt'); ?>
+                </a>
+                <a href="<?php echo esc_url(ryt_whatsapp_url('Hola! Quiero reservar mi primera clase GRATIS')); ?>"
+                   target="_blank" rel="noopener" class="btn btn-outline-white">
+                    <?php esc_html_e('Reservar clase gratis', 'ryt'); ?>
+                </a>
             </div>
 
-            <!-- Texto -->
-            <div>
-                <span class="inline-block text-xs font-bold uppercase tracking-[0.22em] text-ryt-mint mb-5">
-                    Escuela de baile en Mataró · desde 2010
-                </span>
-                <h1 class="text-white leading-[1.08] mb-6 text-4xl md:text-5xl lg:text-[54px]">
-                    <?php esc_html_e('Clases de', 'ryt'); ?>
-                    <span class="text-ryt-mint"><?php esc_html_e('Salsa y Bachata', 'ryt'); ?></span>
-                    <?php esc_html_e('en Mataró', 'ryt'); ?>
-                </h1>
-                <p class="text-base md:text-[17px] text-[#D9D4CF] leading-[1.7] mb-[34px] max-w-[520px]">
-                    <?php esc_html_e('En Ritmo y Tumbao llevamos más de 15 años impartiendo clases. Hemos abierto nuestras nuevas', 'ryt'); ?>
-                    <strong class="text-white font-semibold"><?php esc_html_e('clases de salsa y bachata en Mataró', 'ryt'); ?></strong>.
-                    <?php esc_html_e('También Rueda de Casino, Reggaetón, Zumba Kids y otras disciplinas.', 'ryt'); ?>
-                </p>
-                <div class="flex flex-wrap gap-3.5">
-                    <a href="<?php echo esc_url(home_url('/horarios-y-tarifas/')); ?>" class="btn btn-primary">
-                        <?php esc_html_e('Ver horarios', 'ryt'); ?>
-                    </a>
-                    <a href="<?php echo esc_url(ryt_whatsapp_url('Hola! Quiero reservar mi primera clase GRATIS')); ?>"
-                       target="_blank" rel="noopener" class="btn btn-outline-white">
-                        <?php esc_html_e('Reservar clase gratis', 'ryt'); ?>
-                    </a>
-                </div>
+            <!-- 3 Stats -->
+            <div class="flex flex-wrap gap-[38px]">
+                <?php foreach ($hero_stats as $stat): ?>
+                    <div>
+                        <div class="ryt-hero-stat-n"><?php echo esc_html($stat['n']); ?></div>
+                        <div class="ryt-hero-stat-l"><?php echo esc_html($stat['l']); ?></div>
+                    </div>
+                <?php endforeach; ?>
             </div>
+        </div>
+
+        <!-- Logo sello redondo con radial gradient -->
+        <div class="flex justify-center relative">
+            <div aria-hidden="true" class="absolute w-[360px] h-[360px] rounded-full"
+                 style="background: radial-gradient(circle, rgba(98,216,172,0.26), transparent 66%);"></div>
+            <img src="<?php echo esc_url(RYT_URI . '/assets/img/logo-sello.webp'); ?>"
+                 alt="<?php echo esc_attr(RYT_BRAND_NAME); ?>"
+                 class="relative w-[330px] max-w-full h-auto"
+                 style="filter: drop-shadow(0 28px 56px rgba(0,0,0,0.55));"
+                 loading="eager" fetchpriority="high">
+        </div>
+    </div>
+
+    <!-- Ticker bar -->
+    <div class="ryt-ticker">
+        <div class="ryt-marquee-30 py-[13px]">
+            <?php for ($i = 0; $i < 2; $i++): ?>
+                <span class="ryt-ticker-text">
+                    <?php foreach ($ticker_msgs as $msg): ?>
+                        <span>· <?php echo esc_html($msg); ?></span>
+                    <?php endforeach; ?>
+                </span>
+            <?php endfor; ?>
         </div>
     </div>
 </section>

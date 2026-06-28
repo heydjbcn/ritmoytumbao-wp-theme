@@ -36,16 +36,26 @@ $profes = [
     ],
 ];
 ?>
-<section class="section bg-paper-soft" id="profesores">
-    <div class="container mx-auto px-4">
-        <header class="text-center max-w-3xl mx-auto mb-12">
-            <span class="pre-title">Clases de Salsa y Bachata en Mataró</span>
-            <h2 class="text-ink-heading uppercase">Conoce a nuestros profesionales del baile</h2>
-            <p class="text-base md:text-lg text-ink-soft mt-4">
-                Nuestros profesores llevan años impartiendo
-                <strong>clases de salsa y bachata en Mataró.</strong>
-            </p>
-        </header>
+<section class="bg-white py-[104px] px-6" id="profesores">
+    <div class="max-w-[1220px] mx-auto">
+        <!-- Header grid 2-col (v9) -->
+        <div class="grid grid-cols-1 lg:grid-cols-[1.3fr_1fr] gap-[48px] items-end mb-[56px]">
+            <div>
+                <?php ryt_eyebrow('04', 'El equipo'); ?>
+                <h2 class="text-ink-heading" style="font-size: 46px; line-height: 1.08;">
+                    Profesionales<br>del baile
+                </h2>
+            </div>
+            <div>
+                <p class="text-[16px] leading-[1.7] text-ink-soft mb-[22px]">
+                    Nuestros profesores llevan años impartiendo clases de salsa y bachata en Mataró. Experiencia certificada y mucho ritmo.
+                </p>
+                <a href="<?php echo esc_url(home_url('/ritmo-y-tumbao-academia-de-baile-en-mataro/')); ?>"
+                   class="inline-flex items-center gap-[9px] text-[13px] font-bold uppercase tracking-[0.1em] text-ink-heading hover:text-ryt-mint transition-colors">
+                    Ver todo el equipo →
+                </a>
+            </div>
+        </div>
 
         <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             <?php foreach ($profes as $p): ?>

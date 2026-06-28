@@ -76,15 +76,20 @@ usort($clases_ordenadas, function ($a, $b) use ($orden_dia_idx) {
 
 $total_clases = count($clases);
 ?>
-<section class="section bg-paper" id="horarios">
-    <div class="container mx-auto px-4 max-w-[1180px]">
-        <header class="text-center max-w-3xl mx-auto mb-10">
-            <span class="pre-title">Horarios <?php echo esc_html(date('Y')); ?></span>
-            <h2 class="text-ink-heading uppercase">Horario completo de la temporada</h2>
-            <p class="text-base md:text-lg text-ink-soft mt-4">
-                Filtra por estilo, día, nivel o profesor. Si tienes dudas, escríbenos por WhatsApp.
+<section class="bg-ink-dark text-white py-[104px] px-6" id="horarios">
+    <div class="max-w-[1320px] mx-auto">
+        <!-- Header grid 2-col (v9) -->
+        <div class="grid grid-cols-1 lg:grid-cols-[1.3fr_1fr] gap-[48px] items-end mb-[44px]">
+            <div>
+                <?php ryt_eyebrow('03', 'Horarios ' . date('Y')); ?>
+                <h2 class="text-white" style="font-size: 46px; line-height: 1.08;">
+                    Horario completo<br>de la temporada
+                </h2>
+            </div>
+            <p class="text-[16px] leading-[1.7] text-[#C5BFB9]">
+                Filtra por estilo, día, nivel o profesor. Si tienes dudas, escríbenos por WhatsApp y te recomendamos grupo.
             </p>
-        </header>
+        </div>
 
         <!-- Filtros -->
         <div class="max-w-[920px] mx-auto mb-6" id="ryt-horario-filtros">

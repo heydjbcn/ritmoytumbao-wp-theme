@@ -28,7 +28,9 @@ module.exports = {
           'mint-dark': '#3FB389',
           'mint-soft': '#EAF8F1',
           'mint-glow': '#C7EADC',
-          forest:      '#173C30',
+          'mint-mute': '#D7DED9',   // v9 — número grande en cards de estilos
+          forest:      '#173C30',   // alias legacy (mantener para no romper)
+          deep:        '#173C30',   // v9 — nombre canónico
         },
         ink: {
           DEFAULT: '#33302E',
@@ -72,9 +74,20 @@ module.exports = {
         'card-lg':'0 16px 44px rgba(38,37,36,0.06)',
         cta:     '0 10px 28px rgba(98,216,172,0.32)',
         'cta-sm':'0 10px 24px rgba(98,216,172,0.28)',
+        'wa-float':'0 12px 30px rgba(37,211,102,0.45)',
       },
       borderRadius: {
         pill: '50px',
+      },
+      keyframes: {
+        rytMarq: {
+          'from': { transform: 'translateX(0)' },
+          'to':   { transform: 'translateX(-50%)' },
+        },
+      },
+      animation: {
+        marquee:      'rytMarq 60s linear infinite',
+        'marquee-30': 'rytMarq 30s linear infinite',
       },
     },
   },

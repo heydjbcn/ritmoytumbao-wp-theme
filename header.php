@@ -18,10 +18,10 @@
 <body <?php body_class('bg-paper text-ink antialiased font-sans'); ?>>
 <?php wp_body_open(); ?>
 
-<header class="w-full bg-white">
-    <!-- Topbar info: visible solo en md+ (oculto en móvil) -->
-    <div class="hidden md:block border-b border-paper-alt">
-        <div class="container mx-auto px-4 py-2.5 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-ink">
+<header class="ryt-header-sticky w-full">
+    <!-- Topbar info OSCURO (v9): visible solo en md+ (oculto en móvil) -->
+    <div class="hidden md:block bg-ink-dark text-[#CFCAC5]">
+        <div class="max-w-[1320px] mx-auto px-6 py-2 flex flex-wrap items-center gap-x-6 gap-y-2 text-[12.5px]">
             <a href="<?php echo esc_url(RYT_ADDRESS_MAPS); ?>" target="_blank" rel="noopener" class="flex items-center gap-1.5 hover:text-ryt-mint">
                 <?php ryt_icon('pin', 'w-4 h-4 text-ryt-mint'); ?>
                 <span><?php echo esc_html(RYT_ADDRESS); ?></span>

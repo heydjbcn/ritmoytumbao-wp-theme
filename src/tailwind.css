@@ -28,17 +28,17 @@
   .btn {
     @apply inline-flex items-center justify-center px-8 py-[15px] rounded-pill font-sans font-bold text-[13.5px] uppercase tracking-[0.06em] transition-all duration-200;
   }
-  /* Botón primario (mint con texto verde-bosque + sombra flotante). */
+  /* Botón primario (mint con texto verde profundo + sombra flotante). */
   .btn-primary {
-    @apply bg-ryt-mint text-ryt-forest shadow-cta hover:bg-ryt-mint-dark hover:-translate-y-0.5;
+    @apply bg-ryt-mint text-ryt-deep shadow-cta hover:bg-ryt-mint-dark hover:-translate-y-0.5;
   }
   /* Botón outline mint sobre claro. */
   .btn-outline {
-    @apply bg-white text-ryt-forest border-2 border-ryt-mint hover:bg-ryt-mint hover:text-ryt-forest;
+    @apply bg-white text-ryt-deep border-2 border-ryt-mint hover:bg-ryt-mint hover:text-ryt-deep;
   }
   /* Botón outline blanco (sobre fondo oscuro). */
   .btn-outline-white {
-    @apply bg-transparent text-white border-[1.5px] border-white/30 hover:bg-white hover:text-ryt-forest;
+    @apply bg-transparent text-white border-[1.5px] border-white/30 hover:bg-white hover:text-ryt-deep;
   }
   /* Botón blanco (sobre fondo mint). */
   .btn-on-mint {
@@ -54,9 +54,9 @@
     @apply uppercase tracking-[0.22em] text-xs font-bold text-ryt-mint;
   }
 
-  /* Precio grande ADLaM Display (cards de pricing). */
+  /* Precio grande ADLaM Display (cards de pricing v9: 60px). */
   .price {
-    @apply font-display text-[62px] leading-[.9] text-ink-heading;
+    @apply font-display text-[60px] leading-[.9] text-ink-heading;
   }
 
   /* Card básica — más redondeada, borde sutil, sombra difusa. */
@@ -504,6 +504,66 @@
     @apply w-full pl-11 pr-9 py-3 bg-transparent text-[13.5px] font-sans text-ink cursor-pointer appearance-none focus:outline-none;
   }
 
+  /* Variante sobre fondo OSCURO (v9: horarios en home). */
+  .bg-ink-dark .ryt-filtro-pill {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(255,255,255,0.18);
+  }
+  .bg-ink-dark .ryt-filtro-pill:hover {
+    border-color: rgba(98,216,172,0.6);
+  }
+  .bg-ink-dark .ryt-filtro-pill select {
+    color: #F4F1EC;
+  }
+  .bg-ink-dark .ryt-filtro-pill select option {
+    color: #222;
+  }
+  .bg-ink-dark .ryt-filtro-pill .ryt-filtro-chev {
+    color: rgba(255,255,255,0.6);
+  }
+
+  /* Tabla de horarios sobre fondo DARK: invertir colores */
+  .bg-ink-dark .ryt-tabla-wrap {
+    background: rgba(255,255,255,0.04);
+    border-color: rgba(255,255,255,0.10);
+  }
+  .bg-ink-dark .ryt-tabla {
+    color: #E6E1DB;
+  }
+  .bg-ink-dark .ryt-th {
+    background: rgba(255,255,255,0.05);
+    color: rgba(255,255,255,0.55);
+    border-bottom-color: rgba(98,216,172,0.35);
+  }
+  .bg-ink-dark .ryt-td {
+    border-bottom-color: rgba(255,255,255,0.08);
+  }
+  .bg-ink-dark .ryt-td-grupo {
+    background: transparent;
+  }
+  .bg-ink-dark .ryt-grupo-dia {
+    color: #fff;
+  }
+  .bg-ink-dark .ryt-tr:hover {
+    background: rgba(98,216,172,0.10);
+  }
+  .bg-ink-dark .ryt-td .text-ink-heading,
+  .bg-ink-dark .ryt-td .font-bold.text-ink-heading {
+    color: #fff !important;
+  }
+  .bg-ink-dark .ryt-td .text-ink-soft,
+  .bg-ink-dark .ryt-td.text-ink-soft {
+    color: #BCB6B1 !important;
+  }
+  .bg-ink-dark .ryt-td .text-ink-mute,
+  .bg-ink-dark .ryt-badge-sala {
+    color: #fff;
+    background: rgba(255,255,255,0.08);
+  }
+  .bg-ink-dark #ryt-horario-count {
+    color: #BCB6B1;
+  }
+
   /* Prose para contenido WP (legales, blog). */
   .prose-ryt {
     @apply text-ink-soft leading-relaxed;
@@ -518,4 +578,95 @@
   .prose-ryt blockquote { @apply border-l-4 border-ryt-mint pl-5 my-6 italic text-ink-heading font-serif; }
   .prose-ryt img { @apply my-6 rounded-2xl; }
   .prose-ryt strong { @apply text-ink-heading; font-weight: 700; }
+
+  /* ─────────────────────────────────────────────────────────────
+     V9 — Componentes nuevos del rediseño Cloud Design v2
+     ───────────────────────────────────────────────────────────── */
+
+  /* Eyebrow numerado: pequeño número ADLaM + línea + texto uppercase */
+  .ryt-eyebrow {
+    @apply inline-flex items-center gap-3 text-[11.5px] font-bold uppercase tracking-[0.2em] text-ryt-mint mb-[18px];
+  }
+  .ryt-eyebrow-num {
+    @apply font-display text-[14px] leading-none;
+  }
+  .ryt-eyebrow-line {
+    @apply inline-block w-[26px] h-px bg-ryt-mint;
+  }
+  .ryt-eyebrow-line-mint {
+    background: #62D8AC;
+    height: 1.5px;
+  }
+
+  /* Header sticky con backdrop blur */
+  .ryt-header-sticky {
+    @apply sticky top-0 z-50;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: saturate(1.4) blur(10px);
+    -webkit-backdrop-filter: saturate(1.4) blur(10px);
+    border-bottom: 1px solid #ECE8E3;
+  }
+
+  /* Marquee animation */
+  .ryt-marquee {
+    @apply flex animate-marquee;
+    width: max-content;
+  }
+  .ryt-marquee-30 {
+    @apply flex animate-marquee-30;
+    width: max-content;
+  }
+
+  /* Hero-stats: número grande mint + label uppercase */
+  .ryt-hero-stat-n {
+    @apply font-display text-[32px] text-ryt-mint leading-none;
+  }
+  .ryt-hero-stat-l {
+    @apply text-[12px] uppercase tracking-[0.1em] text-[#9C9692] mt-[5px];
+  }
+
+  /* WhatsApp float button */
+  .ryt-wa-float {
+    @apply fixed bottom-[26px] right-[26px] z-[80] w-[58px] h-[58px] rounded-full inline-flex items-center justify-center text-white shadow-wa-float transition-transform duration-200 hover:scale-110;
+    background: #25D366;
+  }
+  .ryt-wa-float:hover {
+    background: #1FB957;
+  }
+
+  /* Pilar item (en banda mint) */
+  .ryt-pilar {
+    @apply flex items-center gap-[14px] py-[26px] px-[28px];
+    border-right: 1px solid rgba(23, 60, 48, 0.14);
+  }
+  .ryt-pilar:last-child { border-right: 0; }
+  .ryt-pilar-icon {
+    @apply flex-shrink-0 w-10 h-10 rounded-full inline-flex items-center justify-center text-ryt-deep;
+    background: rgba(23, 60, 48, 0.12);
+  }
+  .ryt-pilar-text {
+    @apply text-[14.5px] font-bold text-ryt-deep leading-[1.25];
+  }
+
+  /* Ticker bar (debajo del hero) */
+  .ryt-ticker {
+    @apply overflow-hidden border-t border-white/10;
+    background: rgba(0,0,0,0.18);
+  }
+  .ryt-ticker-text {
+    @apply inline-flex gap-[34px] pr-[34px] text-[12.5px] font-bold uppercase tracking-[0.16em] whitespace-nowrap;
+    color: #BCB6B1;
+  }
+
+  /* FAQ accordion: `+` que rota a `×` al abrir */
+  .ryt-faq-plus {
+    @apply font-display text-ryt-mint text-[28px] leading-none flex-shrink-0 transition-transform duration-200;
+    width: 24px;
+    text-align: center;
+  }
+  .ryt-faq-item[open] .ryt-faq-plus {
+    transform: rotate(45deg);
+  }
+  .ryt-faq-item summary::-webkit-details-marker { display: none; }
+  .ryt-faq-item summary::marker { content: ''; }
 }

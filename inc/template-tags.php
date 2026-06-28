@@ -60,6 +60,22 @@ function ryt_nav_menu(string $location, string $class_root = 'flex items-center 
     ]);
 }
 
+/**
+ * Eyebrow numerado v9 (Cloud Design): pequeño número ADLaM mint + línea + texto uppercase.
+ * Uso: ryt_eyebrow('01', 'Nuestras disciplinas');
+ */
+function ryt_eyebrow(string $num, string $text, string $extra_class = ''): void {
+    ?>
+    <span class="ryt-eyebrow <?php echo esc_attr($extra_class); ?>">
+        <?php if ($num !== ''): ?>
+            <span class="ryt-eyebrow-num"><?php echo esc_html($num); ?></span>
+        <?php endif; ?>
+        <span class="ryt-eyebrow-line ryt-eyebrow-line-mint"></span>
+        <?php echo esc_html($text); ?>
+    </span>
+    <?php
+}
+
 /** Iconos SVG inline (sin dependencias). */
 function ryt_icon(string $name, string $class = 'h-5 w-5'): void {
     $icons = [
