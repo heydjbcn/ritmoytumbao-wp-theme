@@ -37,7 +37,7 @@ define('RYT_APP_ANDROID_URL', 'https://play.google.com/store/apps/details?id=es.
 
 /* CTAs principales */
 define('RYT_WHATSAPP_MSG', 'Quisiera información sobre los cursos de Salsa, Bachata y otras disciplinas');
-define('RYT_PREINSCRIPCION_URL', 'https://ritmoytumbao.playoffinformatica.com/preinscripcion/');
+define('RYT_PREINSCRIPCION_URL', 'https://ritmoytumbao.es/alumno/registro');
 define('RYT_APP_URL', 'https://app.ritmoytumbao.es'); // panel alumno web (legacy, los alumnos usan ahora las apps móviles)
 
 /**

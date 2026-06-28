@@ -93,7 +93,7 @@
     @apply relative;
   }
   .ryt-nav > li > a {
-    @apply relative font-sans font-bold text-[13px] uppercase tracking-[0.08em] text-ink-heading inline-flex items-center gap-1.5 px-4 py-3 transition-colors duration-200;
+    @apply relative font-sans font-bold text-[15px] uppercase tracking-[0.08em] text-ink-heading inline-flex items-center gap-1.5 px-5 py-3 transition-colors duration-200;
   }
   /* Rayita fina mint que crece desde el centro */
   .ryt-nav > li > a::before {
@@ -169,7 +169,7 @@
 
   /* Items con barra lateral + slide del texto al hover */
   .ryt-nav .sub-menu li a {
-    @apply relative flex items-center px-6 py-2.5 text-[13.5px] font-sans font-semibold text-ink-soft whitespace-nowrap normal-case overflow-hidden transition-all duration-200;
+    @apply relative flex items-center px-6 py-3 text-[15px] font-sans font-semibold text-ink-soft whitespace-nowrap normal-case overflow-hidden transition-all duration-200;
     letter-spacing: 0.01em;
   }
   .ryt-nav .sub-menu li a::before {
