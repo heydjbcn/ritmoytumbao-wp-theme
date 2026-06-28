@@ -268,8 +268,53 @@
   }
 
   /* ─────────────────────────────────────────────────────────────
-     Widget horarios CALENDARIO SEMANAL (v7.5)
+     Widget horarios TABLA CLÁSICA (v7.6)
      ───────────────────────────────────────────────────────────── */
+  .ryt-tabla {
+    @apply border-collapse w-full text-[14px];
+  }
+  .ryt-th {
+    @apply font-sans font-bold uppercase text-[11px] tracking-[0.14em] text-ink-mute py-4 px-5 bg-paper-soft border-b-2 border-ryt-mint/30;
+  }
+  .ryt-tr {
+    @apply transition-colors duration-150;
+  }
+  .ryt-tr:nth-child(even) {
+    @apply bg-paper-soft/40;
+  }
+  .ryt-tr:hover {
+    @apply bg-ryt-mint-soft/40;
+  }
+  /* Separador grueso entre días — animable via JS (.ryt-tr-dia-inicio-active) */
+  .ryt-tr-dia-inicio-active .ryt-td {
+    @apply border-t-2 border-t-[#E8E2DA];
+    padding-top: 22px;
+  }
+  /* Quitar separador en la primera fila visible total */
+  .ryt-tr-dia-inicio-active:first-child .ryt-td,
+  .ryt-tabla tbody > .ryt-tr-dia-inicio-active:not(.is-hidden):first-of-type .ryt-td {
+    /* Las primeras filas mantienen el separador para uniformidad — comentar este selector si quieres quitar */
+  }
+  .ryt-td {
+    @apply py-3.5 px-5 border-b border-[#F2EDE6] align-middle;
+  }
+  .ryt-td-dia {
+    @apply align-top pt-4;
+  }
+  .ryt-td-hora {
+    @apply leading-tight;
+  }
+  .ryt-dot {
+    @apply inline-block w-2 h-2 rounded-full mr-2.5 align-middle;
+    transform: translateY(-1px);
+  }
+  /* Fila oculta por filtro */
+  .ryt-tr.is-hidden {
+    display: none;
+  }
+  /* Tabular nums para horas */
+  .tabular-nums { font-variant-numeric: tabular-nums; }
+
   /* Chip de leyenda */
   .ryt-legend-chip {
     @apply cursor-pointer select-none;
