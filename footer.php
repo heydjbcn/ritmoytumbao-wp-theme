@@ -87,7 +87,8 @@
                 Contacto
             </h3>
             <p class="text-sm text-[#A39D98] leading-[1.7] mb-[14px]">
-                Josep Vicenç Foix 51,<br>08301 Mataró (Barcelona)
+                <?php echo esc_html(RYT_ADDRESS_STREET); ?>,<br>
+                <?php echo esc_html(RYT_ADDRESS_CP . ' ' . RYT_ADDRESS_CITY . ' (' . RYT_ADDRESS_REGION . ')'); ?>
             </p>
             <p class="text-sm text-[#A39D98] leading-[1.8] mb-1">
                 <a href="<?php echo esc_attr(ryt_tel_link(RYT_PHONE_1)); ?>" class="hover:text-ryt-mint transition-colors">
@@ -107,24 +108,32 @@
             <p class="text-[13px] text-[#7C7672]">Lun–Vie · 18h–23h</p>
         </div>
 
-        <!-- QR -->
+        <!-- Descarga la app + QR -->
         <div class="flex flex-col items-start">
             <h3 class="text-[13px] font-bold uppercase tracking-[0.16em] text-[#F4F1EC] mb-5 font-sans">
-                Escanéame
+                Descarga la app
             </h3>
+            <div class="flex flex-col gap-2.5 mb-5">
+                <a href="<?php echo esc_url(RYT_APP_IOS_URL); ?>" target="_blank" rel="noopener"
+                   class="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-pill bg-white/10 hover:bg-ryt-mint hover:text-ryt-forest text-white text-[12.5px] font-semibold transition-colors">
+                    <?php ryt_icon('apple', 'w-4 h-4'); ?>
+                    App Store
+                </a>
+                <a href="<?php echo esc_url(RYT_APP_ANDROID_URL); ?>" target="_blank" rel="noopener"
+                   class="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-pill bg-white/10 hover:bg-ryt-mint hover:text-ryt-forest text-white text-[12.5px] font-semibold transition-colors">
+                    <?php ryt_icon('googleplay', 'w-4 h-4 text-ryt-mint'); ?>
+                    Google Play
+                </a>
+            </div>
             <?php $qr = RYT_DIR . '/assets/img/qrcode-1.png'; if (file_exists($qr)): ?>
                 <img src="<?php echo esc_url(RYT_URI . '/assets/img/qrcode-1.png'); ?>"
                      alt="QR contacto Ritmo y Tumbao"
-                     class="w-[118px] h-[118px] bg-white p-[9px] rounded-[14px]"
+                     class="w-[80px] h-[80px] bg-white p-[6px] rounded-[10px]"
                      loading="lazy">
-            <?php else: ?>
-                <div class="w-[118px] h-[118px] rounded-[14px] bg-white/5 flex items-center justify-center text-xs text-white/40 text-center px-3">
-                    QR pendiente
-                </div>
+                <p class="text-xs text-[#7C7672] mt-2 max-w-[140px] leading-[1.5]">
+                    O escanea para guardar nuestro contacto.
+                </p>
             <?php endif; ?>
-            <p class="text-xs text-[#7C7672] mt-3 max-w-[140px] leading-[1.5]">
-                Guarda nuestro contacto al instante.
-            </p>
         </div>
     </div>
 

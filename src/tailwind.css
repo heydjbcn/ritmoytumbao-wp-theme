@@ -229,6 +229,14 @@
   }
 
   /* ─────────────────────────────────────────────────────────────
+     Dropdown "Soy alumno" — descarga apps stores
+     ───────────────────────────────────────────────────────────── */
+  .ryt-app-dropdown:hover .ryt-app-menu,
+  .ryt-app-dropdown:focus-within .ryt-app-menu {
+    @apply opacity-100 visible translate-y-0;
+  }
+
+  /* ─────────────────────────────────────────────────────────────
      Iconos sociales del topbar con bounce + bg verde al hover
      ───────────────────────────────────────────────────────────── */
   .ryt-social-icon {

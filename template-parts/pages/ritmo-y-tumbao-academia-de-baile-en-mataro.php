@@ -5,12 +5,12 @@
  */
 $profes = [
     [ 'name' => 'Miguel García',  'role' => 'CEO fundador',           'desc' => 'Fundador y alma de Ritmo y Tumbao. Más de 20 años enseñando salsa.', 'img' => '/assets/img/profes/miguel.png' ],
-    [ 'name' => 'Jeni',           'role' => 'Instructora y directora','desc' => 'Co-dirige la escuela e imparte salsa y lady style.',                  'img' => null ],
-    [ 'name' => 'Michael e Ivet', 'role' => 'Profesores de Bachata',  'desc' => 'Pareja con energía contagiosa y técnica depurada.',                  'img' => null ],
-    [ 'name' => 'Mario y Nia',    'role' => 'Bachata Sensual',        'desc' => 'Especialistas en bachata sensual moderna.',                          'img' => null ],
-    [ 'name' => 'Gio y Judit',    'role' => 'Bachata Fusión',         'desc' => 'Profesores creativos que fusionan estilos.',                         'img' => null ],
+    [ 'name' => 'Jeni',           'role' => 'Instructora y directora','desc' => 'Co-dirige la escuela e imparte salsa y lady style.',                  'img' => '/assets/img/profes/jeni.webp' ],
+    [ 'name' => 'Michael e Ivet', 'role' => 'Profesores de Bachata',  'desc' => 'Pareja con energía contagiosa y técnica depurada.',                  'img' => '/assets/img/profes/michaelivet.webp' ],
+    [ 'name' => 'Mario y Nia',    'role' => 'Bachata Sensual',        'desc' => 'Especialistas en bachata sensual moderna.',                          'img' => '/assets/img/profes/marionia.webp' ],
+    [ 'name' => 'Gio y Judit',    'role' => 'Bachata Fusión',         'desc' => 'Profesores creativos que fusionan estilos.',                         'img' => '/assets/img/profes/giojudit.webp' ],
     [ 'name' => 'Aleix y Belén',  'role' => 'Bachata Fusión',         'desc' => 'Pareja joven con un estilo fresco y muy musical.',                   'img' => '/assets/img/profes/aleixybelen.png' ],
-    [ 'name' => 'Sandra',         'role' => 'Salsa',                  'desc' => 'Co-profesora de salsa con foco en musicalidad.',                     'img' => null ],
+    [ 'name' => 'Sandra',         'role' => 'Salsa',                  'desc' => 'Co-profesora de salsa con foco en musicalidad.',                     'img' => '/assets/img/profes/sandra.webp' ],
     [ 'name' => 'Thais',          'role' => 'Salsa',                  'desc' => 'Profesora de salsa y de casino con timba.',                          'img' => null ],
 ];
 ?>

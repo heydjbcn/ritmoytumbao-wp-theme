@@ -19,13 +19,13 @@ $profes = [
     [
         'name'  => 'Jeni',
         'role'  => 'Instructora y directora',
-        'img'   => null,
+        'img'   => RYT_URI . '/assets/img/profes/jeni.webp',
         'alt'   => 'Jeni — instructora y directora',
     ],
     [
         'name'  => 'Mario y Nia',
         'role'  => 'Bachata Sensual',
-        'img'   => null,
+        'img'   => RYT_URI . '/assets/img/profes/marionia.webp',
         'alt'   => 'Mario y Nia — instructores de Bachata Sensual',
     ],
     [

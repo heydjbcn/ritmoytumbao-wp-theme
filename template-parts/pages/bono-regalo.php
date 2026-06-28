@@ -1,6 +1,6 @@
 <?php
 /**
- * Página /bono-regalo-2/ — Bonos de regalo (1 clase, 5 clases, 10 clases).
+ * Página /bono-regalo/ — Bonos de regalo (1 clase, 5 clases, 10 clases).
  */
 ?>
 <section class="bg-ink-dark text-white relative overflow-hidden">

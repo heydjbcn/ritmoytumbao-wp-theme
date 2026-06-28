@@ -35,20 +35,59 @@
                 <span><?php echo esc_html(RYT_OFFICE_HOURS); ?></span>
             </span>
 
-            <!-- Redes alineadas a la derecha -->
-            <div class="ml-auto flex items-center gap-1">
-                <a href="<?php echo esc_url(ryt_whatsapp_url()); ?>" target="_blank" rel="noopener" aria-label="WhatsApp" class="ryt-social-icon">
-                    <?php ryt_icon('whatsapp', 'w-4 h-4'); ?>
-                </a>
-                <a href="<?php echo esc_url(RYT_INSTAGRAM); ?>" target="_blank" rel="noopener" aria-label="Instagram" class="ryt-social-icon">
-                    <?php ryt_icon('instagram', 'w-4 h-4'); ?>
-                </a>
-                <a href="<?php echo esc_url(RYT_FACEBOOK); ?>" target="_blank" rel="noopener" aria-label="Facebook" class="ryt-social-icon">
-                    <?php ryt_icon('facebook', 'w-4 h-4'); ?>
-                </a>
-                <a href="<?php echo esc_url(RYT_YOUTUBE); ?>" target="_blank" rel="noopener" aria-label="YouTube" class="ryt-social-icon">
-                    <?php ryt_icon('youtube', 'w-4 h-4'); ?>
-                </a>
+            <!-- Selector idioma + Soy alumno + redes -->
+            <div class="ml-auto flex items-center gap-4">
+                <?php if (function_exists('pll_the_languages')): ?>
+                    <ul class="ryt-lang-switch flex items-center gap-1 text-[11px] font-bold uppercase tracking-[0.1em]">
+                        <?php
+                        $langs = pll_the_languages(['raw' => 1, 'hide_if_empty' => 0, 'hide_current' => 0]);
+                        foreach ($langs as $lang):
+                        ?>
+                            <li>
+                                <a href="<?php echo esc_url($lang['url']); ?>"
+                                   class="px-1.5 py-0.5 transition-colors <?php echo $lang['current_lang'] ? 'text-ryt-mint' : 'text-ink-soft hover:text-ryt-mint'; ?>">
+                                    <?php echo esc_html($lang['slug']); ?>
+                                </a>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+                    <span class="text-ink-mute">·</span>
+                <?php endif; ?>
+                <!-- Soy alumno con dropdown stores -->
+                <div class="ryt-app-dropdown relative">
+                    <button type="button" class="ryt-app-trigger inline-flex items-center gap-1.5 text-[12px] font-bold uppercase tracking-[0.06em] text-ink-soft hover:text-ryt-mint transition-colors">
+                        <?php ryt_icon('user', 'w-3.5 h-3.5'); ?>
+                        Soy alumno
+                        <?php ryt_icon('chevron-down', 'w-3 h-3'); ?>
+                    </button>
+                    <div class="ryt-app-menu absolute right-0 top-full mt-2 min-w-[220px] bg-white rounded-2xl border border-[#EFEBE6] shadow-card-lg p-3 z-50 opacity-0 invisible translate-y-1 transition-all duration-200">
+                        <p class="text-[10px] uppercase tracking-[0.16em] font-bold text-ink-mute mb-2 px-1">Descarga la app</p>
+                        <a href="<?php echo esc_url(RYT_APP_IOS_URL); ?>" target="_blank" rel="noopener" class="flex items-center gap-2.5 px-2 py-2 rounded-lg hover:bg-paper-alt transition-colors">
+                            <?php ryt_icon('apple', 'w-5 h-5 text-ink-heading'); ?>
+                            <span class="text-[13px] font-semibold text-ink-heading">App Store</span>
+                        </a>
+                        <a href="<?php echo esc_url(RYT_APP_ANDROID_URL); ?>" target="_blank" rel="noopener" class="flex items-center gap-2.5 px-2 py-2 rounded-lg hover:bg-paper-alt transition-colors">
+                            <?php ryt_icon('googleplay', 'w-5 h-5 text-ryt-mint'); ?>
+                            <span class="text-[13px] font-semibold text-ink-heading">Google Play</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Redes sociales -->
+                <div class="flex items-center gap-1">
+                    <a href="<?php echo esc_url(ryt_whatsapp_url()); ?>" target="_blank" rel="noopener" aria-label="WhatsApp" class="ryt-social-icon">
+                        <?php ryt_icon('whatsapp', 'w-4 h-4'); ?>
+                    </a>
+                    <a href="<?php echo esc_url(RYT_INSTAGRAM); ?>" target="_blank" rel="noopener" aria-label="Instagram" class="ryt-social-icon">
+                        <?php ryt_icon('instagram', 'w-4 h-4'); ?>
+                    </a>
+                    <a href="<?php echo esc_url(RYT_FACEBOOK); ?>" target="_blank" rel="noopener" aria-label="Facebook" class="ryt-social-icon">
+                        <?php ryt_icon('facebook', 'w-4 h-4'); ?>
+                    </a>
+                    <a href="<?php echo esc_url(RYT_YOUTUBE); ?>" target="_blank" rel="noopener" aria-label="YouTube" class="ryt-social-icon">
+                        <?php ryt_icon('youtube', 'w-4 h-4'); ?>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -104,6 +143,21 @@
             <a href="<?php echo esc_url(RYT_PREINSCRIPCION_URL); ?>" target="_blank" rel="noopener" class="btn btn-primary w-full mt-4">
                 <?php esc_html_e('Preinscripción', 'ryt'); ?>
             </a>
+
+            <!-- Soy alumno: descarga de apps -->
+            <div class="mt-6 pt-5 border-t border-paper-alt">
+                <p class="text-[10px] uppercase tracking-[0.16em] font-bold text-ink-mute mb-3">Soy alumno · Descarga la app</p>
+                <div class="flex gap-2">
+                    <a href="<?php echo esc_url(RYT_APP_IOS_URL); ?>" target="_blank" rel="noopener" class="flex-1 inline-flex items-center justify-center gap-2 px-3 py-2.5 rounded-pill bg-ink-dark text-white text-[12px] font-semibold hover:bg-ink transition-colors">
+                        <?php ryt_icon('apple', 'w-4 h-4'); ?>
+                        App Store
+                    </a>
+                    <a href="<?php echo esc_url(RYT_APP_ANDROID_URL); ?>" target="_blank" rel="noopener" class="flex-1 inline-flex items-center justify-center gap-2 px-3 py-2.5 rounded-pill bg-ink-dark text-white text-[12px] font-semibold hover:bg-ink transition-colors">
+                        <?php ryt_icon('googleplay', 'w-4 h-4 text-ryt-mint'); ?>
+                        Google Play
+                    </a>
+                </div>
+            </div>
         </div>
     </nav>
 </header>
