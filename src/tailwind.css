@@ -333,6 +333,78 @@
   /* Tabular nums para horas */
   .tabular-nums { font-variant-numeric: tabular-nums; }
 
+  /* ─── Responsive tabla horarios — móvil: cards apiladas ─── */
+  @media (max-width: 767px) {
+    .ryt-tabla-wrap {
+      @apply bg-transparent border-0 shadow-none rounded-none;
+    }
+    .ryt-tabla thead { display: none; }
+    .ryt-tabla,
+    .ryt-tabla tbody,
+    .ryt-tabla tr,
+    .ryt-tabla td {
+      display: block;
+      width: 100%;
+    }
+    /* Cabecera de día — fila completa */
+    .ryt-tr-grupo {
+      padding: 24px 0 4px;
+    }
+    .ryt-td-grupo {
+      padding: 0 !important;
+      background: transparent !important;
+    }
+    .ryt-grupo-dia {
+      @apply text-[22px];
+    }
+    .ryt-grupo-dia::after {
+      width: 40px;
+    }
+
+    /* Cada clase como card */
+    .ryt-tr {
+      @apply bg-white rounded-[14px] border border-[#EFEBE6] relative mb-3;
+      padding: 14px 16px;
+    }
+    .ryt-tr:hover {
+      background: white !important;
+    }
+    .ryt-tr .ryt-td {
+      border: none !important;
+      padding: 0 !important;
+    }
+
+    /* Hora: bloque arriba */
+    .ryt-td-hora {
+      @apply mb-2;
+    }
+    .ryt-td-hora span:first-child {
+      @apply text-[16px] !important;
+    }
+    .ryt-td-hora span:last-child {
+      @apply inline ml-2 !important;
+    }
+
+    /* Clase: estilo + nivel */
+    .ryt-tr td:nth-child(2) {
+      @apply mb-1.5 text-[15px];
+    }
+
+    /* Profesores */
+    .ryt-tr td:nth-child(3) {
+      @apply text-[14px] text-ink-soft;
+    }
+
+    /* Sala arriba a la derecha (badge flotando) */
+    .ryt-tr td:last-child {
+      @apply absolute top-3.5 right-4 text-right;
+    }
+    .ryt-badge-sala {
+      @apply text-[10.5px];
+      padding: 4px 10px;
+    }
+  }
+
   /* Chip de leyenda */
   .ryt-legend-chip {
     @apply cursor-pointer select-none;

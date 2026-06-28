@@ -19,8 +19,8 @@
 <?php wp_body_open(); ?>
 
 <header class="w-full bg-white">
-    <!-- Topbar info: dirección · tel · horario · 4 redes -->
-    <div class="border-b border-paper-alt">
+    <!-- Topbar info: visible solo en md+ (oculto en móvil) -->
+    <div class="hidden md:block border-b border-paper-alt">
         <div class="container mx-auto px-4 py-2.5 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-ink">
             <a href="<?php echo esc_url(RYT_ADDRESS_MAPS); ?>" target="_blank" rel="noopener" class="flex items-center gap-1.5 hover:text-ryt-mint">
                 <?php ryt_icon('pin', 'w-4 h-4 text-ryt-mint'); ?>
@@ -48,6 +48,27 @@
                 </a>
                 <a href="<?php echo esc_url(RYT_YOUTUBE); ?>" target="_blank" rel="noopener" aria-label="YouTube" class="ryt-social-icon">
                     <?php ryt_icon('youtube', 'w-4 h-4'); ?>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Topbar móvil compacto: solo botón Llamar + redes -->
+    <div class="md:hidden border-b border-paper-alt bg-ink-dark">
+        <div class="container mx-auto px-4 py-2 flex items-center justify-between text-xs">
+            <a href="<?php echo esc_attr(ryt_tel_link(RYT_PHONE_1)); ?>" class="inline-flex items-center gap-1.5 text-white">
+                <?php ryt_icon('phone', 'w-3.5 h-3.5 text-ryt-mint'); ?>
+                <span class="text-[12px] font-medium"><?php echo esc_html(RYT_PHONE_1); ?></span>
+            </a>
+            <div class="flex items-center gap-2">
+                <a href="<?php echo esc_url(ryt_whatsapp_url()); ?>" target="_blank" rel="noopener" aria-label="WhatsApp" class="text-white/80 hover:text-ryt-mint transition-colors">
+                    <?php ryt_icon('whatsapp', 'w-4 h-4'); ?>
+                </a>
+                <a href="<?php echo esc_url(RYT_INSTAGRAM); ?>" target="_blank" rel="noopener" aria-label="Instagram" class="text-white/80 hover:text-ryt-mint transition-colors">
+                    <?php ryt_icon('instagram', 'w-4 h-4'); ?>
+                </a>
+                <a href="<?php echo esc_url(RYT_FACEBOOK); ?>" target="_blank" rel="noopener" aria-label="Facebook" class="text-white/80 hover:text-ryt-mint transition-colors">
+                    <?php ryt_icon('facebook', 'w-4 h-4'); ?>
                 </a>
             </div>
         </div>
