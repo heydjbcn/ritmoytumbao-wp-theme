@@ -267,6 +267,67 @@
     box-shadow: 0 8px 20px rgba(98,216,172,0.4);
   }
 
+  /* ─────────────────────────────────────────────────────────────
+     Widget horarios (v7.4)
+     ───────────────────────────────────────────────────────────── */
+  /* Card de clase: hover con elevación + sombra suave */
+  .ryt-clase-card {
+    @apply transition-all duration-300 ease-out;
+    box-shadow: 0 1px 2px rgba(38,37,36,0.04);
+  }
+  .ryt-clase-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 30px rgba(38,37,36,0.10), 0 4px 12px rgba(38,37,36,0.06);
+  }
+  /* Animación de filtrado */
+  .ryt-clase-card.is-hidden,
+  .ryt-dia-col.is-hidden {
+    opacity: 0;
+    transform: scale(0.96) translateY(0);
+    pointer-events: none;
+    max-height: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    overflow: hidden;
+  }
+  .ryt-dia-col.is-hidden {
+    width: 0;
+    min-width: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Filtro pill */
+  .ryt-filtro-pill {
+    @apply relative inline-flex items-center bg-paper-soft border border-paper-alt rounded-pill transition-all duration-200 cursor-pointer;
+  }
+  .ryt-filtro-pill:hover {
+    @apply border-ryt-mint/40;
+  }
+  .ryt-filtro-pill.is-active {
+    @apply border-ryt-mint bg-ryt-mint-soft;
+    box-shadow: 0 0 0 3px rgba(98,216,172,0.16);
+  }
+  .ryt-filtro-pill.is-active .ryt-filtro-icon {
+    @apply text-ryt-forest;
+  }
+  .ryt-filtro-pill .ryt-filtro-icon {
+    @apply absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-ryt-mint pointer-events-none;
+  }
+  .ryt-filtro-pill .ryt-filtro-chev {
+    @apply absolute right-4 top-1/2 -translate-y-1/2 w-3 h-3 text-ink-mute pointer-events-none transition-transform duration-200;
+  }
+  .ryt-filtro-pill:focus-within .ryt-filtro-chev {
+    transform: translateY(-50%) rotate(180deg);
+  }
+  .ryt-filtro-pill select {
+    @apply w-full pl-11 pr-9 py-3 bg-transparent text-[13.5px] font-sans text-ink cursor-pointer appearance-none focus:outline-none;
+  }
+
   /* Prose para contenido WP (legales, blog). */
   .prose-ryt {
     @apply text-ink-soft leading-relaxed;
