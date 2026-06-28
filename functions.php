@@ -31,8 +31,8 @@ define('RYT_INSTAGRAM', 'https://www.instagram.com/ritmoytumbao_/');
 define('RYT_FACEBOOK',  'https://www.facebook.com/ritmoytumbao.escola');
 define('RYT_YOUTUBE',   'https://www.youtube.com/user/TheRitmoytumbao');
 
-/* Apps móviles — URLs reales pendientes (app en TestFlight / Firebase, Mauri actualizará al publicar) */
-define('RYT_APP_IOS_URL',     'https://apps.apple.com/es/app/ritmo-y-tumbao/idPENDIENTE');
+/* Apps móviles oficiales (publicadas jun 2026) */
+define('RYT_APP_IOS_URL',     'https://apps.apple.com/es/app/ritmo-y-tumbao/id6780409712');
 define('RYT_APP_ANDROID_URL', 'https://play.google.com/store/apps/details?id=es.ritmoytumbao.alumno');
 
 /* CTAs principales */
