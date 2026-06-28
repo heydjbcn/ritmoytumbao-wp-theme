@@ -61,19 +61,19 @@ $app_features = [
             </div>
         </div>
 
-        <!-- Mockup iPhone con captura real de la app (Google Play) -->
+        <!-- Mockup iPhone con captura real de la app (App Store) -->
         <div class="flex justify-center relative">
             <div aria-hidden="true" class="absolute w-[320px] h-[320px] rounded-full"
                  style="background: radial-gradient(circle, rgba(98,216,172,0.28), transparent 68%);"></div>
-            <div class="relative w-[252px] h-[546px] rounded-[42px] p-[10px] border border-[#333]"
+            <div class="relative w-[248px] h-[506px] rounded-[42px] p-[11px] border border-[#333]"
                  style="background: #0E0D0D; box-shadow: 0 34px 70px rgba(0,0,0,0.5);">
                 <!-- Screen con captura real Mis Clases -->
-                <div class="h-full rounded-[34px] overflow-hidden bg-white">
-                    <img src="<?php echo esc_url(RYT_URI . '/assets/img/app/play-mis-clases.png'); ?>"
+                <div class="h-full rounded-[32px] overflow-hidden bg-white">
+                    <img src="<?php echo esc_url(RYT_URI . '/assets/img/app/appstore-mis-clases.png'); ?>"
                          alt="App Ritmo y Tumbao — pantalla Mis Clases"
                          class="w-full h-full object-cover object-top block"
                          loading="lazy"
-                         width="1080" height="2345">
+                         width="600" height="1300">
                 </div>
             </div>
         </div>
