@@ -32,3 +32,37 @@ add_action('after_setup_theme', function () {
     add_image_size('ryt-card', 720,  480, true);
     add_image_size('ryt-thumb', 320, 200, true);
 });
+
+/**
+ * Polylang gestiona `nav_menu_locations` por idioma a través de su propia opción.
+ * Si esa opción está vacía, `has_nav_menu()` devuelve false en frontend HTTP aunque
+ * el menú esté asignado en wp-admin → el theme cae al fallback hardcoded.
+ *
+ * Este filtro garantiza que, mientras no se configure manualmente en wp-admin →
+ * Apariencia → Menús (por idioma), el menú con el primer término del location
+ * `primary` se utilice para todos los idiomas registrados en Polylang.
+ *
+ * Sin coste si Polylang no está activo o si ya hay configuración propia.
+ */
+add_filter('pre_option_polylang', function ($value) {
+    if (!is_array($value)) return $value;
+    if (!empty($value['nav_menus'])) return $value;
+
+    $locations = get_nav_menu_locations();
+    if (empty($locations['primary'])) return $value;
+
+    $menu_id = (int) $locations['primary'];
+    $langs   = function_exists('pll_languages_list') ? pll_languages_list(['fields' => 'slug']) : ['es'];
+    if (empty($langs)) $langs = ['es'];
+
+    $stylesheet = get_stylesheet();
+    $value['nav_menus'] ??= [];
+    foreach (['primary', 'footer'] as $loc) {
+        foreach ($langs as $lang) {
+            $value['nav_menus'][$stylesheet][$loc][$lang] = ($loc === 'primary')
+                ? $menu_id
+                : (int) ($locations['footer'] ?? 0);
+        }
+    }
+    return $value;
+}, 10, 1);
