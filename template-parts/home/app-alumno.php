@@ -61,51 +61,19 @@ $app_features = [
             </div>
         </div>
 
-        <!-- Mockup iPhone CSS-only -->
+        <!-- Mockup iPhone con captura real de la app (Google Play) -->
         <div class="flex justify-center relative">
             <div aria-hidden="true" class="absolute w-[320px] h-[320px] rounded-full"
                  style="background: radial-gradient(circle, rgba(98,216,172,0.28), transparent 68%);"></div>
-            <div class="relative w-[248px] h-[506px] rounded-[42px] p-[11px] border border-[#333]"
+            <div class="relative w-[252px] h-[546px] rounded-[42px] p-[10px] border border-[#333]"
                  style="background: #0E0D0D; box-shadow: 0 34px 70px rgba(0,0,0,0.5);">
-                <!-- Notch -->
-                <div class="absolute top-[22px] left-1/2 -translate-x-1/2 w-[84px] h-[22px] rounded-full bg-[#0E0D0D] z-[2]"></div>
-                <!-- Screen -->
-                <div class="h-full rounded-[32px] overflow-hidden bg-[#FBFAF8] flex flex-col">
-                    <!-- Header con próxima clase -->
-                    <div class="bg-ryt-mint px-[22px] pt-[38px] pb-[22px] text-ryt-deep">
-                        <p class="text-[12px] font-bold uppercase tracking-[0.14em] opacity-80">Hola, Marta</p>
-                        <p class="font-serif text-[22px] mt-1.5 leading-[1.2]">Tu próxima clase</p>
-                        <div class="mt-[14px] bg-white/[.92] rounded-[14px] p-[13px_15px]">
-                            <p class="text-[10px] font-bold uppercase tracking-[0.1em] text-ryt-mint-dark">Hoy · 20:00</p>
-                            <p class="text-[14px] font-bold text-ink-heading mt-1">Bachata · Inicio 3</p>
-                            <p class="text-[12px] text-ink-soft mt-0.5">Aleix &amp; Belén · Sala 2</p>
-                        </div>
-                    </div>
-                    <!-- Lista semana -->
-                    <div class="p-[18px] flex flex-col gap-[11px]">
-                        <p class="text-[11px] font-bold uppercase tracking-[0.1em] text-ink-mute">Esta semana</p>
-                        <div class="flex items-center justify-between bg-white border border-[#EFEBE6] rounded-[12px] p-[11px_13px]">
-                            <div>
-                                <p class="text-[13px] font-semibold text-ink-heading">Salsa · Intermedio</p>
-                                <p class="text-[11px] text-ink-soft">Vie · 19:50</p>
-                            </div>
-                            <span class="text-[10px] font-bold uppercase text-ryt-mint-dark bg-ryt-mint-soft px-[9px] py-[5px] rounded-pill">Reservada</span>
-                        </div>
-                        <div class="flex items-center justify-between bg-white border border-[#EFEBE6] rounded-[12px] p-[11px_13px]">
-                            <div>
-                                <p class="text-[13px] font-semibold text-ink-heading">Lady Style</p>
-                                <p class="text-[11px] text-ink-soft">Vie · 20:00</p>
-                            </div>
-                            <span class="text-[10px] font-bold uppercase text-ink-soft bg-paper px-[9px] py-[5px] rounded-pill">Reservar</span>
-                        </div>
-                        <div class="flex items-center justify-between bg-white border border-[#EFEBE6] rounded-[12px] p-[11px_13px]">
-                            <div>
-                                <p class="text-[13px] font-semibold text-ink-heading">Casino con Timba</p>
-                                <p class="text-[11px] text-ink-soft">Sáb · 21:00</p>
-                            </div>
-                            <span class="text-[10px] font-bold uppercase text-ink-soft bg-paper px-[9px] py-[5px] rounded-pill">Reservar</span>
-                        </div>
-                    </div>
+                <!-- Screen con captura real Mis Clases -->
+                <div class="h-full rounded-[34px] overflow-hidden bg-white">
+                    <img src="<?php echo esc_url(RYT_URI . '/assets/img/app/play-mis-clases.png'); ?>"
+                         alt="App Ritmo y Tumbao — pantalla Mis Clases"
+                         class="w-full h-full object-cover object-top block"
+                         loading="lazy"
+                         width="1080" height="2345">
                 </div>
             </div>
         </div>
