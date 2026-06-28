@@ -268,37 +268,70 @@
   }
 
   /* ─────────────────────────────────────────────────────────────
-     Widget horarios (v7.4)
+     Widget horarios CALENDARIO SEMANAL (v7.5)
      ───────────────────────────────────────────────────────────── */
-  /* Card de clase: hover con elevación + sombra suave */
-  .ryt-clase-card {
-    @apply transition-all duration-300 ease-out;
-    box-shadow: 0 1px 2px rgba(38,37,36,0.04);
+  /* Chip de leyenda */
+  .ryt-legend-chip {
+    @apply cursor-pointer select-none;
   }
-  .ryt-clase-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 14px 30px rgba(38,37,36,0.10), 0 4px 12px rgba(38,37,36,0.06);
+
+  /* Cabecera de día del calendario */
+  .ryt-cal-day-head {
+    @apply text-center py-3 border-b border-[#EFEBE6] border-l border-l-[#EFEBE6] first:border-l-0 bg-paper-soft transition-opacity duration-200;
   }
-  /* Animación de filtrado */
-  .ryt-clase-card.is-hidden,
-  .ryt-dia-col.is-hidden {
-    opacity: 0;
-    transform: scale(0.96) translateY(0);
+  .ryt-cal-day-head.is-empty {
+    @apply opacity-30;
+  }
+
+  /* Columna de horas (eje Y) */
+  .ryt-cal-hours .ryt-cal-hour-label {
+    @apply absolute right-2 text-[10.5px] uppercase tracking-wider font-bold text-ink-mute;
+    transform: translateY(-50%);
+  }
+
+  /* Línea horizontal cada hora */
+  .ryt-cal-hourline {
+    @apply absolute left-0 right-0 border-t border-dashed border-[#EFEBE6] pointer-events-none;
+  }
+
+  /* Evento (clase) en el calendario */
+  .ryt-cal-event {
+    @apply absolute rounded-[10px] overflow-hidden cursor-default transition-all duration-300 ease-out z-10;
+  }
+  .ryt-cal-event:hover {
+    z-index: 20;
+    transform: translateY(-2px) scale(1.03);
+    filter: brightness(1.04);
+    box-shadow: 0 14px 28px rgba(38,37,36,0.12), 0 4px 10px rgba(38,37,36,0.08);
+  }
+  .ryt-cal-event-inner {
+    @apply h-full p-2.5 flex flex-col;
+  }
+  .ryt-cal-time {
+    @apply text-[10px] font-bold uppercase tracking-wider mb-0.5 leading-none;
+  }
+  .ryt-cal-title {
+    @apply text-[12.5px] leading-[1.2] text-ink-heading mb-1;
+  }
+  .ryt-cal-title strong {
+    @apply font-bold;
+  }
+  .ryt-cal-title span {
+    @apply font-normal text-ink-soft;
+  }
+  .ryt-cal-meta {
+    @apply text-[11px] text-ink-soft leading-[1.25] mt-auto;
+  }
+  .ryt-cal-sala {
+    @apply absolute top-1.5 right-1.5 text-[8.5px] font-bold uppercase tracking-[0.06em] bg-white/85 text-ink-heading rounded-full px-1.5 py-[1px];
+  }
+
+  /* Animación al filtrar — escalar y desvanecer */
+  .ryt-cal-event.is-hidden {
+    opacity: 0.08;
+    filter: grayscale(0.6);
     pointer-events: none;
-    max-height: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    border-top-width: 0;
-    border-bottom-width: 0;
-    overflow: hidden;
-  }
-  .ryt-dia-col.is-hidden {
-    width: 0;
-    min-width: 0;
-    padding-left: 0;
-    padding-right: 0;
+    transform: scale(0.96);
   }
 
   /* Filtro pill */
