@@ -564,20 +564,46 @@
     color: #BCB6B1;
   }
 
-  /* Prose para contenido WP (legales, blog). */
+  /* Prose para contenido WP (legales, blog) — v9 elegante. */
   .prose-ryt {
-    @apply text-ink-soft leading-relaxed;
+    @apply text-ink-soft;
+    font-size: 17.5px;
+    line-height: 1.75;
   }
-  .prose-ryt h2 { @apply text-2xl md:text-3xl mt-10 mb-4 text-ink-heading; font-weight: 800; }
-  .prose-ryt h3 { @apply text-xl mt-8 mb-3 text-ink-heading; }
-  .prose-ryt p { @apply mb-5; }
-  .prose-ryt a { @apply text-ryt-mint underline hover:text-ryt-mint-dark; }
-  .prose-ryt ul { @apply mb-5 ml-6 list-disc; }
-  .prose-ryt ol { @apply mb-5 ml-6 list-decimal; }
-  .prose-ryt li { @apply mb-2; }
-  .prose-ryt blockquote { @apply border-l-4 border-ryt-mint pl-5 my-6 italic text-ink-heading font-serif; }
-  .prose-ryt img { @apply my-6 rounded-2xl; }
-  .prose-ryt strong { @apply text-ink-heading; font-weight: 700; }
+  .prose-ryt h2 { @apply font-serif mt-12 mb-5 text-ink-heading; font-size: 30px; line-height: 1.2; font-weight: 800; }
+  .prose-ryt h3 { @apply font-serif mt-10 mb-4 text-ink-heading; font-size: 22px; line-height: 1.25; font-weight: 800; }
+  .prose-ryt h4 { @apply font-serif mt-8 mb-3 text-ink-heading; font-size: 19px; font-weight: 800; }
+  .prose-ryt p { @apply mb-6; }
+  .prose-ryt a { @apply text-ryt-mint-dark underline decoration-ryt-mint underline-offset-4 hover:text-ryt-deep; }
+  .prose-ryt ul { @apply mb-6 ml-2 list-none; }
+  .prose-ryt ol { @apply mb-6 ml-6 list-decimal; }
+  .prose-ryt ul li { @apply mb-2.5 pl-7 relative; }
+  .prose-ryt ul li::before {
+    content: "";
+    @apply absolute left-0 top-3 w-3 h-px bg-ryt-mint;
+  }
+  .prose-ryt ol li { @apply mb-2.5 pl-2; }
+  .prose-ryt blockquote {
+    @apply font-serif italic text-ink-heading my-8 pl-6 border-l-[3px] border-ryt-mint;
+    font-size: 22px;
+    line-height: 1.5;
+  }
+  .prose-ryt img,
+  .prose-ryt figure img { @apply my-8 rounded-[18px] w-full h-auto shadow-[0_18px_50px_rgba(38,37,36,0.08)]; }
+  .prose-ryt figure figcaption { @apply text-[13px] text-ink-mute text-center mt-3 italic; }
+  .prose-ryt strong { @apply text-ink-heading font-bold; }
+  .prose-ryt em { @apply italic; }
+
+  /* Drop-cap en la primera letra del primer párrafo */
+  .ryt-post-content > p:first-of-type::first-letter {
+    @apply font-serif font-extrabold float-left mr-3 leading-none text-ryt-deep;
+    font-size: 72px;
+    line-height: 0.85;
+    padding-top: 4px;
+  }
+  .prose-ryt hr {
+    @apply my-10 border-0 h-px bg-[#EFEBE6];
+  }
 
   /* ─────────────────────────────────────────────────────────────
      V9 — Componentes nuevos del rediseño Cloud Design v2
@@ -669,6 +695,69 @@
   }
   .ryt-faq-item summary::-webkit-details-marker { display: none; }
   .ryt-faq-item summary::marker { content: ''; }
+
+  /* ─────────────────────────────────────────────────────────────
+     Post aside (TOC + servicios + contacto + compartir + related)
+     ───────────────────────────────────────────────────────────── */
+  .ryt-post-aside { @apply flex flex-col gap-[18px]; }
+  .ryt-post-aside-card {
+    @apply bg-paper rounded-[18px] border border-[#EFEBE6] p-[20px];
+  }
+  .ryt-post-aside-card.is-cta {
+    @apply bg-ryt-mint border-transparent;
+    box-shadow: 0 12px 30px rgba(98,216,172,0.32);
+  }
+  .ryt-post-aside .aside-title {
+    @apply font-sans text-[11px] font-bold uppercase tracking-[0.14em] text-ryt-mint mb-3;
+  }
+
+  /* TOC */
+  .ryt-toc ul { @apply flex flex-col gap-1 list-none m-0 p-0; }
+  .ryt-toc li { @apply m-0 p-0; }
+  .ryt-toc a {
+    @apply block py-[6px] pl-[10px] border-l border-[#EFEBE6] text-[13.5px] text-ink-soft leading-[1.4] transition-colors;
+    text-decoration: none;
+  }
+  .ryt-toc a:hover { @apply text-ink-heading border-ryt-mint; }
+  .ryt-toc a.is-active {
+    @apply text-ryt-mint-dark font-semibold border-ryt-mint;
+    border-left-width: 2px;
+    padding-left: 9px;
+  }
+  .ryt-toc li.level-3 a { @apply pl-[24px] text-[12.5px]; }
+  .ryt-toc li.level-3 a.is-active { padding-left: 23px; }
+
+  /* Aside links (servicios) */
+  .ryt-aside-link {
+    @apply flex items-center gap-2 py-[7px] px-2 -mx-2 rounded-[8px] text-[13.5px] text-ink-heading hover:bg-white hover:text-ryt-mint-dark transition-all;
+    text-decoration: none;
+  }
+  .ryt-aside-link svg { @apply w-[14px] h-[14px] text-ryt-mint-dark flex-shrink-0; }
+  .ryt-aside-link:hover svg { transform: translateX(2px); }
+
+  /* Sticky aside en desktop */
+  @media (min-width: 1024px) {
+    .ryt-post-aside {
+      position: sticky;
+      top: 120px;
+      align-self: start;
+      max-height: calc(100vh - 140px);
+      overflow-y: auto;
+      padding-right: 4px;
+    }
+    .ryt-post-aside::-webkit-scrollbar { width: 4px; }
+    .ryt-post-aside::-webkit-scrollbar-track { background: transparent; }
+    .ryt-post-aside::-webkit-scrollbar-thumb {
+      background: rgba(98,216,172,0.4);
+      border-radius: 2px;
+    }
+  }
+
+  /* Toast notification */
+  #ryt-toast.is-visible {
+    @apply opacity-100 visible;
+    transform: translateY(-4px);
+  }
 }
 
 /* ─────────────────────────────────────────────────────────────
