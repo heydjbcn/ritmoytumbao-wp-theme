@@ -13,18 +13,18 @@ $recent = new WP_Query([
         <!-- Header grid 2-col v9 -->
         <div class="grid grid-cols-1 lg:grid-cols-[1.3fr_1fr] gap-[48px] items-end mb-[48px]">
             <div>
-                <?php ryt_eyebrow('08', 'Blog de salsa y bachata'); ?>
+                <?php ryt_eyebrow('08', __('Blog de salsa y bachata', 'ryt')); ?>
                 <h2 class="text-ink-heading" style="font-size: 46px; line-height: 1.08;">
-                    Lo último del<br>blog
+                    <?php esc_html_e('Lo último del', 'ryt'); ?><br><?php esc_html_e('blog', 'ryt'); ?>
                 </h2>
             </div>
             <div>
                 <p class="text-[16px] leading-[1.7] text-ink-soft mb-[22px]">
-                    Trucos, eventos, novedades y todo lo que pasa en la escuela. Para alumnos y curiosos del baile.
+                    <?php esc_html_e('Trucos, eventos, novedades y todo lo que pasa en la escuela. Para alumnos y curiosos del baile.', 'ryt'); ?>
                 </p>
                 <a href="<?php echo esc_url(home_url('/blog/')); ?>"
                    class="inline-flex items-center gap-[9px] text-[13px] font-bold uppercase tracking-[0.1em] text-ink-heading hover:text-ryt-mint transition-colors">
-                    Ver todo el blog →
+                    <?php esc_html_e('Ver todo el blog →', 'ryt'); ?>
                 </a>
             </div>
         </div>
@@ -44,14 +44,14 @@ $recent = new WP_Query([
                             <h3 class="text-ink-heading text-[19px] leading-[1.3] mb-2 group-hover:text-ryt-mint-dark transition-colors flex-1">
                                 <?php the_title(); ?>
                             </h3>
-                            <span class="inline-flex items-center gap-[6px] mt-3 text-[12px] uppercase tracking-[0.1em] font-bold text-ink-heading">Leer más →</span>
+                            <span class="inline-flex items-center gap-[6px] mt-3 text-[12px] uppercase tracking-[0.1em] font-bold text-ink-heading"><?php esc_html_e('Leer más →', 'ryt'); ?></span>
                         </div>
                     </a>
                 </article>
                 <?php endwhile; wp_reset_postdata(); ?>
             </div>
         <?php else: wp_reset_postdata(); ?>
-            <p class="text-center text-ink-soft">Pronto publicaremos los primeros artículos.</p>
+            <p class="text-center text-ink-soft"><?php esc_html_e('Pronto publicaremos los primeros artículos.', 'ryt'); ?></p>
         <?php endif; ?>
     </div>
 </section>

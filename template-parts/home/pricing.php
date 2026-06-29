@@ -10,11 +10,11 @@
 $cards = [
     [
         'price' => '0€',
-        'label' => 'Prueba',
-        'title' => '¡Tu Primera Clase GRATIS!',
-        'text'  => 'Si quieres aprender a bailar, ven a probar clases de Salsa y Bachata en Mataró GRATIS y evaluaremos el nivel para ti.',
-        'cta'   => '¡Quiero probar!',
-        'wa'    => 'Hola! Quiero probar mi primera clase GRATIS',
+        'label' => __('Prueba', 'ryt'),
+        'title' => __('¡Tu Primera Clase GRATIS!', 'ryt'),
+        'text'  => __('Si quieres aprender a bailar, ven a probar clases de Salsa y Bachata en Mataró GRATIS y evaluaremos el nivel para ti.', 'ryt'),
+        'cta'   => __('¡Quiero probar!', 'ryt'),
+        'wa'    => __('Hola! Quiero probar mi primera clase GRATIS', 'ryt'),
         'topBar'    => '#62D8AC',
         'cardBg'    => '#FFFFFF',
         'cardBorder'=> '#EFEBE6',
@@ -22,11 +22,11 @@ $cards = [
     ],
     [
         'price' => '12€',
-        'label' => 'Clase suelta',
-        'title' => '¿No Siempre Puedes Venir?',
-        'text'  => 'Si no tienes disponibilidad para venir a las clases por horario de trabajo te ofrecemos una solución, puedes hacer clases sueltas.',
-        'cta'   => 'Me va bien',
-        'wa'    => 'Hola! Me gustaría info sobre las clases sueltas (12€)',
+        'label' => __('Clase suelta', 'ryt'),
+        'title' => __('¿No Siempre Puedes Venir?', 'ryt'),
+        'text'  => __('Si no tienes disponibilidad para venir a las clases por horario de trabajo te ofrecemos una solución, puedes hacer clases sueltas.', 'ryt'),
+        'cta'   => __('Me va bien', 'ryt'),
+        'wa'    => __('Hola! Me gustaría info sobre las clases sueltas (12€)', 'ryt'),
         'topBar'    => '#3FB389',
         'cardBg'    => '#FBFAF8',
         'cardBorder'=> '#EFEBE6',
@@ -34,11 +34,11 @@ $cards = [
     ],
     [
         'price' => '36,90€',
-        'label' => 'Mensual',
-        'title' => '¡Aprende a bailar en mataró!',
-        'text'  => 'Cursos de salsa, cursos de bachata, reggaetón, Zumba Kids, Coreográfico y otros podrás disfrutar en Ritmo y Tumbao.',
-        'cta'   => '¡Quiero empezar!',
-        'wa'    => 'Hola! Me gustaría apuntarme a las clases (36,90€/mes)',
+        'label' => __('Mensual', 'ryt'),
+        'title' => __('¡Aprende a bailar en mataró!', 'ryt'),
+        'text'  => __('Cursos de salsa, cursos de bachata, reggaetón, Zumba Kids, Coreográfico y otros podrás disfrutar en Ritmo y Tumbao.', 'ryt'),
+        'cta'   => __('¡Quiero empezar!', 'ryt'),
+        'wa'    => __('Hola! Me gustaría apuntarme a las clases (36,90€/mes)', 'ryt'),
         'topBar'    => '#173C30',
         'cardBg'    => '#FFFFFF',
         'cardBorder'=> '#EFEBE6',
@@ -51,13 +51,13 @@ $cards = [
         <!-- Header grid 2-col -->
         <div class="grid grid-cols-1 lg:grid-cols-[1.3fr_1fr] gap-[48px] items-end mb-[56px]">
             <div>
-                <?php ryt_eyebrow('02', 'Tarifas sin permanencia'); ?>
+                <?php ryt_eyebrow('02', __('Tarifas sin permanencia', 'ryt')); ?>
                 <h2 class="text-ink-heading" style="font-size: 46px; line-height: 1.08;">
-                    Empieza a bailar<br>hoy mismo
+                    <?php esc_html_e('Empieza a bailar', 'ryt'); ?><br><?php esc_html_e('hoy mismo', 'ryt'); ?>
                 </h2>
             </div>
             <p class="text-[16px] leading-[1.7] text-ink-soft">
-                Tu primera clase es gratis y evaluamos tu nivel sin compromiso. Sin matrícula. Sin permanencia.
+                <?php esc_html_e('Tu primera clase es gratis y evaluamos tu nivel sin compromiso. Sin matrícula. Sin permanencia.', 'ryt'); ?>
             </p>
         </div>
         <div class="grid gap-[26px] md:grid-cols-3 items-stretch">
@@ -73,7 +73,7 @@ $cards = [
                         <?php echo esc_html($c['label']); ?>
                     </span>
                     <?php if ($c['popular']): ?>
-                        <span class="badge-popular">Más popular</span>
+                        <span class="badge-popular"><?php esc_html_e('Más popular', 'ryt'); ?></span>
                     <?php endif; ?>
                 </div>
 

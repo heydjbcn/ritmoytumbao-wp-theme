@@ -7,9 +7,9 @@
  *   - Derecha: mockup iPhone CSS-only con captura simulada de la app.
  */
 $app_features = [
-    'Reserva y anula clases en un toque',
-    'Consulta horarios y tu nivel',
-    'Recibe avisos de eventos y quedadas',
+    __('Reserva y anula clases en un toque', 'ryt'),
+    __('Consulta horarios y tu nivel', 'ryt'),
+    __('Recibe avisos de eventos y quedadas', 'ryt'),
 ];
 ?>
 <section class="bg-ink-dark text-white overflow-hidden" id="app">
@@ -17,14 +17,14 @@ $app_features = [
 
         <!-- Texto + features + badges -->
         <div>
-            <?php ryt_eyebrow('06', 'App del alumno'); ?>
+            <?php ryt_eyebrow('06', __('App del alumno', 'ryt')); ?>
             <h2 class="text-white leading-[1.12] mb-5"
                 style="font-size: 42px;">
-                Tu escuela, también
-                <span class="text-ryt-mint italic">en el móvil</span>
+                <?php esc_html_e('Tu escuela, también', 'ryt'); ?>
+                <span class="text-ryt-mint italic"><?php esc_html_e('en el móvil', 'ryt'); ?></span>
             </h2>
             <p class="text-[16.5px] text-[#C5BFB9] leading-[1.8] mb-7 max-w-[460px]">
-                Reserva clases, consulta tus horarios, sigue tu progreso y recibe los avisos de la escuela. Todo desde la app de Ritmo y Tumbao.
+                <?php esc_html_e('Reserva clases, consulta tus horarios, sigue tu progreso y recibe los avisos de la escuela. Todo desde la app de Ritmo y Tumbao.', 'ryt'); ?>
             </p>
 
             <!-- Features con checkmarks circulares mint -->
@@ -46,7 +46,7 @@ $app_features = [
                    class="inline-flex items-center gap-[11px] bg-white text-[#1A1918] px-5 py-[11px] rounded-[13px] hover:bg-paper transition-colors">
                     <?php ryt_icon('apple', 'w-6 h-6'); ?>
                     <span class="text-left leading-[1.05]">
-                        <span class="block text-[9.5px] tracking-[0.04em] text-[#5C5C5C]">Descárgalo en la</span>
+                        <span class="block text-[9.5px] tracking-[0.04em] text-[#5C5C5C]"><?php esc_html_e('Descárgalo en la', 'ryt'); ?></span>
                         <span class="text-[17px] font-semibold tracking-[0.01em]">App Store</span>
                     </span>
                 </a>
@@ -54,7 +54,7 @@ $app_features = [
                    class="inline-flex items-center gap-[11px] bg-white text-[#1A1918] px-5 py-[11px] rounded-[13px] hover:bg-paper transition-colors">
                     <?php ryt_icon('googleplay', 'w-6 h-6 text-ryt-mint'); ?>
                     <span class="text-left leading-[1.05]">
-                        <span class="block text-[9.5px] tracking-[0.04em] text-[#5C5C5C]">Disponible en</span>
+                        <span class="block text-[9.5px] tracking-[0.04em] text-[#5C5C5C]"><?php esc_html_e('Disponible en', 'ryt'); ?></span>
                         <span class="text-[17px] font-semibold tracking-[0.01em]">Google Play</span>
                     </span>
                 </a>
@@ -70,7 +70,7 @@ $app_features = [
                 <!-- Screen con captura real Mis Clases -->
                 <div class="h-full rounded-[32px] overflow-hidden bg-white">
                     <img src="<?php echo esc_url(RYT_URI . '/assets/img/app/appstore-mis-clases.png'); ?>"
-                         alt="App Ritmo y Tumbao — pantalla Mis Clases"
+                         alt="<?php echo esc_attr__('App Ritmo y Tumbao — pantalla Mis Clases', 'ryt'); ?>"
                          class="w-full h-full object-cover object-top block"
                          loading="lazy"
                          width="600" height="1300">

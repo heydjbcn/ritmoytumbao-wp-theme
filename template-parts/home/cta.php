@@ -21,17 +21,23 @@
     <div class="relative z-10 max-w-[860px] mx-auto px-6 py-[108px] text-center">
         <h2 class="text-white font-serif italic leading-[1.08] mb-6"
             style="font-size: 46px;">
-            Aprende a bailar
-            <span class="not-italic font-bold uppercase">Salsa y Bachata</span>
-            en Ritmo y Tumbao
+            <?php esc_html_e('Aprende a bailar', 'ryt'); ?>
+            <span class="not-italic font-bold uppercase"><?php esc_html_e('Salsa y Bachata', 'ryt'); ?></span>
+            <?php esc_html_e('en Ritmo y Tumbao', 'ryt'); ?>
         </h2>
         <p class="text-white/90 text-[16.5px] mb-10 max-w-[600px] mx-auto">
-            Tu primera clase es <strong>gratis</strong>. Sin matrícula. Sin permanencia.
+            <?php
+            printf(
+                /* translators: %s: palabra "gratis" en negrita */
+                esc_html__('Tu primera clase es %s. Sin matrícula. Sin permanencia.', 'ryt'),
+                '<strong>' . esc_html__('gratis', 'ryt') . '</strong>'
+            );
+            ?>
         </p>
-        <a href="<?php echo esc_url(ryt_whatsapp_url('Hola! Quiero apuntarme a las clases')); ?>"
+        <a href="<?php echo esc_url(ryt_whatsapp_url(__('Hola! Quiero apuntarme a las clases', 'ryt'))); ?>"
            target="_blank" rel="noopener"
            class="inline-flex items-center justify-center px-9 py-[18px] rounded-pill bg-white text-ryt-mint-dark font-sans font-bold uppercase tracking-[0.08em] hover:bg-paper transition-colors text-[14px]">
-            ¡Apúntate ya!
+            <?php esc_html_e('¡Apúntate ya!', 'ryt'); ?>
         </a>
     </div>
 </section>

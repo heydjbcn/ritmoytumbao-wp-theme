@@ -8,8 +8,6 @@ if (!defined('ABSPATH')) {
 }
 
 add_action('after_setup_theme', function () {
-    load_theme_textdomain('ryt', RYT_DIR . '/languages');
-
     add_theme_support('automatic-feed-links');
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
@@ -31,6 +29,26 @@ add_action('after_setup_theme', function () {
     add_image_size('ryt-hero', 1920, 1080, true);
     add_image_size('ryt-card', 720,  480, true);
     add_image_size('ryt-thumb', 320, 200, true);
+});
+
+/**
+ * Cargar el textdomain del theme con el locale actual.
+ *
+ * Polylang aplica su filtro `locale` DESPUÉS de `after_setup_theme`, así que
+ * load_theme_textdomain() en ese hook lee el locale de WP (es_ES) en vez del
+ * de Polylang (ca) y carga el .mo incorrecto.
+ *
+ * Solución: hookar a `wp` y usar `load_textdomain` low-level con el path
+ * explícito al .mo correspondiente al locale ya resuelto por Polylang.
+ */
+add_action('wp', function () {
+    if (is_admin()) return;
+    $locale = get_locale();
+    $mo     = RYT_DIR . '/languages/ryt-' . $locale . '.mo';
+    if (file_exists($mo)) {
+        if (is_textdomain_loaded('ryt')) unload_textdomain('ryt');
+        load_textdomain('ryt', $mo);
+    }
 });
 
 /**

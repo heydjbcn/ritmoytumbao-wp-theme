@@ -12,22 +12,22 @@
  *   - CTAs con text-ryt-deep (verde profundo).
  */
 $hero_stats = [
-    ['n' => '15+', 'l' => 'Años enseñando'],
-    ['n' => '8',   'l' => 'Profesores'],
-    ['n' => '5.0★','l' => 'En Google'],
+    ['n' => '15+', 'l' => __('Años enseñando', 'ryt')],
+    ['n' => '8',   'l' => __('Profesores', 'ryt')],
+    ['n' => '5.0★','l' => __('En Google', 'ryt')],
 ];
 
 $ticker_msgs = [
-    'Primera clase gratis',
-    'Sin pareja',
-    'Sin matrícula',
-    'Sin permanencia',
-    'Salsa cubana',
-    'Bachata sensual',
-    'Rueda de casino',
-    'Lady style',
-    'Reggaetón',
-    'Zumba kids',
+    __('Primera clase gratis', 'ryt'),
+    __('Sin pareja', 'ryt'),
+    __('Sin matrícula', 'ryt'),
+    __('Sin permanencia', 'ryt'),
+    __('Salsa cubana', 'ryt'),
+    __('Bachata sensual', 'ryt'),
+    __('Rueda de casino', 'ryt'),
+    __('Lady style', 'ryt'),
+    __('Reggaetón', 'ryt'),
+    __('Zumba kids', 'ryt'),
 ];
 ?>
 <section class="relative overflow-hidden bg-ink-dark text-white">
@@ -50,7 +50,7 @@ $ticker_msgs = [
         <div>
             <span class="ryt-eyebrow">
                 <span class="ryt-eyebrow-line ryt-eyebrow-line-mint" style="width:30px"></span>
-                Escuela de baile en Mataró · desde 2010
+                <?php esc_html_e('Escuela de baile en Mataró · desde 2010', 'ryt'); ?>
             </span>
             <h1 class="text-white mb-6"
                 style="font-size: 62px; line-height: 1.04; letter-spacing: -0.01em;">

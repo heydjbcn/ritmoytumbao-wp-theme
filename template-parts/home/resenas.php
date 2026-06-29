@@ -3,17 +3,17 @@
  * Reseñas — 4 cards reales extraídas del widget Google de prod + rating agregado.
  */
 $reviews = [
-    [ 'name' => 'Monica Soria',         'when' => 'hace 4 años', 'text' => 'Buena escuela de baile con profesores muy cualificados.', 'initial' => 'M', 'color' => 'bg-rose-400' ],
-    [ 'name' => 'Agencia Kreatib',      'when' => 'hace 4 años', 'text' => 'Escuela muy recomendable y grupos del mismo nivel!',     'initial' => 'A', 'color' => 'bg-sky-400'   ],
-    [ 'name' => 'Natalia Montesinos',   'when' => 'hace 5 años', 'text' => 'Increíble ambiente, escuela inmejorable!',                'initial' => 'N', 'color' => 'bg-amber-400' ],
-    [ 'name' => 'Jose Posilio',         'when' => 'hace 5 años', 'text' => 'Si quieres disfrutar y aprender haciendo clases de salsa/bachata este es tu sitio.', 'initial' => 'J', 'color' => 'bg-emerald-400' ],
+    [ 'name' => 'Monica Soria',         'when' => __('hace 4 años', 'ryt'), 'text' => __('Buena escuela de baile con profesores muy cualificados.', 'ryt'), 'initial' => 'M', 'color' => 'bg-rose-400' ],
+    [ 'name' => 'Agencia Kreatib',      'when' => __('hace 4 años', 'ryt'), 'text' => __('Escuela muy recomendable y grupos del mismo nivel!', 'ryt'),     'initial' => 'A', 'color' => 'bg-sky-400'   ],
+    [ 'name' => 'Natalia Montesinos',   'when' => __('hace 5 años', 'ryt'), 'text' => __('Increíble ambiente, escuela inmejorable!', 'ryt'),                'initial' => 'N', 'color' => 'bg-amber-400' ],
+    [ 'name' => 'Jose Posilio',         'when' => __('hace 5 años', 'ryt'), 'text' => __('Si quieres disfrutar y aprender haciendo clases de salsa/bachata este es tu sitio.', 'ryt'), 'initial' => 'J', 'color' => 'bg-emerald-400' ],
 ];
 ?>
 <section class="section bg-paper-soft">
     <div class="container mx-auto px-4">
         <header class="text-center max-w-3xl mx-auto mb-10">
-            <span class="pre-title">Clases de Salsa y Bachata en Mataró</span>
-            <h2 class="text-ink-heading uppercase">Nuestros alumnos dicen</h2>
+            <span class="pre-title"><?php esc_html_e('Clases de Salsa y Bachata en Mataró', 'ryt'); ?></span>
+            <h2 class="text-ink-heading uppercase"><?php esc_html_e('Nuestros alumnos dicen', 'ryt'); ?></h2>
         </header>
 
         <!-- Rating agregado -->
@@ -24,7 +24,7 @@ $reviews = [
                     <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                 <?php endfor; ?>
             </div>
-            <span class="text-sm text-ink-soft">Basado en 13+ reseñas en Google</span>
+            <span class="text-sm text-ink-soft"><?php esc_html_e('Basado en 13+ reseñas en Google', 'ryt'); ?></span>
         </div>
 
         <!-- 4 cards -->
@@ -53,7 +53,7 @@ $reviews = [
 
         <div class="text-center mt-10">
             <a href="https://www.google.com/maps/place/Ritmo+y+Tumbao" target="_blank" rel="noopener" class="btn btn-primary">
-                Ver todas las reseñas
+                <?php esc_html_e('Ver todas las reseñas', 'ryt'); ?>
             </a>
         </div>
     </div>

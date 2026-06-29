@@ -12,27 +12,27 @@
 $profes = [
     [
         'name'  => 'Miguel García',
-        'role'  => 'CEO fundador',
+        'role'  => __('CEO fundador', 'ryt'),
         'img'   => RYT_URI . '/assets/img/profes/miguel.png',
-        'alt'   => 'Miguel García — director y fundador de Ritmo y Tumbao',
+        'alt'   => __('Miguel García — director y fundador de Ritmo y Tumbao', 'ryt'),
     ],
     [
         'name'  => 'Jeni',
-        'role'  => 'Instructora y directora',
+        'role'  => __('Instructora y directora', 'ryt'),
         'img'   => RYT_URI . '/assets/img/profes/jeni.webp',
-        'alt'   => 'Jeni — instructora y directora',
+        'alt'   => __('Jeni — instructora y directora', 'ryt'),
     ],
     [
         'name'  => 'Mario y Nia',
-        'role'  => 'Bachata Sensual',
+        'role'  => __('Bachata Sensual', 'ryt'),
         'img'   => RYT_URI . '/assets/img/profes/marionia.webp',
-        'alt'   => 'Mario y Nia — instructores de Bachata Sensual',
+        'alt'   => __('Mario y Nia — instructores de Bachata Sensual', 'ryt'),
     ],
     [
         'name'  => 'Aleix y Belén',
-        'role'  => 'Bachata Fusión',
+        'role'  => __('Bachata Fusión', 'ryt'),
         'img'   => RYT_URI . '/assets/img/profes/aleixybelen.png',
-        'alt'   => 'Aleix y Belén — instructores de Bachata Fusión',
+        'alt'   => __('Aleix y Belén — instructores de Bachata Fusión', 'ryt'),
     ],
 ];
 ?>
@@ -41,18 +41,18 @@ $profes = [
         <!-- Header grid 2-col (v9) -->
         <div class="grid grid-cols-1 lg:grid-cols-[1.3fr_1fr] gap-[48px] items-end mb-[56px]">
             <div>
-                <?php ryt_eyebrow('04', 'El equipo'); ?>
+                <?php ryt_eyebrow('04', __('El equipo', 'ryt')); ?>
                 <h2 class="text-ink-heading" style="font-size: 46px; line-height: 1.08;">
-                    Profesionales<br>del baile
+                    <?php esc_html_e('Profesionales', 'ryt'); ?><br><?php esc_html_e('del baile', 'ryt'); ?>
                 </h2>
             </div>
             <div>
                 <p class="text-[16px] leading-[1.7] text-ink-soft mb-[22px]">
-                    Nuestros profesores llevan años impartiendo clases de salsa y bachata en Mataró. Experiencia certificada y mucho ritmo.
+                    <?php esc_html_e('Nuestros profesores llevan años impartiendo clases de salsa y bachata en Mataró. Experiencia certificada y mucho ritmo.', 'ryt'); ?>
                 </p>
                 <a href="<?php echo esc_url(home_url('/ritmo-y-tumbao-academia-de-baile-en-mataro/')); ?>"
                    class="inline-flex items-center gap-[9px] text-[13px] font-bold uppercase tracking-[0.1em] text-ink-heading hover:text-ryt-mint transition-colors">
-                    Ver todo el equipo →
+                    <?php esc_html_e('Ver todo el equipo →', 'ryt'); ?>
                 </a>
             </div>
         </div>
@@ -87,7 +87,7 @@ $profes = [
 
         <div class="text-center mt-12">
             <a href="<?php echo esc_url(home_url('/ritmo-y-tumbao-academia-de-baile-en-mataro/')); ?>" class="btn btn-primary">
-                Ver todo el equipo
+                <?php esc_html_e('Ver todo el equipo', 'ryt'); ?>
             </a>
         </div>
     </div>

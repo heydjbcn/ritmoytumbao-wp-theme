@@ -57,11 +57,11 @@
                 <div class="ryt-app-dropdown relative">
                     <button type="button" class="ryt-app-trigger inline-flex items-center gap-1.5 text-[12px] font-bold uppercase tracking-[0.06em] text-ink-soft hover:text-ryt-mint transition-colors">
                         <?php ryt_icon('user', 'w-3.5 h-3.5'); ?>
-                        Soy alumno
+                        <?php esc_html_e('Soy alumno', 'ryt'); ?>
                         <?php ryt_icon('chevron-down', 'w-3 h-3'); ?>
                     </button>
                     <div class="ryt-app-menu absolute right-0 top-full mt-2 min-w-[220px] bg-white rounded-2xl border border-[#EFEBE6] shadow-card-lg p-3 z-50 opacity-0 invisible translate-y-1 transition-all duration-200">
-                        <p class="text-[10px] uppercase tracking-[0.16em] font-bold text-ink-mute mb-2 px-1">Descarga la app</p>
+                        <p class="text-[10px] uppercase tracking-[0.16em] font-bold text-ink-mute mb-2 px-1"><?php esc_html_e('Descarga la app', 'ryt'); ?></p>
                         <a href="<?php echo esc_url(RYT_APP_IOS_URL); ?>" target="_blank" rel="noopener" class="flex items-center gap-2.5 px-2 py-2 rounded-lg hover:bg-paper-alt transition-colors">
                             <?php ryt_icon('apple', 'w-5 h-5 text-ink-heading'); ?>
                             <span class="text-[13px] font-semibold text-ink-heading">App Store</span>
@@ -146,7 +146,7 @@
 
             <!-- Soy alumno: descarga de apps -->
             <div class="mt-6 pt-5 border-t border-paper-alt">
-                <p class="text-[10px] uppercase tracking-[0.16em] font-bold text-ink-mute mb-3">Soy alumno · Descarga la app</p>
+                <p class="text-[10px] uppercase tracking-[0.16em] font-bold text-ink-mute mb-3"><?php esc_html_e('Soy alumno · Descarga la app', 'ryt'); ?></p>
                 <div class="flex gap-2">
                     <a href="<?php echo esc_url(RYT_APP_IOS_URL); ?>" target="_blank" rel="noopener" class="flex-1 inline-flex items-center justify-center gap-2 px-3 py-2.5 rounded-pill bg-ink-dark text-white text-[12px] font-semibold hover:bg-ink transition-colors">
                         <?php ryt_icon('apple', 'w-4 h-4'); ?>

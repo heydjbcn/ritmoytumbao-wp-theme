@@ -1,0 +1,2275 @@
+# Copyright (C) 2026 Hey DJ Mauri
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: RYT v9\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/ryt\n"
+"Last-Translator: Auto\n"
+"Language-Team: Ritmo y Tumbao\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-06-29T12:45:44+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: ryt\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "Ritmo y Tumbao 2026"
+msgstr ""
+
+#. Theme URI of the theme
+#. Author URI of the theme
+#: style.css
+msgid "https://ritmoytumbao-ds.es"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "Tema custom de Ritmo y Tumbao Dance School (Mataró). PHP nativo + Tailwind CSS, sin Elementor ni page builders. Paleta verde mint #62D8AC sobre tinta #373636, tipografías Libre Baskerville + ADLaM Display + Source Sans Pro."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "Hey DJ Mauri"
+msgstr ""
+
+#: footer.php:17
+msgid "\"El trabajo de los pies es caminar, pero su afición es bailar.\""
+msgstr ""
+
+#: footer.php:20
+msgid "Suscripción pendiente de integración"
+msgstr ""
+
+#: footer.php:21
+#: template-parts/home/faq.php:82
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:294
+#: template-parts/pages/ritmo-y-tumbao-tu-escuela-de-baile-en-mataro.php:80
+#: template-parts/pages/ritmo-y-tumbao-tu-escuela-de-baile-en-mataro.php:156
+msgid "Email"
+msgstr ""
+
+#: footer.php:22
+msgid "Tu email"
+msgstr ""
+
+#: footer.php:27
+msgid "Subscríbete"
+msgstr ""
+
+#: footer.php:31
+msgid "Recibe ofertas, eventos e información sobre nuevos cursos."
+msgstr ""
+
+#: footer.php:42
+msgid "Ritmo y Tumbao Dance School"
+msgstr ""
+
+#: footer.php:46
+msgid "Escuela de salsa y bachata en Mataró. Más de 15 años enseñando a bailar con ritmo y tumbao."
+msgstr ""
+
+#: footer.php:71
+msgid "Explora"
+msgstr ""
+
+#: footer.php:74
+#: single.php:77
+msgid "Inicio"
+msgstr ""
+
+#: footer.php:75
+#: single.php:50
+msgid "Horarios y tarifas"
+msgstr ""
+
+#: footer.php:76
+#: single.php:45
+msgid "Clases de salsa"
+msgstr ""
+
+#: footer.php:77
+#: single.php:46
+msgid "Clases de bachata"
+msgstr ""
+
+#: footer.php:78
+#: single.php:47
+msgid "Baile nupcial"
+msgstr ""
+
+#: footer.php:79
+msgid "Instalaciones"
+msgstr ""
+
+#: footer.php:80
+#: single.php:20
+#: single.php:79
+msgid "Blog"
+msgstr ""
+
+#: footer.php:87
+#: template-parts/pages/ritmo-y-tumbao-tu-escuela-de-baile-en-mataro.php:19
+msgid "Contacto"
+msgstr ""
+
+#: footer.php:108
+msgid "Lun–Vie · 18h–23h"
+msgstr ""
+
+#: footer.php:114
+#: header.php:64
+msgid "Descarga la app"
+msgstr ""
+
+#: footer.php:130
+msgid "QR contacto Ritmo y Tumbao"
+msgstr ""
+
+#: footer.php:134
+msgid "O escanea para guardar nuestro contacto."
+msgstr ""
+
+#: footer.php:144
+msgid "Política de privacidad"
+msgstr ""
+
+#: footer.php:145
+msgid "Aviso legal"
+msgstr ""
+
+#: footer.php:146
+msgid "Política de cookies"
+msgstr ""
+
+#: footer.php:147
+msgid "Política de devoluciones"
+msgstr ""
+
+#: footer.php:149
+#, php-format
+msgid "®%s Ritmo y Tumbao · Dance School"
+msgstr ""
+
+#: footer.php:158
+#: template-parts/home/faq.php:49
+#: template-parts/pages/baile-nupcial.php:244
+#: template-parts/pages/ritmo-y-tumbao-tu-escuela-de-baile-en-mataro.php:103
+msgid "Escríbenos por WhatsApp"
+msgstr ""
+
+#: header.php:60
+msgid "Soy alumno"
+msgstr ""
+
+#: header.php:122
+#: inc/setup.php:27
+msgid "Menú principal"
+msgstr ""
+
+#: header.php:128
+#: header.php:144
+msgid "Preinscripción"
+msgstr ""
+
+#: header.php:133
+msgid "Abrir menú"
+msgstr ""
+
+#: header.php:140
+msgid "Menú móvil"
+msgstr ""
+
+#: header.php:149
+msgid "Soy alumno · Descarga la app"
+msgstr ""
+
+#: home.php:60
+msgid "Blog de Ritmo y Tumbao"
+msgstr ""
+
+#: home.php:62
+msgid "Bailamos, también"
+msgstr ""
+
+#: home.php:63
+msgid "con palabras"
+msgstr ""
+
+#: home.php:66
+#: template-parts/home/blog.php:23
+msgid "Trucos, eventos, novedades y todo lo que pasa en la escuela. Para alumnos y curiosos del baile."
+msgstr ""
+
+#: home.php:72
+msgid "artículos"
+msgstr ""
+
+#: home.php:76
+msgid "años bailando"
+msgstr ""
+
+#: home.php:80
+msgid "profes opinan"
+msgstr ""
+
+#: home.php:91
+msgid "Filtrar"
+msgstr ""
+
+#: home.php:94
+msgid "Todos"
+msgstr ""
+
+#: home.php:130
+msgid "Destacado"
+msgstr ""
+
+#: home.php:155
+msgid "Leer artículo"
+msgstr ""
+
+#: home.php:206
+msgid "Leer"
+msgstr ""
+
+#: home.php:228
+msgid "Aún no hay artículos publicados."
+msgstr ""
+
+#: inc/setup.php:28
+msgid "Footer — enlaces"
+msgstr ""
+
+#: inc/template-tags.php:43
+msgid "LA ESCUELA"
+msgstr ""
+
+#: inc/template-tags.php:44
+msgid "HORARIOS Y TARIFAS"
+msgstr ""
+
+#: inc/template-tags.php:45
+msgid "SERVICIOS"
+msgstr ""
+
+#: inc/template-tags.php:46
+msgid "CONTACTO"
+msgstr ""
+
+#: index.php:23
+msgid "No hay contenido todavía."
+msgstr ""
+
+#: page.php:47
+#: template-parts/home/resenas.php:15
+#: template-parts/pages/horarios-y-tarifas.php:16
+msgid "Clases de Salsa y Bachata en Mataró"
+msgstr ""
+
+#: single.php:48
+#: template-parts/pages/clases-particulares.php:15
+msgid "Clases particulares"
+msgstr ""
+
+#: single.php:49
+msgid "Alquiler de salas"
+msgstr ""
+
+#: single.php:76
+msgid "Breadcrumb"
+msgstr ""
+
+#: single.php:105
+#: single.php:146
+msgid "min"
+msgstr ""
+
+#: single.php:134
+msgid "Volver al blog"
+msgstr ""
+
+#: single.php:145
+#: single.php:148
+msgid "Índice de contenidos"
+msgstr ""
+
+#. translators: %s: palabra "gratis" en cursiva
+#: single.php:160
+#, php-format
+msgid "Tu primera clase es %s."
+msgstr ""
+
+#: single.php:161
+#: template-parts/home/cta.php:33
+msgid "gratis"
+msgstr ""
+
+#: single.php:165
+msgid "Sin matrícula. Sin permanencia. Sin necesidad de pareja."
+msgstr ""
+
+#: single.php:166
+msgid "Hola! He visto el blog de Ritmo y Tumbao y me gustaría reservar mi primera clase gratis."
+msgstr ""
+
+#: single.php:169
+msgid "Reservar mi clase"
+msgstr ""
+
+#: single.php:175
+msgid "Servicios"
+msgstr ""
+
+#: single.php:188
+msgid "¿Hablamos?"
+msgstr ""
+
+#: single.php:189
+#: template-parts/pages/ritmo-y-tumbao-tu-escuela-de-baile-en-mataro.php:97
+msgid "Hola! Tengo una duda"
+msgstr ""
+
+#: single.php:199
+msgid "Llamar"
+msgstr ""
+
+#: single.php:206
+msgid "Compartir"
+msgstr ""
+
+#: single.php:210
+msgid "Compartir por WhatsApp"
+msgstr ""
+
+#: single.php:215
+msgid "Compartir en Facebook"
+msgstr ""
+
+#: single.php:219
+msgid "Copiar enlace"
+msgstr ""
+
+#: single.php:228
+#: single.php:252
+msgid "Sigue leyendo"
+msgstr ""
+
+#: single.php:254
+msgid "Otros artículos"
+msgstr ""
+
+#: single.php:254
+msgid "del blog"
+msgstr ""
+
+#: single.php:260
+#: template-parts/home/blog.php:27
+msgid "Ver todo el blog →"
+msgstr ""
+
+#: single.php:279
+msgid "Leer →"
+msgstr ""
+
+#: single.php:297
+msgid "Enlace copiado"
+msgstr ""
+
+#: template-parts/home/app-alumno.php:10
+msgid "Reserva y anula clases en un toque"
+msgstr ""
+
+#: template-parts/home/app-alumno.php:11
+msgid "Consulta horarios y tu nivel"
+msgstr ""
+
+#: template-parts/home/app-alumno.php:12
+msgid "Recibe avisos de eventos y quedadas"
+msgstr ""
+
+#: template-parts/home/app-alumno.php:20
+msgid "App del alumno"
+msgstr ""
+
+#: template-parts/home/app-alumno.php:23
+msgid "Tu escuela, también"
+msgstr ""
+
+#: template-parts/home/app-alumno.php:24
+msgid "en el móvil"
+msgstr ""
+
+#: template-parts/home/app-alumno.php:27
+msgid "Reserva clases, consulta tus horarios, sigue tu progreso y recibe los avisos de la escuela. Todo desde la app de Ritmo y Tumbao."
+msgstr ""
+
+#: template-parts/home/app-alumno.php:49
+msgid "Descárgalo en la"
+msgstr ""
+
+#: template-parts/home/app-alumno.php:57
+msgid "Disponible en"
+msgstr ""
+
+#: template-parts/home/app-alumno.php:73
+msgid "App Ritmo y Tumbao — pantalla Mis Clases"
+msgstr ""
+
+#: template-parts/home/blog.php:16
+msgid "Blog de salsa y bachata"
+msgstr ""
+
+#: template-parts/home/blog.php:18
+msgid "Lo último del"
+msgstr ""
+
+#: template-parts/home/blog.php:18
+msgid "blog"
+msgstr ""
+
+#: template-parts/home/blog.php:47
+msgid "Leer más →"
+msgstr ""
+
+#: template-parts/home/blog.php:54
+msgid "Pronto publicaremos los primeros artículos."
+msgstr ""
+
+#: template-parts/home/cta.php:24
+#: template-parts/pages/clases-de-bachata.php:21
+#: template-parts/pages/clases-de-salsa.php:21
+msgid "Aprende a bailar"
+msgstr ""
+
+#: template-parts/home/cta.php:25
+#: template-parts/home/hero.php:58
+msgid "Salsa y Bachata"
+msgstr ""
+
+#: template-parts/home/cta.php:26
+#: template-parts/pages/clases-de-bachata.php:23
+#: template-parts/pages/clases-de-salsa.php:23
+msgid "en Ritmo y Tumbao"
+msgstr ""
+
+#. translators: %s: palabra "gratis" en negrita
+#: template-parts/home/cta.php:32
+#, php-format
+msgid "Tu primera clase es %s. Sin matrícula. Sin permanencia."
+msgstr ""
+
+#: template-parts/home/cta.php:37
+msgid "Hola! Quiero apuntarme a las clases"
+msgstr ""
+
+#: template-parts/home/cta.php:40
+msgid "¡Apúntate ya!"
+msgstr ""
+
+#: template-parts/home/estilos.php:12
+msgid "Clases de Bachata"
+msgstr ""
+
+#: template-parts/home/estilos.php:12
+msgid "Fusionamos bachata sensual y bachata dominicana en una experiencia única."
+msgstr ""
+
+#: template-parts/home/estilos.php:13
+msgid "Clases de Salsa"
+msgstr ""
+
+#: template-parts/home/estilos.php:13
+msgid "Salsa Cubana, rueda casino, figuras, tiempo musical y mucha diversión."
+msgstr ""
+
+#: template-parts/home/estilos.php:14
+msgid "Formación"
+msgstr ""
+
+#: template-parts/home/estilos.php:14
+msgid "Si quieres profundizar en tu manera de bailar estas son las clases que buscas."
+msgstr ""
+
+#: template-parts/home/estilos.php:15
+msgid "Coreográfico"
+msgstr ""
+
+#: template-parts/home/estilos.php:15
+msgid "Formación de ritmos latinos, perfeccionamiento y técnica de giro."
+msgstr ""
+
+#: template-parts/home/estilos.php:24
+msgid "Nuestras disciplinas"
+msgstr ""
+
+#: template-parts/home/estilos.php:27
+msgid "Encuentra tu estilo"
+msgstr ""
+
+#: template-parts/home/estilos.php:27
+msgid "en la pista"
+msgstr ""
+
+#: template-parts/home/estilos.php:31
+msgid "Desde clases de salsa y bachata hasta rueda de casino, formación y grupos coreográficos. Cada estilo, su especialista."
+msgstr ""
+
+#: template-parts/home/estilos.php:53
+msgid "Ver clases"
+msgstr ""
+
+#: template-parts/home/faq.php:12
+msgid "¿Necesito traer pareja para unirme a las clases?"
+msgstr ""
+
+#: template-parts/home/faq.php:12
+msgid "No es necesario. En clase rotamos para que practiques con distintos compañeros, hayas venido solo o acompañado."
+msgstr ""
+
+#: template-parts/home/faq.php:13
+msgid "¿Qué nivel de experiencia se requiere para unirse a las clases de salsa y bachata?"
+msgstr ""
+
+#: template-parts/home/faq.php:13
+msgid "Ninguno. Tenemos grupos desde nivel \"Iniciación\" para personas que nunca han bailado, hasta niveles avanzados."
+msgstr ""
+
+#: template-parts/home/faq.php:14
+msgid "¿Qué tipo de vestuario tengo que llevar para bailar?"
+msgstr ""
+
+#: template-parts/home/faq.php:14
+msgid "Ropa cómoda y zapatos limpios (no de calle). Si tienes zapatos de baile o de tacón medio, ¡mejor! Pero no es imprescindible."
+msgstr ""
+
+#: template-parts/home/faq.php:15
+msgid "¿Cuánto cuestan las clases?"
+msgstr ""
+
+#: template-parts/home/faq.php:15
+msgid "Desde 0€ la primera clase (gratis para probar), 12€ la clase suelta o desde 36,90€/mes una clase a la semana."
+msgstr ""
+
+#: template-parts/home/faq.php:16
+msgid "¿Ofrecen clases privadas además de las clases grupales?"
+msgstr ""
+
+#: template-parts/home/faq.php:16
+msgid "Sí. Tenemos clases particulares para parejas y para preparación de bailes nupciales. Consúltanos por WhatsApp."
+msgstr ""
+
+#: template-parts/home/faq.php:17
+msgid "¿Tienen eventos sociales o prácticas de baile fuera de las clases regulares?"
+msgstr ""
+
+#: template-parts/home/faq.php:17
+msgid "Sí. Organizamos quedadas mensuales, prácticas y eventos especiales. Te avisamos a través de la app y las redes."
+msgstr ""
+
+#: template-parts/home/faq.php:28
+#: template-parts/pages/baile-nupcial.php:224
+msgid "Preguntas frecuentes"
+msgstr ""
+
+#: template-parts/home/faq.php:30
+msgid "Te"
+msgstr ""
+
+#: template-parts/home/faq.php:30
+msgid "irá bien"
+msgstr ""
+
+#: template-parts/home/faq.php:30
+msgid "saberlo"
+msgstr ""
+
+#: template-parts/home/faq.php:47
+msgid "¿Alguna duda más?"
+msgstr ""
+
+#: template-parts/home/faq.php:57
+msgid "¿Tienes una duda más concreta?"
+msgstr ""
+
+#: template-parts/home/faq.php:58
+msgid "Escríbenos y te respondemos en menos de 24h."
+msgstr ""
+
+#: template-parts/home/faq.php:62
+#: template-parts/pages/ritmo-y-tumbao-tu-escuela-de-baile-en-mataro.php:136
+msgid "¡Gracias! Hemos recibido tu mensaje. Te respondemos en breve."
+msgstr ""
+
+#: template-parts/home/faq.php:66
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:277
+#: template-parts/pages/ritmo-y-tumbao-tu-escuela-de-baile-en-mataro.php:140
+msgid "Algo no ha funcionado. Vuelve a intentarlo o escríbenos por WhatsApp."
+msgstr ""
+
+#: template-parts/home/faq.php:78
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:290
+#: template-parts/pages/ritmo-y-tumbao-tu-escuela-de-baile-en-mataro.php:152
+msgid "Nombre"
+msgstr ""
+
+#: template-parts/home/faq.php:86
+#: template-parts/pages/ritmo-y-tumbao-tu-escuela-de-baile-en-mataro.php:161
+msgid "Teléfono (opcional)"
+msgstr ""
+
+#: template-parts/home/faq.php:90
+#: template-parts/pages/ritmo-y-tumbao-tu-escuela-de-baile-en-mataro.php:165
+msgid "Tu mensaje"
+msgstr ""
+
+#: template-parts/home/faq.php:94
+#: template-parts/pages/ritmo-y-tumbao-tu-escuela-de-baile-en-mataro.php:168
+msgid "Enviar mensaje"
+msgstr ""
+
+#. translators: %s: enlace a la política de privacidad
+#: template-parts/home/faq.php:100
+#: template-parts/pages/ritmo-y-tumbao-tu-escuela-de-baile-en-mataro.php:173
+#, php-format
+msgid "Al enviar aceptas nuestra %s. Nunca cederemos tus datos a terceros."
+msgstr ""
+
+#: template-parts/home/faq.php:101
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:326
+#: template-parts/pages/ritmo-y-tumbao-tu-escuela-de-baile-en-mataro.php:174
+msgid "política de privacidad"
+msgstr ""
+
+#: template-parts/home/hero.php:15
+msgid "Años enseñando"
+msgstr ""
+
+#: template-parts/home/hero.php:16
+#: template-parts/home/horarios.php:182
+msgid "Profesores"
+msgstr ""
+
+#: template-parts/home/hero.php:17
+msgid "En Google"
+msgstr ""
+
+#: template-parts/home/hero.php:21
+msgid "Primera clase gratis"
+msgstr ""
+
+#: template-parts/home/hero.php:22
+msgid "Sin pareja"
+msgstr ""
+
+#: template-parts/home/hero.php:23
+msgid "Sin matrícula"
+msgstr ""
+
+#: template-parts/home/hero.php:24
+msgid "Sin permanencia"
+msgstr ""
+
+#: template-parts/home/hero.php:25
+msgid "Salsa cubana"
+msgstr ""
+
+#: template-parts/home/hero.php:26
+msgid "Bachata sensual"
+msgstr ""
+
+#: template-parts/home/hero.php:27
+msgid "Rueda de casino"
+msgstr ""
+
+#: template-parts/home/hero.php:28
+msgid "Lady style"
+msgstr ""
+
+#: template-parts/home/hero.php:29
+msgid "Reggaetón"
+msgstr ""
+
+#: template-parts/home/hero.php:30
+msgid "Zumba kids"
+msgstr ""
+
+#: template-parts/home/hero.php:53
+msgid "Escuela de baile en Mataró · desde 2010"
+msgstr ""
+
+#: template-parts/home/hero.php:57
+msgid "Clases de"
+msgstr ""
+
+#: template-parts/home/hero.php:59
+#: template-parts/pages/ritmo-y-tumbao-tu-escuela-de-baile-en-mataro.php:42
+msgid "en Mataró"
+msgstr ""
+
+#: template-parts/home/hero.php:62
+msgid "Más de 15 años enseñando a bailar. Empieza"
+msgstr ""
+
+#: template-parts/home/hero.php:63
+msgid "sin pareja, sin matrícula y sin permanencia"
+msgstr ""
+
+#: template-parts/home/hero.php:64
+msgid "También Rueda de Casino, Reggaetón y Zumba Kids."
+msgstr ""
+
+#: template-parts/home/hero.php:68
+#: template-parts/pages/clases-de-bachata.php:29
+#: template-parts/pages/clases-de-salsa.php:29
+msgid "Ver horarios"
+msgstr ""
+
+#: template-parts/home/hero.php:72
+#: template-parts/pages/clases-de-bachata.php:31
+#: template-parts/pages/clases-de-salsa.php:31
+msgid "Reservar clase gratis"
+msgstr ""
+
+#: template-parts/home/horarios.php:30
+msgid "Lunes"
+msgstr ""
+
+#: template-parts/home/horarios.php:30
+msgid "Martes"
+msgstr ""
+
+#: template-parts/home/horarios.php:30
+msgid "Miércoles"
+msgstr ""
+
+#: template-parts/home/horarios.php:31
+msgid "Jueves"
+msgstr ""
+
+#: template-parts/home/horarios.php:31
+msgid "Viernes"
+msgstr ""
+
+#: template-parts/home/horarios.php:31
+msgid "Sábado"
+msgstr ""
+
+#: template-parts/home/horarios.php:31
+msgid "Domingo"
+msgstr ""
+
+#: template-parts/home/horarios.php:84
+#, php-format
+msgid "Horarios %s"
+msgstr ""
+
+#: template-parts/home/horarios.php:86
+msgid "Horario completo"
+msgstr ""
+
+#: template-parts/home/horarios.php:86
+msgid "de la temporada"
+msgstr ""
+
+#: template-parts/home/horarios.php:90
+msgid "Filtra por estilo, día, nivel o profesor. Si tienes dudas, escríbenos por WhatsApp y te recomendamos grupo."
+msgstr ""
+
+#: template-parts/home/horarios.php:101
+msgid "Filtrar por estilo"
+msgstr ""
+
+#: template-parts/home/horarios.php:102
+msgid "Todos los estilos"
+msgstr ""
+
+#: template-parts/home/horarios.php:116
+msgid "Filtrar por día"
+msgstr ""
+
+#: template-parts/home/horarios.php:117
+msgid "Todos los días"
+msgstr ""
+
+#: template-parts/home/horarios.php:134
+msgid "Filtrar por nivel"
+msgstr ""
+
+#: template-parts/home/horarios.php:135
+msgid "Todos los niveles"
+msgstr ""
+
+#: template-parts/home/horarios.php:149
+msgid "Filtrar por profesor"
+msgstr ""
+
+#: template-parts/home/horarios.php:150
+msgid "Todos los profesores"
+msgstr ""
+
+#: template-parts/home/horarios.php:164
+msgid "clases en el horario"
+msgstr ""
+
+#: template-parts/home/horarios.php:169
+msgid "Limpiar filtros"
+msgstr ""
+
+#: template-parts/home/horarios.php:180
+msgid "Hora"
+msgstr ""
+
+#: template-parts/home/horarios.php:181
+msgid "Clase"
+msgstr ""
+
+#: template-parts/home/horarios.php:183
+msgid "Sala"
+msgstr ""
+
+#: template-parts/home/horarios.php:245
+msgid "Vaya, nada por aquí…"
+msgstr ""
+
+#: template-parts/home/horarios.php:247
+msgid "No hay clases que coincidan con los filtros. Prueba a relajarlos o pregúntanos directamente."
+msgstr ""
+
+#: template-parts/home/horarios.php:249
+msgid "Hola! Quiero información sobre los horarios"
+msgstr ""
+
+#: template-parts/home/horarios.php:251
+#: template-parts/pages/baile-nupcial.php:64
+msgid "Pregúntanos por WhatsApp"
+msgstr ""
+
+#: template-parts/home/horarios.php:257
+#: template-parts/pages/clases-de-bachata.php:103
+#: template-parts/pages/clases-de-salsa.php:102
+msgid "Ver horarios y tarifas"
+msgstr ""
+
+#: template-parts/home/instalaciones.php:16
+msgid "Aula de Salsa y Bachata en Ritmo y Tumbao"
+msgstr ""
+
+#: template-parts/home/instalaciones.php:22
+msgid "salas equipadas"
+msgstr ""
+
+#: template-parts/home/instalaciones.php:28
+#: template-parts/pages/instalaciones.php:66
+msgid "Nuestra escuela"
+msgstr ""
+
+#: template-parts/home/instalaciones.php:30
+msgid "Espacios totalmente equipados para bailar"
+msgstr ""
+
+#. translators: %s: enlace destacado a clases de salsa y bachata en Mataró
+#: template-parts/home/instalaciones.php:36
+#, php-format
+msgid "Nos enfocamos en las %s, pero también trabajamos con grupos coreográficos y niños con clases de Reggaetón y Zumba."
+msgstr ""
+
+#: template-parts/home/instalaciones.php:37
+msgid "clases de salsa y bachata en Mataró"
+msgstr ""
+
+#: template-parts/home/instalaciones.php:42
+msgid "Dos amplios espacios perfectamente climatizados e insonorizados, creando una experiencia única para los que amamos el baile."
+msgstr ""
+
+#: template-parts/home/instalaciones.php:45
+msgid "Ver instalaciones"
+msgstr ""
+
+#: template-parts/home/pilares.php:11
+msgid "Primera clase GRATIS"
+msgstr ""
+
+#: template-parts/home/pilares.php:15
+msgid "No necesitas pareja"
+msgstr ""
+
+#: template-parts/home/pilares.php:19
+msgid "Sin matrícula ni permanencia"
+msgstr ""
+
+#: template-parts/home/pilares.php:23
+msgid "Más de 15 años enseñando"
+msgstr ""
+
+#: template-parts/home/pricing.php:13
+msgid "Prueba"
+msgstr ""
+
+#: template-parts/home/pricing.php:14
+msgid "¡Tu Primera Clase GRATIS!"
+msgstr ""
+
+#: template-parts/home/pricing.php:15
+msgid "Si quieres aprender a bailar, ven a probar clases de Salsa y Bachata en Mataró GRATIS y evaluaremos el nivel para ti."
+msgstr ""
+
+#: template-parts/home/pricing.php:16
+msgid "¡Quiero probar!"
+msgstr ""
+
+#: template-parts/home/pricing.php:17
+msgid "Hola! Quiero probar mi primera clase GRATIS"
+msgstr ""
+
+#: template-parts/home/pricing.php:25
+msgid "Clase suelta"
+msgstr ""
+
+#: template-parts/home/pricing.php:26
+msgid "¿No Siempre Puedes Venir?"
+msgstr ""
+
+#: template-parts/home/pricing.php:27
+msgid "Si no tienes disponibilidad para venir a las clases por horario de trabajo te ofrecemos una solución, puedes hacer clases sueltas."
+msgstr ""
+
+#: template-parts/home/pricing.php:28
+msgid "Me va bien"
+msgstr ""
+
+#: template-parts/home/pricing.php:29
+msgid "Hola! Me gustaría info sobre las clases sueltas (12€)"
+msgstr ""
+
+#: template-parts/home/pricing.php:37
+msgid "Mensual"
+msgstr ""
+
+#: template-parts/home/pricing.php:38
+msgid "¡Aprende a bailar en mataró!"
+msgstr ""
+
+#: template-parts/home/pricing.php:39
+msgid "Cursos de salsa, cursos de bachata, reggaetón, Zumba Kids, Coreográfico y otros podrás disfrutar en Ritmo y Tumbao."
+msgstr ""
+
+#: template-parts/home/pricing.php:40
+msgid "¡Quiero empezar!"
+msgstr ""
+
+#: template-parts/home/pricing.php:41
+msgid "Hola! Me gustaría apuntarme a las clases (36,90€/mes)"
+msgstr ""
+
+#: template-parts/home/pricing.php:54
+msgid "Tarifas sin permanencia"
+msgstr ""
+
+#: template-parts/home/pricing.php:56
+msgid "Empieza a bailar"
+msgstr ""
+
+#: template-parts/home/pricing.php:56
+msgid "hoy mismo"
+msgstr ""
+
+#: template-parts/home/pricing.php:60
+msgid "Tu primera clase es gratis y evaluamos tu nivel sin compromiso. Sin matrícula. Sin permanencia."
+msgstr ""
+
+#: template-parts/home/pricing.php:76
+msgid "Más popular"
+msgstr ""
+
+#: template-parts/home/profesores.php:15
+#: template-parts/pages/ritmo-y-tumbao-academia-de-baile-en-mataro.php:7
+msgid "CEO fundador"
+msgstr ""
+
+#: template-parts/home/profesores.php:17
+msgid "Miguel García — director y fundador de Ritmo y Tumbao"
+msgstr ""
+
+#: template-parts/home/profesores.php:21
+#: template-parts/pages/ritmo-y-tumbao-academia-de-baile-en-mataro.php:8
+msgid "Instructora y directora"
+msgstr ""
+
+#: template-parts/home/profesores.php:23
+msgid "Jeni — instructora y directora"
+msgstr ""
+
+#: template-parts/home/profesores.php:27
+#: template-parts/pages/ritmo-y-tumbao-academia-de-baile-en-mataro.php:10
+msgid "Bachata Sensual"
+msgstr ""
+
+#: template-parts/home/profesores.php:29
+msgid "Mario y Nia — instructores de Bachata Sensual"
+msgstr ""
+
+#: template-parts/home/profesores.php:33
+#: template-parts/pages/ritmo-y-tumbao-academia-de-baile-en-mataro.php:11
+#: template-parts/pages/ritmo-y-tumbao-academia-de-baile-en-mataro.php:12
+msgid "Bachata Fusión"
+msgstr ""
+
+#: template-parts/home/profesores.php:35
+msgid "Aleix y Belén — instructores de Bachata Fusión"
+msgstr ""
+
+#: template-parts/home/profesores.php:44
+msgid "El equipo"
+msgstr ""
+
+#: template-parts/home/profesores.php:46
+msgid "Profesionales"
+msgstr ""
+
+#: template-parts/home/profesores.php:46
+msgid "del baile"
+msgstr ""
+
+#: template-parts/home/profesores.php:51
+msgid "Nuestros profesores llevan años impartiendo clases de salsa y bachata en Mataró. Experiencia certificada y mucho ritmo."
+msgstr ""
+
+#: template-parts/home/profesores.php:55
+msgid "Ver todo el equipo →"
+msgstr ""
+
+#: template-parts/home/profesores.php:90
+msgid "Ver todo el equipo"
+msgstr ""
+
+#: template-parts/home/resenas.php:6
+#: template-parts/home/resenas.php:7
+msgid "hace 4 años"
+msgstr ""
+
+#: template-parts/home/resenas.php:6
+msgid "Buena escuela de baile con profesores muy cualificados."
+msgstr ""
+
+#: template-parts/home/resenas.php:7
+msgid "Escuela muy recomendable y grupos del mismo nivel!"
+msgstr ""
+
+#: template-parts/home/resenas.php:8
+#: template-parts/home/resenas.php:9
+msgid "hace 5 años"
+msgstr ""
+
+#: template-parts/home/resenas.php:8
+msgid "Increíble ambiente, escuela inmejorable!"
+msgstr ""
+
+#: template-parts/home/resenas.php:9
+msgid "Si quieres disfrutar y aprender haciendo clases de salsa/bachata este es tu sitio."
+msgstr ""
+
+#: template-parts/home/resenas.php:16
+msgid "Nuestros alumnos dicen"
+msgstr ""
+
+#: template-parts/home/resenas.php:27
+msgid "Basado en 13+ reseñas en Google"
+msgstr ""
+
+#: template-parts/home/resenas.php:56
+msgid "Ver todas las reseñas"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:15
+msgid "Ensayos y coreografías"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:16
+msgid "Tienes un grupo y necesitas un espacio para ensayar. Hay que terminar esa coreografía y no tienes sala. Aquí te esperan."
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:20
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:307
+msgid "Cumpleaños"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:21
+msgid "100€ por 3h"
+msgstr ""
+
+#. translators: %s: "100€ por 3 horas" en negrita
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:24
+#, php-format
+msgid "Llega tu día y quieres compartirlo con familiares y amigos. Te hacemos un precio especial: %s."
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:25
+msgid "100€ por 3 horas"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:30
+msgid "Eventos"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:31
+msgid "Formaciones, conferencias, reuniones o sesiones de fotografía. Cuéntanos cómo es tu evento y ven a visitar las salas."
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:39
+#: template-parts/pages/instalaciones.php:14
+msgid "Sala 1"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:43
+msgid "Espaciosa y bastante diáfana. La sala grande de la escuela. Perfecta para grupos de ensayo, cumpleaños y eventos con público."
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:44
+#: template-parts/pages/instalaciones.php:18
+msgid "Parquet flotante"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:44
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:53
+#: template-parts/pages/instalaciones.php:18
+#: template-parts/pages/instalaciones.php:26
+msgid "Insonorizada"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:44
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:53
+#: template-parts/pages/instalaciones.php:18
+#: template-parts/pages/instalaciones.php:26
+msgid "Climatizada (frío/calor)"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:44
+#: template-parts/pages/instalaciones.php:18
+msgid "Equipo de sonido profesional"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:44
+#: template-parts/pages/instalaciones.php:18
+msgid "Espejo gran formato"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:48
+#: template-parts/pages/instalaciones.php:22
+msgid "Sala 2"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:52
+msgid "Espaciosa y completamente diáfana. Ideal para grupos reducidos, particulares y sesiones de fotografía con luz controlada."
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:53
+#: template-parts/pages/instalaciones.php:26
+msgid "Equipo de sonido"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:53
+#: template-parts/pages/instalaciones.php:26
+msgid "Espejo"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:63
+msgid "Alquiler de salas en Mataró — Ritmo y Tumbao"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:70
+msgid "Espacio profesional en Mataró"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:72
+msgid "Alquiler de"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:73
+msgid "salas"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:74
+msgid "por horas en Mataró"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:77
+msgid "Dos salas amplias con espejos, parquet, equipo de sonido y vestuarios. Para ensayos, cumpleaños, eventos privados, formaciones o sesiones de fotografía."
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:80
+msgid "Ver salas y tarifas"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:81
+msgid "Hola! Quiero info sobre alquilar una sala"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:82
+msgid "Consultar disponibilidad"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:94
+msgid "Sala 1 · por hora"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:98
+msgid "Sala 2 · por hora"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:102
+msgid "Cumpleaños · 3h"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:106
+msgid "m² totales"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:115
+msgid "Las salas más completas para tus eventos"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:117
+msgid "Un espacio"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:117
+msgid "profesional"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:117
+msgid "cuando lo necesitas"
+msgstr ""
+
+#. translators: %s: "alquilar una sala en Mataró" en negrita
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:125
+#, php-format
+msgid "En Ritmo y Tumbao tenemos lo que buscas. Si necesitas %s te ofrecemos dos espacios diáfanos, equipados con sonido, climatizados e insonorizados."
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:126
+msgid "alquilar una sala en Mataró"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:131
+msgid "Prepara un evento, ensaya con tu compañía, celebra un cumpleaños o, si eres fotógrafo, encuentra una sala con luz controlada para tus sesiones."
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:134
+msgid "ⓘ La disponibilidad de las salas está sujeta a los horarios de la escuela de baile."
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:145
+msgid "Para qué se usa"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:147
+msgid "Tres usos"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:147
+msgid "habituales"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:152
+msgid "Cada semana acogemos compañías de baile, particulares celebrando su día y eventos profesionales. Cualquier otro uso, pregúntanos."
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:179
+msgid "Dos salas disponibles"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:181
+msgid "Elige la que"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:181
+msgid "te encaja"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:186
+msgid "Tarifa por hora con descuentos por uso recurrente. Consulta disponibilidad y nos adaptamos a lo que necesites."
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:197
+#, php-format
+msgid "%s — Alquiler en Mataró"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:211
+msgid "Superficie"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:215
+msgid "Tarifa"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:235
+#, php-format
+msgid "Hola! Quiero alquilar la %1$s (%2$s m²)"
+msgstr ""
+
+#. translators: %s: nombre de la sala
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:239
+#, php-format
+msgid "Reservar %s"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:253
+msgid "Formulario de alquiler"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:255
+msgid "Pídenos"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:255
+msgid "disponibilidad"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:258
+msgid "Si buscas alquilar un espacio contacta con nosotros y te daremos el mejor precio para tu evento, ensayo o sesión."
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:261
+msgid "Contacto directo"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:273
+msgid "¡Gracias! Hemos recibido tu solicitud. Te respondemos en breve con disponibilidad."
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:300
+#: template-parts/pages/ritmo-y-tumbao-tu-escuela-de-baile-en-mataro.php:66
+msgid "Teléfono"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:304
+msgid "Tipo de uso"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:306
+msgid "Ensayo / coreografía"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:308
+msgid "Evento / formación"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:309
+msgid "Sesión de fotografía"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:310
+msgid "Otro"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:315
+msgid "Cuéntanos tu evento"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:316
+msgid "Fecha aproximada, número de personas, sala que te interesa…"
+msgstr ""
+
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:319
+msgid "Solicitar disponibilidad"
+msgstr ""
+
+#. translators: %s: enlace a la política de privacidad
+#: template-parts/pages/alquiler-de-salas-en-mataro-ritmo-y-tumbao.php:325
+#, php-format
+msgid "Al enviar aceptas nuestra %s."
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:15
+msgid "¿Cuánto tiempo antes de la boda deberíamos empezar?"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:15
+msgid "Lo ideal es 2-3 meses antes para tener margen. Si nunca habéis bailado, mejor empezar 4 meses antes."
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:16
+msgid "¿Qué diferencia hay entre el Pack Básico y el Premium?"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:16
+msgid "El Básico son 3h (para pulir una coreografía concreta) y el Premium 5h (para aprender desde cero). El Premium incluye 2 canciones editadas en vez de 1."
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:17
+msgid "¿Qué pasa si necesitamos más clases?"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:17
+msgid "Puedes ampliar a 40 €/hora extra cuando haga falta."
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:18
+msgid "¿Nos ayudáis a elegir la canción?"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:18
+msgid "Sí. Proponemos canciones que se adapten al tipo de baile que queréis y al ritmo que mejor os va."
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:19
+msgid "¿Y si nunca hemos bailado antes?"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:19
+msgid "Sin problema. Empezamos desde el primer paso y avanzamos a vuestro ritmo."
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:25
+msgid "Hablamos por WhatsApp"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:26
+msgid "Nos cuentas la fecha, qué buscáis, vuestro nivel y si tenéis canción elegida."
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:30
+msgid "Diseñamos la coreografía"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:31
+msgid "Adaptamos los pasos al tipo de baile que queréis (salsa, bachata, vals, fusión) y al espacio donde vais a bailar."
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:35
+msgid "Practicamos hasta el día"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:36
+msgid "Clases personalizadas en la escuela. Os dejamos audio editado y vídeo de referencia para ensayar."
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:44
+msgid "Novios bailando — Ritmo y Tumbao baile nupcial Mataró"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:52
+msgid "Vuestro gran día"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:54
+msgid "Vuestro"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:55
+msgid "primer baile"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:56
+msgid "empieza aquí"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:59
+msgid "Preparamos vuestra primera baile como pareja casada, con clases personalizadas, edición musical y la coreografía pensada para vuestra canción."
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:62
+msgid "Ver paquetes"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:63
+msgid "Hola! Queremos preparar nuestra primera baile de boda"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:74
+msgid "Vuestro primer baile como pareja"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:76
+msgid "Un momento que"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:76
+msgid "no se olvida"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:79
+msgid "Es la primera baile como recién casados. La canción que habéis elegido. Los ojos puestos en vosotros, las cámaras, los nervios. Lo último que queréis es ir mirando los pies."
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:82
+msgid "Os preparamos para que disfrutéis ese momento, no para que sufráis. Diseñamos la coreografía a vuestra medida, según vuestro nivel, vuestra canción y el espacio donde vais a bailar."
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:87
+msgid "Primer baile de novios con humo en una boda"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:99
+msgid "Cómo trabajamos"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:101
+msgid "De WhatsApp"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:101
+msgid "al baile final"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:106
+msgid "Un proceso sencillo y a vuestro ritmo. Sin clases en grupo: solo vosotros dos y el profesor."
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:128
+msgid "Dos paquetes"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:130
+msgid "Elige el que"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:130
+msgid "mejor os va"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:135
+msgid "El Básico para parejas con algo de base que quieren pulir una coreografía. El Premium para empezar desde cero con tranquilidad."
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:145
+msgid "Pack Básico"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:150
+msgid "Ideal para parejas con experiencia previa que necesitan pulir una coreografía concreta."
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:154
+msgid "3 horas de clase personalizada"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:155
+msgid "Edición musical de 1 canción"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:156
+#: template-parts/pages/baile-nupcial.php:189
+msgid "20% descuento en clases de la escuela"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:166
+msgid "Hola! Quiero reservar el Pack Básico de baile nupcial"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:168
+msgid "Reservar Pack Básico"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:176
+msgid "Recomendado"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:178
+msgid "Pack Premium"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:183
+msgid "Si nunca habéis bailado o queréis aprender desde cero con calma. Ideal para preparar entrada y baile final."
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:187
+msgid "5 horas de clase personalizada"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:188
+msgid "Edición musical de 2 canciones"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:190
+msgid "Clases extras a 40 €/hora"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:200
+msgid "Hola! Quiero reservar el Pack Premium de baile nupcial"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:202
+msgid "Reservar Pack Premium"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:216
+msgid "Detalle de vestido de novia con encaje"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:219
+msgid "Vuestro gran día · Vuestro baile"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:226
+msgid "¿Tenéis dudas? Las resolvemos"
+msgstr ""
+
+#: template-parts/pages/baile-nupcial.php:242
+msgid "Hola! Tengo una duda sobre el baile nupcial"
+msgstr ""
+
+#: template-parts/pages/bono-regalo.php:10
+msgid "Regalo"
+msgstr ""
+
+#: template-parts/pages/bono-regalo.php:14
+msgid "Regala bachata y salsa"
+msgstr ""
+
+#: template-parts/pages/bono-regalo.php:15
+msgid "Bonos de regalo"
+msgstr ""
+
+#: template-parts/pages/bono-regalo.php:17
+msgid "Una experiencia diferente y mucho más útil que otro perfume."
+msgstr ""
+
+#: template-parts/pages/bono-regalo.php:27
+msgid "Bono 1 clase"
+msgstr ""
+
+#: template-parts/pages/bono-regalo.php:27
+msgid "Una clase grupal de cualquier estilo y nivel."
+msgstr ""
+
+#: template-parts/pages/bono-regalo.php:27
+msgid "Regalar 1 clase"
+msgstr ""
+
+#: template-parts/pages/bono-regalo.php:28
+msgid "Bono 5 clases"
+msgstr ""
+
+#: template-parts/pages/bono-regalo.php:28
+msgid "5 clases sueltas a usar en 2 meses. Mejor relación calidad-precio."
+msgstr ""
+
+#: template-parts/pages/bono-regalo.php:28
+msgid "Regalar 5 clases"
+msgstr ""
+
+#: template-parts/pages/bono-regalo.php:29
+msgid "Bono 10 clases"
+msgstr ""
+
+#: template-parts/pages/bono-regalo.php:29
+msgid "10 clases sueltas a usar en 4 meses. Para los más constantes."
+msgstr ""
+
+#: template-parts/pages/bono-regalo.php:29
+msgid "Regalar 10 clases"
+msgstr ""
+
+#: template-parts/pages/bono-regalo.php:38
+#, php-format
+msgid "Hola! Quiero %s"
+msgstr ""
+
+#: template-parts/pages/bono-regalo.php:46
+msgid "Te enviamos el bono en PDF personalizado con el nombre del afortunado. Pago por transferencia o Bizum."
+msgstr ""
+
+#: template-parts/pages/clases-de-bachata.php:12
+msgid "Clases de bachata en Ritmo y Tumbao Mataró"
+msgstr ""
+
+#: template-parts/pages/clases-de-bachata.php:19
+msgid "Clases de bachata en Mataró"
+msgstr ""
+
+#: template-parts/pages/clases-de-bachata.php:22
+msgid "Bachata"
+msgstr ""
+
+#: template-parts/pages/clases-de-bachata.php:26
+msgid "Bachata tradicional, sensual y fusión. Para todos los niveles, sin necesidad de pareja y con profesores especializados."
+msgstr ""
+
+#: template-parts/pages/clases-de-bachata.php:30
+msgid "Hola! Quiero probar las clases de Bachata"
+msgstr ""
+
+#: template-parts/pages/clases-de-bachata.php:41
+#: template-parts/pages/clases-de-salsa.php:41
+msgid "La escuela"
+msgstr ""
+
+#: template-parts/pages/clases-de-bachata.php:43
+msgid "Bachata para todos en Mataró"
+msgstr ""
+
+#. translators: 1: bachata tradicional (negrita), 2: bachata sensual (negrita), 3: bachata fusión (negrita)
+#: template-parts/pages/clases-de-bachata.php:49
+#, php-format
+msgid "En Ritmo y Tumbao impartimos %1$s (la dominicana de toda la vida), %2$s y %3$s. Cada estilo con su propio profesorado especializado y grupos por nivel para que avances a tu ritmo."
+msgstr ""
+
+#: template-parts/pages/clases-de-bachata.php:50
+msgid "bachata tradicional"
+msgstr ""
+
+#: template-parts/pages/clases-de-bachata.php:51
+msgid "bachata sensual"
+msgstr ""
+
+#: template-parts/pages/clases-de-bachata.php:52
+msgid "bachata fusión"
+msgstr ""
+
+#: template-parts/pages/clases-de-bachata.php:58
+#: template-parts/pages/clases-de-salsa.php:56
+msgid "Por qué nosotros"
+msgstr ""
+
+#: template-parts/pages/clases-de-bachata.php:60
+msgid "Profesores especializados por estilo"
+msgstr ""
+
+#: template-parts/pages/clases-de-bachata.php:63
+msgid "Aleix y Belén imparten Bachata Fusión, Mario y Nia llevan la Bachata Sensual, y nuestro equipo cubre la tradicional. Cada uno con años de tarima y festivales."
+msgstr ""
+
+#: template-parts/pages/clases-de-bachata.php:74
+msgid "3 estilos · 1 escuela"
+msgstr ""
+
+#: template-parts/pages/clases-de-bachata.php:76
+msgid "Tradicional,"
+msgstr ""
+
+#: template-parts/pages/clases-de-bachata.php:76
+msgid "sensual y fusión"
+msgstr ""
+
+#: template-parts/pages/clases-de-bachata.php:81
+msgid "Elige el estilo que más te guste o pruébalos todos. Hay grupos de todos los niveles cada semana."
+msgstr ""
+
+#: template-parts/pages/clases-de-bachata.php:88
+msgid "Tradicional"
+msgstr ""
+
+#: template-parts/pages/clases-de-bachata.php:88
+msgid "La bachata dominicana, con pasos clásicos y mucho ritmo. Ideal para empezar."
+msgstr ""
+
+#: template-parts/pages/clases-de-bachata.php:89
+msgid "Sensual"
+msgstr ""
+
+#: template-parts/pages/clases-de-bachata.php:89
+msgid "Movimientos fluidos, ondas y conexión. La bachata más bonita de bailar en pareja."
+msgstr ""
+
+#: template-parts/pages/clases-de-bachata.php:90
+msgid "Fusión"
+msgstr ""
+
+#: template-parts/pages/clases-de-bachata.php:90
+msgid "Mezcla de bachata con figuras de salsa, kizomba y zouk. Para los más creativos."
+msgstr ""
+
+#: template-parts/pages/clases-de-salsa-y-bachata-en-cabrera.php:4
+#: template-parts/pages/clases-de-salsa-y-bachata-en-granollers.php:4
+#: template-parts/pages/clases-de-salsa-y-bachata-en-vilassar.php:4
+msgid "en"
+msgstr ""
+
+#: template-parts/pages/clases-de-salsa-y-bachata-en-cabrera.php:5
+msgid "8 minutos en coche"
+msgstr ""
+
+#: template-parts/pages/clases-de-salsa-y-bachata-en-granollers.php:5
+msgid "20 minutos en coche"
+msgstr ""
+
+#: template-parts/pages/clases-de-salsa-y-bachata-en-vilassar.php:5
+msgid "5 minutos en coche"
+msgstr ""
+
+#: template-parts/pages/clases-de-salsa.php:12
+msgid "Clases de salsa en Ritmo y Tumbao Mataró"
+msgstr ""
+
+#: template-parts/pages/clases-de-salsa.php:19
+msgid "Clases de salsa en Mataró"
+msgstr ""
+
+#: template-parts/pages/clases-de-salsa.php:22
+#: template-parts/pages/ritmo-y-tumbao-academia-de-baile-en-mataro.php:13
+#: template-parts/pages/ritmo-y-tumbao-academia-de-baile-en-mataro.php:14
+msgid "Salsa"
+msgstr ""
+
+#: template-parts/pages/clases-de-salsa.php:26
+msgid "Iniciación, Intermedio y Avanzado. Profesores con más de 15 años enseñando, sin matrícula ni permanencia. Tu primera clase es gratis."
+msgstr ""
+
+#: template-parts/pages/clases-de-salsa.php:30
+msgid "Hola! Quiero probar las clases de Salsa"
+msgstr ""
+
+#: template-parts/pages/clases-de-salsa.php:43
+msgid "Sobre Ritmo y Tumbao Dance School"
+msgstr ""
+
+#. translators: %s: "clases de salsa dinámicas" en negrita
+#: template-parts/pages/clases-de-salsa.php:49
+#, php-format
+msgid "Ritmo y Tumbao Dance School es mucho más que una escuela de baile. Con un gran equipo de profesores, ofrecemos un espacio donde cada alumno puede disfrutar de %s, aprender desde cero o perfeccionar su estilo en un ambiente amigable y divertido."
+msgstr ""
+
+#: template-parts/pages/clases-de-salsa.php:50
+msgid "clases de salsa dinámicas"
+msgstr ""
+
+#: template-parts/pages/clases-de-salsa.php:58
+msgid "¿Por qué elegir nuestras clases de salsa?"
+msgstr ""
+
+#: template-parts/pages/clases-de-salsa.php:61
+msgid "Desde los pasos básicos hasta movimientos avanzados, nuestras clases de salsa se adaptan a cada nivel. Te enseñaremos figuras, musicalidad y cómo expresar tu estilo en cada paso. No importa si es tu primera vez o quieres llevar tu baile al siguiente nivel."
+msgstr ""
+
+#: template-parts/pages/clases-de-salsa.php:72
+msgid "Para todos los niveles"
+msgstr ""
+
+#: template-parts/pages/clases-de-salsa.php:74
+msgid "Variedad"
+msgstr ""
+
+#: template-parts/pages/clases-de-salsa.php:74
+msgid "de niveles"
+msgstr ""
+
+#: template-parts/pages/clases-de-salsa.php:79
+msgid "Iniciación, Inicio, Básico, Intermedio y Avanzado. Hay un grupo para ti."
+msgstr ""
+
+#: template-parts/pages/clases-de-salsa.php:86
+msgid "Iniciación"
+msgstr ""
+
+#: template-parts/pages/clases-de-salsa.php:86
+msgid "Tu primer contacto con la salsa. Pasos básicos y postura. Sin experiencia previa."
+msgstr ""
+
+#: template-parts/pages/clases-de-salsa.php:87
+msgid "Intermedio"
+msgstr ""
+
+#: template-parts/pages/clases-de-salsa.php:87
+msgid "Figuras, vueltas y musicalidad. Ganarás soltura y conexión con tu pareja de baile."
+msgstr ""
+
+#: template-parts/pages/clases-de-salsa.php:88
+msgid "Avanzado"
+msgstr ""
+
+#: template-parts/pages/clases-de-salsa.php:88
+msgid "Estilo propio, técnica refinada y combinaciones complejas. Para apasionados."
+msgstr ""
+
+#: template-parts/pages/clases-particulares.php:10
+msgid "Particulares"
+msgstr ""
+
+#: template-parts/pages/clases-particulares.php:14
+msgid "A tu ritmo"
+msgstr ""
+
+#: template-parts/pages/clases-particulares.php:17
+msgid "Sesiones 1 a 1 o en pareja, adaptadas a tu nivel, objetivo y disponibilidad."
+msgstr ""
+
+#: template-parts/pages/clases-particulares.php:24
+msgid "¿A quién va dirigido?"
+msgstr ""
+
+#: template-parts/pages/clases-particulares.php:25
+msgid "Aprende a tu ritmo, con tu pareja o solo"
+msgstr ""
+
+#. translators: %s: "aprender a tu ritmo" en negrita
+#: template-parts/pages/clases-particulares.php:30
+#, php-format
+msgid "Las clases particulares son la mejor forma de avanzar rápido o de prepararte para algo concreto: una boda, una grabación, una competición o simplemente %s con atención 100%% personalizada."
+msgstr ""
+
+#: template-parts/pages/clases-particulares.php:31
+msgid "aprender a tu ritmo"
+msgstr ""
+
+#: template-parts/pages/clases-particulares.php:36
+msgid "Tú eliges el estilo (salsa, bachata, fusión, lady style…), el día y el profesor. Nosotros nos adaptamos."
+msgstr ""
+
+#: template-parts/pages/clases-particulares.php:44
+msgid "Cómo funciona"
+msgstr ""
+
+#: template-parts/pages/clases-particulares.php:45
+msgid "Tu sesión, a medida"
+msgstr ""
+
+#: template-parts/pages/clases-particulares.php:50
+#: template-parts/pages/ritmo-y-tumbao-tu-escuela-de-baile-en-mataro.php:131
+msgid "Escríbenos"
+msgstr ""
+
+#: template-parts/pages/clases-particulares.php:51
+msgid "Cuéntanos qué quieres y para cuándo. Sin compromiso."
+msgstr ""
+
+#: template-parts/pages/clases-particulares.php:55
+msgid "Reserva"
+msgstr ""
+
+#: template-parts/pages/clases-particulares.php:56
+msgid "Cuadramos día, hora, profesor y sala."
+msgstr ""
+
+#: template-parts/pages/clases-particulares.php:60
+msgid "Disfruta"
+msgstr ""
+
+#: template-parts/pages/clases-particulares.php:61
+msgid "Vienes a clase y aprendes a tu ritmo."
+msgstr ""
+
+#: template-parts/pages/clases-particulares.php:65
+msgid "Hola! Me interesan las clases particulares"
+msgstr ""
+
+#: template-parts/pages/clases-particulares.php:66
+msgid "Reservar clase particular"
+msgstr ""
+
+#: template-parts/pages/horarios-y-tarifas.php:12
+msgid "Horarios"
+msgstr ""
+
+#: template-parts/pages/horarios-y-tarifas.php:17
+msgid "Horarios y Tarifas"
+msgstr ""
+
+#: template-parts/pages/horarios-y-tarifas.php:19
+msgid "Mira el calendario completo de clases y elige el grupo que mejor te encaje."
+msgstr ""
+
+#: template-parts/pages/horarios-y-tarifas.php:31
+msgid "Reserva tu"
+msgstr ""
+
+#: template-parts/pages/horarios-y-tarifas.php:31
+msgid "clase de prueba"
+msgstr ""
+
+#: template-parts/pages/horarios-y-tarifas.php:31
+msgid "con nosotros"
+msgstr ""
+
+#: template-parts/pages/horarios-y-tarifas.php:34
+msgid "Gratis. Sin matrícula. Sin permanencia. Te orientamos en función de tu experiencia."
+msgstr ""
+
+#: template-parts/pages/horarios-y-tarifas.php:36
+msgid "Hola! Quiero reservar mi primera clase GRATIS"
+msgstr ""
+
+#: template-parts/pages/horarios-y-tarifas.php:39
+msgid "Reservar clase de prueba"
+msgstr ""
+
+#: template-parts/pages/horarios-y-tarifas.php:48
+msgid "Tarifas"
+msgstr ""
+
+#: template-parts/pages/horarios-y-tarifas.php:49
+msgid "Elige tu plan"
+msgstr ""
+
+#: template-parts/pages/instalaciones.php:17
+msgid "Amplia, diáfana y luminosa. La sala principal de la escuela, donde se imparten la mayoría de grupos de salsa y bachata y se montan los workshops."
+msgstr ""
+
+#: template-parts/pages/instalaciones.php:25
+msgid "Espaciosa y polivalente. Pensada para grupos reducidos, niveles avanzados, particulares y ensayos de coreográfico."
+msgstr ""
+
+#: template-parts/pages/instalaciones.php:32
+msgid "Recepción"
+msgstr ""
+
+#: template-parts/pages/instalaciones.php:33
+msgid "Área de atención a alumnos, información y reservas."
+msgstr ""
+
+#: template-parts/pages/instalaciones.php:37
+msgid "Vestuarios"
+msgstr ""
+
+#: template-parts/pages/instalaciones.php:38
+msgid "Cómodos y equipados para cambiarse antes y después de las clases."
+msgstr ""
+
+#: template-parts/pages/instalaciones.php:42
+msgid "Baños"
+msgstr ""
+
+#: template-parts/pages/instalaciones.php:43
+msgid "Modernos y accesibles para mayor comodidad de los alumnos."
+msgstr ""
+
+#: template-parts/pages/instalaciones.php:49
+#: template-parts/pages/instalaciones.php:157
+msgid "m² útiles"
+msgstr ""
+
+#: template-parts/pages/instalaciones.php:50
+msgid "salas de baile"
+msgstr ""
+
+#: template-parts/pages/instalaciones.php:51
+msgid "espacios"
+msgstr ""
+
+#: template-parts/pages/instalaciones.php:52
+msgid "años abierta"
+msgstr ""
+
+#: template-parts/pages/instalaciones.php:59
+msgid "Instalaciones de Ritmo y Tumbao en Mataró"
+msgstr ""
+
+#: template-parts/pages/instalaciones.php:68
+msgid "Espacios totalmente"
+msgstr ""
+
+#: template-parts/pages/instalaciones.php:69
+msgid "equipados"
+msgstr ""
+
+#: template-parts/pages/instalaciones.php:72
+msgid "Dos amplias salas, parquet, insonorización, climatización y equipo de sonido profesional. Más de 145 m² útiles dedicados al baile en pleno centro de Mataró."
+msgstr ""
+
+#: template-parts/pages/instalaciones.php:95
+msgid "Un espacio diseñado para el baile"
+msgstr ""
+
+#: template-parts/pages/instalaciones.php:97
+msgid "Más de 20 años bailando"
+msgstr ""
+
+#: template-parts/pages/instalaciones.php:97
+msgid "en este local"
+msgstr ""
+
+#. translators: %s: "salsa y bachata" en negrita
+#: template-parts/pages/instalaciones.php:103
+#, php-format
+msgid "En Ritmo y Tumbao ofrecemos un espacio moderno y totalmente acondicionado para el aprendizaje y la práctica de %s. Dos salas, vestuarios, recepción y baños, en un entorno cómodo y profesional."
+msgstr ""
+
+#: template-parts/pages/instalaciones.php:104
+msgid "salsa y bachata"
+msgstr ""
+
+#: template-parts/pages/instalaciones.php:109
+msgid "Llevamos más de dos décadas enseñando, formando bailarines de todos los niveles y compartiendo nuestra pasión por el baile. Un punto de encuentro para los que aman la pista."
+msgstr ""
+
+#: template-parts/pages/instalaciones.php:114
+msgid "Vista de las instalaciones de Ritmo y Tumbao"
+msgstr ""
+
+#: template-parts/pages/instalaciones.php:125
+msgid "Dos salas equipadas"
+msgstr ""
+
+#: template-parts/pages/instalaciones.php:127
+msgid "El espacio"
+msgstr ""
+
+#: template-parts/pages/instalaciones.php:127
+msgid "donde se baila"
+msgstr ""
+
+#: template-parts/pages/instalaciones.php:132
+msgid "Dos salas pensadas para grupos de todos los niveles, con todas las garantías técnicas para que el baile sea cómodo y sin interrupciones."
+msgstr ""
+
+#: template-parts/pages/instalaciones.php:143
+#, php-format
+msgid "%s — Ritmo y Tumbao Mataró"
+msgstr ""
+
+#: template-parts/pages/instalaciones.php:187
+msgid "+3 espacios complementarios"
+msgstr ""
+
+#: template-parts/pages/instalaciones.php:189
+msgid "Todo lo que necesitas"
+msgstr ""
+
+#: template-parts/pages/instalaciones.php:189
+msgid "para una buena clase"
+msgstr ""
+
+#: template-parts/pages/instalaciones.php:194
+msgid "Más allá de las salas: vestuarios para cambiarse, recepción para resolver tus dudas y baños accesibles."
+msgstr ""
+
+#: template-parts/pages/ritmo-y-tumbao-academia-de-baile-en-mataro.php:7
+msgid "Fundador y alma de Ritmo y Tumbao. Más de 20 años enseñando salsa."
+msgstr ""
+
+#: template-parts/pages/ritmo-y-tumbao-academia-de-baile-en-mataro.php:8
+msgid "Co-dirige la escuela e imparte salsa y lady style."
+msgstr ""
+
+#: template-parts/pages/ritmo-y-tumbao-academia-de-baile-en-mataro.php:9
+msgid "Profesores de Bachata"
+msgstr ""
+
+#: template-parts/pages/ritmo-y-tumbao-academia-de-baile-en-mataro.php:9
+msgid "Pareja con energía contagiosa y técnica depurada."
+msgstr ""
+
+#: template-parts/pages/ritmo-y-tumbao-academia-de-baile-en-mataro.php:10
+msgid "Especialistas en bachata sensual moderna."
+msgstr ""
+
+#: template-parts/pages/ritmo-y-tumbao-academia-de-baile-en-mataro.php:11
+msgid "Profesores creativos que fusionan estilos."
+msgstr ""
+
+#: template-parts/pages/ritmo-y-tumbao-academia-de-baile-en-mataro.php:12
+msgid "Pareja joven con un estilo fresco y muy musical."
+msgstr ""
+
+#: template-parts/pages/ritmo-y-tumbao-academia-de-baile-en-mataro.php:13
+msgid "Co-profesora de salsa con foco en musicalidad."
+msgstr ""
+
+#: template-parts/pages/ritmo-y-tumbao-academia-de-baile-en-mataro.php:14
+msgid "Profesora de salsa y de casino con timba."
+msgstr ""
+
+#: template-parts/pages/ritmo-y-tumbao-academia-de-baile-en-mataro.php:21
+#: template-parts/pages/ritmo-y-tumbao-academia-de-baile-en-mataro.php:36
+msgid "Nuestro equipo"
+msgstr ""
+
+#: template-parts/pages/ritmo-y-tumbao-academia-de-baile-en-mataro.php:25
+msgid "Academia de baile en Mataró"
+msgstr ""
+
+#: template-parts/pages/ritmo-y-tumbao-academia-de-baile-en-mataro.php:26
+msgid "Aprende a bailar en Mataró"
+msgstr ""
+
+#: template-parts/pages/ritmo-y-tumbao-academia-de-baile-en-mataro.php:28
+msgid "Conoce al equipo que imparte cada estilo. Experiencia certificada y mucho ritmo."
+msgstr ""
+
+#: template-parts/pages/ritmo-y-tumbao-academia-de-baile-en-mataro.php:37
+msgid "Profesionales del baile"
+msgstr ""
+
+#: template-parts/pages/ritmo-y-tumbao-academia-de-baile-en-mataro.php:39
+msgid "Cada estilo, su especialista. Cada grupo, su pareja docente."
+msgstr ""
+
+#: template-parts/pages/ritmo-y-tumbao-academia-de-baile-en-mataro.php:71
+msgid "Experiencia certificada"
+msgstr ""
+
+#: template-parts/pages/ritmo-y-tumbao-academia-de-baile-en-mataro.php:72
+msgid "Equipo titulado y formado en escuelas internacionales."
+msgstr ""
+
+#: template-parts/pages/ritmo-y-tumbao-academia-de-baile-en-mataro.php:75
+msgid "Toda una vida enseñando"
+msgstr ""
+
+#: template-parts/pages/ritmo-y-tumbao-academia-de-baile-en-mataro.php:76
+msgid "Más de 20 años de trayectoria al frente de Ritmo y Tumbao."
+msgstr ""
+
+#: template-parts/pages/ritmo-y-tumbao-academia-de-baile-en-mataro.php:79
+msgid "Apreciación de clientes"
+msgstr ""
+
+#: template-parts/pages/ritmo-y-tumbao-academia-de-baile-en-mataro.php:80
+msgid "Más de 13 reseñas con 5★ en Google. La opinión de los alumnos cuenta."
+msgstr ""
+
+#: template-parts/pages/ritmo-y-tumbao-tu-escuela-de-baile-en-mataro.php:23
+msgid "Estamos aquí para ti"
+msgstr ""
+
+#: template-parts/pages/ritmo-y-tumbao-tu-escuela-de-baile-en-mataro.php:25
+msgid "Hablemos de"
+msgstr ""
+
+#: template-parts/pages/ritmo-y-tumbao-tu-escuela-de-baile-en-mataro.php:26
+msgid "baile"
+msgstr ""
+
+#: template-parts/pages/ritmo-y-tumbao-tu-escuela-de-baile-en-mataro.php:29
+msgid "Resolvemos tus dudas en menos de 24h. Por WhatsApp, por email o pasándote por la escuela."
+msgstr ""
+
+#: template-parts/pages/ritmo-y-tumbao-tu-escuela-de-baile-en-mataro.php:40
+msgid "Escuela Ritmo y Tumbao"
+msgstr ""
+
+#: template-parts/pages/ritmo-y-tumbao-tu-escuela-de-baile-en-mataro.php:42
+msgid "Tu escuela de baile"
+msgstr ""
+
+#: template-parts/pages/ritmo-y-tumbao-tu-escuela-de-baile-en-mataro.php:52
+msgid "Dirección"
+msgstr ""
+
+#: template-parts/pages/ritmo-y-tumbao-tu-escuela-de-baile-en-mataro.php:91
+msgid "Horario oficina"
+msgstr ""
+
+#: template-parts/pages/ritmo-y-tumbao-tu-escuela-de-baile-en-mataro.php:108
+msgid "Síguenos"
+msgstr ""
+
+#: template-parts/pages/ritmo-y-tumbao-tu-escuela-de-baile-en-mataro.php:129
+msgid "Cuéntanos"
+msgstr ""
+
+#: template-parts/pages/ritmo-y-tumbao-tu-escuela-de-baile-en-mataro.php:166
+msgid "¿En qué te ayudamos?"
+msgstr ""
+
+#: template-parts/pages/ritmo-y-tumbao-tu-escuela-de-baile-en-mataro.php:188
+msgid "Cómo llegar"
+msgstr ""
+
+#: template-parts/pages/ritmo-y-tumbao-tu-escuela-de-baile-en-mataro.php:190
+msgid "Estamos a 5 min"
+msgstr ""
+
+#: template-parts/pages/ritmo-y-tumbao-tu-escuela-de-baile-en-mataro.php:190
+msgid "del centro de Mataró"
+msgstr ""
+
+#. translators: %s: dirección completa de la escuela
+#: template-parts/pages/ritmo-y-tumbao-tu-escuela-de-baile-en-mataro.php:198
+#, php-format
+msgid "%s. Aparcamiento sencillo en la zona y a pocos pasos del transporte público."
+msgstr ""

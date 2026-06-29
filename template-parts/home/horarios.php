@@ -27,8 +27,8 @@ sort($profesores);
 
 $dias_orden = ['lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado', 'domingo'];
 $dias_label = [
-    'lunes' => 'Lunes', 'martes' => 'Martes', 'miércoles' => 'Miércoles',
-    'jueves' => 'Jueves', 'viernes' => 'Viernes', 'sábado' => 'Sábado', 'domingo' => 'Domingo',
+    'lunes' => __('Lunes', 'ryt'), 'martes' => __('Martes', 'ryt'), 'miércoles' => __('Miércoles', 'ryt'),
+    'jueves' => __('Jueves', 'ryt'), 'viernes' => __('Viernes', 'ryt'), 'sábado' => __('Sábado', 'ryt'), 'domingo' => __('Domingo', 'ryt'),
 ];
 
 if (!function_exists('ryt_slug')) {
@@ -81,13 +81,13 @@ $total_clases = count($clases);
         <!-- Header grid 2-col (v9) -->
         <div class="grid grid-cols-1 lg:grid-cols-[1.3fr_1fr] gap-[48px] items-end mb-[44px]">
             <div>
-                <?php ryt_eyebrow('03', 'Horarios ' . date('Y')); ?>
+                <?php ryt_eyebrow('03', sprintf(__('Horarios %s', 'ryt'), date('Y'))); ?>
                 <h2 class="text-white" style="font-size: 46px; line-height: 1.08;">
-                    Horario completo<br>de la temporada
+                    <?php esc_html_e('Horario completo', 'ryt'); ?><br><?php esc_html_e('de la temporada', 'ryt'); ?>
                 </h2>
             </div>
             <p class="text-[16px] leading-[1.7] text-[#C5BFB9]">
-                Filtra por estilo, día, nivel o profesor. Si tienes dudas, escríbenos por WhatsApp y te recomendamos grupo.
+                <?php esc_html_e('Filtra por estilo, día, nivel o profesor. Si tienes dudas, escríbenos por WhatsApp y te recomendamos grupo.', 'ryt'); ?>
             </p>
         </div>
 
@@ -98,8 +98,8 @@ $total_clases = count($clases);
                     <span class="ryt-filtro-icon" aria-hidden="true">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M7 12h10"/></svg>
                     </span>
-                    <select data-filter="estilo" aria-label="Filtrar por estilo">
-                        <option value="">Todos los estilos</option>
+                    <select data-filter="estilo" aria-label="<?php echo esc_attr__('Filtrar por estilo', 'ryt'); ?>">
+                        <option value=""><?php esc_html_e('Todos los estilos', 'ryt'); ?></option>
                         <?php foreach ($estilos as $e): ?>
                             <option value="<?php echo esc_attr(ryt_slug($e)); ?>"><?php echo esc_html($e); ?></option>
                         <?php endforeach; ?>
@@ -113,8 +113,8 @@ $total_clases = count($clases);
                     <span class="ryt-filtro-icon" aria-hidden="true">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
                     </span>
-                    <select data-filter="dia" aria-label="Filtrar por día">
-                        <option value="">Todos los días</option>
+                    <select data-filter="dia" aria-label="<?php echo esc_attr__('Filtrar por día', 'ryt'); ?>">
+                        <option value=""><?php esc_html_e('Todos los días', 'ryt'); ?></option>
                         <?php foreach ($dias_orden as $d):
                             $hay = count(array_filter($clases, fn($c) => ($c['dia'] === 'miercoles' ? 'miércoles' : ($c['dia'] === 'sabado' ? 'sábado' : $c['dia'])) === $d));
                             if ($hay):
@@ -131,8 +131,8 @@ $total_clases = count($clases);
                     <span class="ryt-filtro-icon" aria-hidden="true">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6M9 18V9M15 18V6M21 18v-3"/></svg>
                     </span>
-                    <select data-filter="nivel" aria-label="Filtrar por nivel">
-                        <option value="">Todos los niveles</option>
+                    <select data-filter="nivel" aria-label="<?php echo esc_attr__('Filtrar por nivel', 'ryt'); ?>">
+                        <option value=""><?php esc_html_e('Todos los niveles', 'ryt'); ?></option>
                         <?php foreach ($niveles as $n): ?>
                             <option value="<?php echo esc_attr(ryt_slug($n)); ?>"><?php echo esc_html($n); ?></option>
                         <?php endforeach; ?>
@@ -146,8 +146,8 @@ $total_clases = count($clases);
                     <span class="ryt-filtro-icon" aria-hidden="true">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                     </span>
-                    <select data-filter="profesor" aria-label="Filtrar por profesor">
-                        <option value="">Todos los profesores</option>
+                    <select data-filter="profesor" aria-label="<?php echo esc_attr__('Filtrar por profesor', 'ryt'); ?>">
+                        <option value=""><?php esc_html_e('Todos los profesores', 'ryt'); ?></option>
                         <?php foreach ($profesores as $p): ?>
                             <option value="<?php echo esc_attr(ryt_slug($p)); ?>"><?php echo esc_html($p); ?></option>
                         <?php endforeach; ?>
@@ -161,12 +161,12 @@ $total_clases = count($clases);
             <div class="flex items-center justify-between mt-4 text-xs">
                 <span id="ryt-horario-count" class="text-ink-soft">
                     <strong class="font-bold text-ryt-mint" data-count><?php echo (int) $total_clases; ?></strong>
-                    <span class="lowercase"> clases en el horario</span>
+                    <span class="lowercase"> <?php esc_html_e('clases en el horario', 'ryt'); ?></span>
                 </span>
                 <button type="button" id="ryt-horario-clear"
                         class="hidden text-ryt-mint hover:text-ryt-mint-dark font-bold uppercase tracking-widest text-[11px] inline-flex items-center gap-1.5 transition-colors">
                     <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
-                    Limpiar filtros
+                    <?php esc_html_e('Limpiar filtros', 'ryt'); ?>
                 </button>
             </div>
         </div>
@@ -177,10 +177,10 @@ $total_clases = count($clases);
                 <table class="ryt-tabla w-full" id="ryt-horario-grid">
                     <thead>
                         <tr>
-                            <th class="ryt-th text-left w-[130px]">Hora</th>
-                            <th class="ryt-th text-left">Clase</th>
-                            <th class="ryt-th text-left">Profesores</th>
-                            <th class="ryt-th text-center w-[120px]">Sala</th>
+                            <th class="ryt-th text-left w-[130px]"><?php esc_html_e('Hora', 'ryt'); ?></th>
+                            <th class="ryt-th text-left"><?php esc_html_e('Clase', 'ryt'); ?></th>
+                            <th class="ryt-th text-left"><?php esc_html_e('Profesores', 'ryt'); ?></th>
+                            <th class="ryt-th text-center w-[120px]"><?php esc_html_e('Sala', 'ryt'); ?></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -242,19 +242,19 @@ $total_clases = count($clases);
                 <line x1="9" y1="9" x2="9.01" y2="9"/>
                 <line x1="15" y1="9" x2="15.01" y2="9"/>
             </svg>
-            <p class="text-ink-heading font-serif text-xl mb-2 italic">Vaya, nada por aquí…</p>
+            <p class="text-ink-heading font-serif text-xl mb-2 italic"><?php esc_html_e('Vaya, nada por aquí…', 'ryt'); ?></p>
             <p class="text-ink-soft text-sm mb-6">
-                No hay clases que coincidan con los filtros. Prueba a relajarlos o pregúntanos directamente.
+                <?php esc_html_e('No hay clases que coincidan con los filtros. Prueba a relajarlos o pregúntanos directamente.', 'ryt'); ?>
             </p>
-            <a href="<?php echo esc_url(ryt_whatsapp_url('Hola! Quiero información sobre los horarios')); ?>"
+            <a href="<?php echo esc_url(ryt_whatsapp_url(__('Hola! Quiero información sobre los horarios', 'ryt'))); ?>"
                target="_blank" rel="noopener" class="btn btn-primary">
-                Pregúntanos por WhatsApp
+                <?php esc_html_e('Pregúntanos por WhatsApp', 'ryt'); ?>
             </a>
         </div>
 
         <div class="text-center mt-10">
             <a href="<?php echo esc_url(home_url('/horarios-y-tarifas/')); ?>" class="btn btn-primary">
-                Ver horarios y tarifas
+                <?php esc_html_e('Ver horarios y tarifas', 'ryt'); ?>
             </a>
         </div>
     </div>

@@ -9,10 +9,10 @@
  *   - "Ver clases →" con flecha animada.
  */
 $estilos = [
-    ['t' => 'Clases de Bachata', 'd' => 'Fusionamos bachata sensual y bachata dominicana en una experiencia única.',  'url' => home_url('/clases-de-bachata/')],
-    ['t' => 'Clases de Salsa',   'd' => 'Salsa Cubana, rueda casino, figuras, tiempo musical y mucha diversión.',     'url' => home_url('/clases-de-salsa/')],
-    ['t' => 'Formación',         'd' => 'Si quieres profundizar en tu manera de bailar estas son las clases que buscas.', 'url' => home_url('/horarios-y-tarifas/')],
-    ['t' => 'Coreográfico',      'd' => 'Formación de ritmos latinos, perfeccionamiento y técnica de giro.',           'url' => home_url('/baile-nupcial/')],
+    ['t' => __('Clases de Bachata', 'ryt'), 'd' => __('Fusionamos bachata sensual y bachata dominicana en una experiencia única.', 'ryt'),  'url' => home_url('/clases-de-bachata/')],
+    ['t' => __('Clases de Salsa', 'ryt'),   'd' => __('Salsa Cubana, rueda casino, figuras, tiempo musical y mucha diversión.', 'ryt'),     'url' => home_url('/clases-de-salsa/')],
+    ['t' => __('Formación', 'ryt'),         'd' => __('Si quieres profundizar en tu manera de bailar estas son las clases que buscas.', 'ryt'), 'url' => home_url('/horarios-y-tarifas/')],
+    ['t' => __('Coreográfico', 'ryt'),      'd' => __('Formación de ritmos latinos, perfeccionamiento y técnica de giro.', 'ryt'),           'url' => home_url('/baile-nupcial/')],
 ];
 ?>
 <section class="bg-white py-[104px] px-6">
@@ -21,14 +21,14 @@ $estilos = [
         <!-- Header grid 2-col -->
         <div class="grid grid-cols-1 lg:grid-cols-[1.3fr_1fr] gap-[48px] items-end mb-[60px]">
             <div>
-                <?php ryt_eyebrow('01', 'Nuestras disciplinas'); ?>
+                <?php ryt_eyebrow('01', __('Nuestras disciplinas', 'ryt')); ?>
                 <h2 class="text-ink-heading"
                     style="font-size: 46px; line-height: 1.08;">
-                    Encuentra tu estilo<br>en la pista
+                    <?php esc_html_e('Encuentra tu estilo', 'ryt'); ?><br><?php esc_html_e('en la pista', 'ryt'); ?>
                 </h2>
             </div>
             <p class="text-[16px] leading-[1.7] text-ink-soft">
-                Desde clases de salsa y bachata hasta rueda de casino, formación y grupos coreográficos. Cada estilo, su especialista.
+                <?php esc_html_e('Desde clases de salsa y bachata hasta rueda de casino, formación y grupos coreográficos. Cada estilo, su especialista.', 'ryt'); ?>
             </p>
         </div>
 
@@ -50,7 +50,7 @@ $estilos = [
                         <?php echo esc_html($e['d']); ?>
                     </p>
                     <span class="mt-[22px] inline-flex items-center gap-[9px] text-[11px] font-bold uppercase tracking-[0.12em] text-ryt-mint">
-                        Ver clases
+                        <?php esc_html_e('Ver clases', 'ryt'); ?>
                         <span class="inline-block transition-transform duration-200 group-hover:translate-x-1">→</span>
                     </span>
                 </a>

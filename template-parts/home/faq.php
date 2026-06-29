@@ -9,12 +9,12 @@
  *   - Header con eyebrow "07 — Preguntas frecuentes" + h2 46px.
  */
 $faqs = [
-    [ 'q' => '¿Necesito traer pareja para unirme a las clases?',                          'a' => 'No es necesario. En clase rotamos para que practiques con distintos compañeros, hayas venido solo o acompañado.' ],
-    [ 'q' => '¿Qué nivel de experiencia se requiere para unirse a las clases de salsa y bachata?', 'a' => 'Ninguno. Tenemos grupos desde nivel "Iniciación" para personas que nunca han bailado, hasta niveles avanzados.' ],
-    [ 'q' => '¿Qué tipo de vestuario tengo que llevar para bailar?',                      'a' => 'Ropa cómoda y zapatos limpios (no de calle). Si tienes zapatos de baile o de tacón medio, ¡mejor! Pero no es imprescindible.' ],
-    [ 'q' => '¿Cuánto cuestan las clases?',                                               'a' => 'Desde 0€ la primera clase (gratis para probar), 12€ la clase suelta o desde 36,90€/mes una clase a la semana.' ],
-    [ 'q' => '¿Ofrecen clases privadas además de las clases grupales?',                   'a' => 'Sí. Tenemos clases particulares para parejas y para preparación de bailes nupciales. Consúltanos por WhatsApp.' ],
-    [ 'q' => '¿Tienen eventos sociales o prácticas de baile fuera de las clases regulares?', 'a' => 'Sí. Organizamos quedadas mensuales, prácticas y eventos especiales. Te avisamos a través de la app y las redes.' ],
+    [ 'q' => __('¿Necesito traer pareja para unirme a las clases?', 'ryt'),                          'a' => __('No es necesario. En clase rotamos para que practiques con distintos compañeros, hayas venido solo o acompañado.', 'ryt') ],
+    [ 'q' => __('¿Qué nivel de experiencia se requiere para unirse a las clases de salsa y bachata?', 'ryt'), 'a' => __('Ninguno. Tenemos grupos desde nivel "Iniciación" para personas que nunca han bailado, hasta niveles avanzados.', 'ryt') ],
+    [ 'q' => __('¿Qué tipo de vestuario tengo que llevar para bailar?', 'ryt'),                      'a' => __('Ropa cómoda y zapatos limpios (no de calle). Si tienes zapatos de baile o de tacón medio, ¡mejor! Pero no es imprescindible.', 'ryt') ],
+    [ 'q' => __('¿Cuánto cuestan las clases?', 'ryt'),                                               'a' => __('Desde 0€ la primera clase (gratis para probar), 12€ la clase suelta o desde 36,90€/mes una clase a la semana.', 'ryt') ],
+    [ 'q' => __('¿Ofrecen clases privadas además de las clases grupales?', 'ryt'),                   'a' => __('Sí. Tenemos clases particulares para parejas y para preparación de bailes nupciales. Consúltanos por WhatsApp.', 'ryt') ],
+    [ 'q' => __('¿Tienen eventos sociales o prácticas de baile fuera de las clases regulares?', 'ryt'), 'a' => __('Sí. Organizamos quedadas mensuales, prácticas y eventos especiales. Te avisamos a través de la app y las redes.', 'ryt') ],
 ];
 
 $status = $_GET['contact'] ?? '';
@@ -25,9 +25,9 @@ $status = $_GET['contact'] ?? '';
         <!-- Accordion -->
         <div>
             <header class="mb-[40px]">
-                <?php ryt_eyebrow('07', 'Preguntas frecuentes'); ?>
+                <?php ryt_eyebrow('07', __('Preguntas frecuentes', 'ryt')); ?>
                 <h2 class="text-ink-heading" style="font-size: 46px; line-height: 1.08;">
-                    Te <span class="italic font-display">irá bien</span> saberlo
+                    <?php esc_html_e('Te', 'ryt'); ?> <span class="italic font-display"><?php esc_html_e('irá bien', 'ryt'); ?></span> <?php esc_html_e('saberlo', 'ryt'); ?>
                 </h2>
             </header>
 
@@ -44,9 +44,9 @@ $status = $_GET['contact'] ?? '';
             </div>
 
             <p class="mt-[34px] text-sm text-ink-soft">
-                <span class="uppercase font-bold tracking-[0.12em] text-ryt-mint block mb-3 text-[11.5px]">¿Alguna duda más?</span>
+                <span class="uppercase font-bold tracking-[0.12em] text-ryt-mint block mb-3 text-[11.5px]"><?php esc_html_e('¿Alguna duda más?', 'ryt'); ?></span>
                 <a href="<?php echo esc_url(ryt_whatsapp_url()); ?>" target="_blank" rel="noopener" class="btn btn-primary">
-                    Escríbenos por WhatsApp
+                    <?php esc_html_e('Escríbenos por WhatsApp', 'ryt'); ?>
                 </a>
             </p>
         </div>
@@ -54,16 +54,16 @@ $status = $_GET['contact'] ?? '';
         <!-- Form sticky -->
         <div>
             <div class="bg-paper rounded-[22px] p-[28px] md:p-[34px] border border-[#EFEBE6] lg:sticky lg:top-[130px]">
-                <h3 class="font-serif italic text-[26px] text-ink-heading mb-2 leading-[1.2]">¿Tienes una duda más concreta?</h3>
-                <p class="text-sm text-ink-soft mb-6">Escríbenos y te respondemos en menos de 24h.</p>
+                <h3 class="font-serif italic text-[26px] text-ink-heading mb-2 leading-[1.2]"><?php esc_html_e('¿Tienes una duda más concreta?', 'ryt'); ?></h3>
+                <p class="text-sm text-ink-soft mb-6"><?php esc_html_e('Escríbenos y te respondemos en menos de 24h.', 'ryt'); ?></p>
 
                 <?php if ($status === 'sent'): ?>
                     <div class="bg-ryt-mint/15 border border-ryt-mint text-ink-heading rounded-xl p-3 text-sm mb-4">
-                        ¡Gracias! Hemos recibido tu mensaje. Te respondemos en breve.
+                        <?php esc_html_e('¡Gracias! Hemos recibido tu mensaje. Te respondemos en breve.', 'ryt'); ?>
                     </div>
                 <?php elseif ($status === 'error'): ?>
                     <div class="bg-rose-50 border border-rose-200 text-rose-700 rounded-xl p-3 text-sm mb-4">
-                        Algo no ha funcionado. Vuelve a intentarlo o escríbenos por WhatsApp.
+                        <?php esc_html_e('Algo no ha funcionado. Vuelve a intentarlo o escríbenos por WhatsApp.', 'ryt'); ?>
                     </div>
                 <?php endif; ?>
 
@@ -75,28 +75,32 @@ $status = $_GET['contact'] ?? '';
                     <input type="text" name="web" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true">
 
                     <label class="block">
-                        <span class="text-[11px] uppercase tracking-[0.12em] font-bold text-ink-soft">Nombre</span>
+                        <span class="text-[11px] uppercase tracking-[0.12em] font-bold text-ink-soft"><?php esc_html_e('Nombre', 'ryt'); ?></span>
                         <input name="nombre" type="text" required class="mt-1 w-full rounded-pill border border-[#EFEBE6] bg-white px-4 py-3 text-sm focus:outline-none focus:border-ryt-mint">
                     </label>
                     <label class="block">
-                        <span class="text-[11px] uppercase tracking-[0.12em] font-bold text-ink-soft">Email</span>
+                        <span class="text-[11px] uppercase tracking-[0.12em] font-bold text-ink-soft"><?php esc_html_e('Email', 'ryt'); ?></span>
                         <input name="email" type="email" required class="mt-1 w-full rounded-pill border border-[#EFEBE6] bg-white px-4 py-3 text-sm focus:outline-none focus:border-ryt-mint">
                     </label>
                     <label class="block">
-                        <span class="text-[11px] uppercase tracking-[0.12em] font-bold text-ink-soft">Teléfono (opcional)</span>
+                        <span class="text-[11px] uppercase tracking-[0.12em] font-bold text-ink-soft"><?php esc_html_e('Teléfono (opcional)', 'ryt'); ?></span>
                         <input name="tel" type="tel" class="mt-1 w-full rounded-pill border border-[#EFEBE6] bg-white px-4 py-3 text-sm focus:outline-none focus:border-ryt-mint">
                     </label>
                     <label class="block">
-                        <span class="text-[11px] uppercase tracking-[0.12em] font-bold text-ink-soft">Tu mensaje</span>
+                        <span class="text-[11px] uppercase tracking-[0.12em] font-bold text-ink-soft"><?php esc_html_e('Tu mensaje', 'ryt'); ?></span>
                         <textarea name="mensaje" rows="4" required class="mt-1 w-full rounded-2xl border border-[#EFEBE6] bg-white px-4 py-3 text-sm focus:outline-none focus:border-ryt-mint"></textarea>
                     </label>
 
-                    <button type="submit" class="btn btn-primary w-full">Enviar mensaje</button>
+                    <button type="submit" class="btn btn-primary w-full"><?php esc_html_e('Enviar mensaje', 'ryt'); ?></button>
 
                     <p class="text-[10px] text-ink-mute leading-relaxed">
-                        Al enviar aceptas nuestra
-                        <a href="<?php echo esc_url(home_url('/politica-de-privacidad/')); ?>" class="underline">política de privacidad</a>.
-                        Nunca cederemos tus datos a terceros.
+                        <?php
+                        printf(
+                            /* translators: %s: enlace a la política de privacidad */
+                            esc_html__('Al enviar aceptas nuestra %s. Nunca cederemos tus datos a terceros.', 'ryt'),
+                            '<a href="' . esc_url(home_url('/politica-de-privacidad/')) . '" class="underline">' . esc_html__('política de privacidad', 'ryt') . '</a>'
+                        );
+                        ?>
                     </p>
                 </form>
             </div>

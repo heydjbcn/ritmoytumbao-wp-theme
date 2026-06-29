@@ -4,28 +4,28 @@
  * Equipo completo (extraído de prod).
  */
 $profes = [
-    [ 'name' => 'Miguel García',  'role' => 'CEO fundador',           'desc' => 'Fundador y alma de Ritmo y Tumbao. Más de 20 años enseñando salsa.', 'img' => '/assets/img/profes/miguel.png' ],
-    [ 'name' => 'Jeni',           'role' => 'Instructora y directora','desc' => 'Co-dirige la escuela e imparte salsa y lady style.',                  'img' => '/assets/img/profes/jeni.webp' ],
-    [ 'name' => 'Michael e Ivet', 'role' => 'Profesores de Bachata',  'desc' => 'Pareja con energía contagiosa y técnica depurada.',                  'img' => '/assets/img/profes/michaelivet.webp' ],
-    [ 'name' => 'Mario y Nia',    'role' => 'Bachata Sensual',        'desc' => 'Especialistas en bachata sensual moderna.',                          'img' => '/assets/img/profes/marionia.webp' ],
-    [ 'name' => 'Gio y Judit',    'role' => 'Bachata Fusión',         'desc' => 'Profesores creativos que fusionan estilos.',                         'img' => '/assets/img/profes/giojudit.webp' ],
-    [ 'name' => 'Aleix y Belén',  'role' => 'Bachata Fusión',         'desc' => 'Pareja joven con un estilo fresco y muy musical.',                   'img' => '/assets/img/profes/aleixybelen.png' ],
-    [ 'name' => 'Sandra',         'role' => 'Salsa',                  'desc' => 'Co-profesora de salsa con foco en musicalidad.',                     'img' => '/assets/img/profes/sandra.webp' ],
-    [ 'name' => 'Thais',          'role' => 'Salsa',                  'desc' => 'Profesora de salsa y de casino con timba.',                          'img' => null ],
+    [ 'name' => 'Miguel García',  'role' => __('CEO fundador', 'ryt'),           'desc' => __('Fundador y alma de Ritmo y Tumbao. Más de 20 años enseñando salsa.', 'ryt'), 'img' => '/assets/img/profes/miguel.png' ],
+    [ 'name' => 'Jeni',           'role' => __('Instructora y directora', 'ryt'),'desc' => __('Co-dirige la escuela e imparte salsa y lady style.', 'ryt'),                  'img' => '/assets/img/profes/jeni.webp' ],
+    [ 'name' => 'Michael e Ivet', 'role' => __('Profesores de Bachata', 'ryt'),  'desc' => __('Pareja con energía contagiosa y técnica depurada.', 'ryt'),                  'img' => '/assets/img/profes/michaelivet.webp' ],
+    [ 'name' => 'Mario y Nia',    'role' => __('Bachata Sensual', 'ryt'),        'desc' => __('Especialistas en bachata sensual moderna.', 'ryt'),                          'img' => '/assets/img/profes/marionia.webp' ],
+    [ 'name' => 'Gio y Judit',    'role' => __('Bachata Fusión', 'ryt'),         'desc' => __('Profesores creativos que fusionan estilos.', 'ryt'),                         'img' => '/assets/img/profes/giojudit.webp' ],
+    [ 'name' => 'Aleix y Belén',  'role' => __('Bachata Fusión', 'ryt'),         'desc' => __('Pareja joven con un estilo fresco y muy musical.', 'ryt'),                   'img' => '/assets/img/profes/aleixybelen.png' ],
+    [ 'name' => 'Sandra',         'role' => __('Salsa', 'ryt'),                  'desc' => __('Co-profesora de salsa con foco en musicalidad.', 'ryt'),                     'img' => '/assets/img/profes/sandra.webp' ],
+    [ 'name' => 'Thais',          'role' => __('Salsa', 'ryt'),                  'desc' => __('Profesora de salsa y de casino con timba.', 'ryt'),                          'img' => null ],
 ];
 ?>
 <section class="bg-ink-dark text-white relative overflow-hidden">
     <div aria-hidden="true" class="absolute inset-0 pointer-events-none select-none flex items-center justify-center">
         <span class="font-serif italic font-bold uppercase text-transparent text-[14vw] leading-none whitespace-nowrap"
               style="-webkit-text-stroke: 1px rgba(98, 216, 172, 0.18);">
-            Nuestro equipo
+            <?php esc_html_e('Nuestro equipo', 'ryt'); ?>
         </span>
     </div>
     <div class="container mx-auto px-4 py-20 md:py-24 text-center relative z-10">
-        <span class="pre-title text-ryt-mint">Academia de baile en Mataró</span>
-        <h1 class="text-white uppercase mt-3">Aprende a bailar en Mataró</h1>
+        <span class="pre-title text-ryt-mint"><?php esc_html_e('Academia de baile en Mataró', 'ryt'); ?></span>
+        <h1 class="text-white uppercase mt-3"><?php esc_html_e('Aprende a bailar en Mataró', 'ryt'); ?></h1>
         <p class="text-paper-alt mt-6 max-w-2xl mx-auto">
-            Conoce al equipo que imparte cada estilo. Experiencia certificada y mucho ritmo.
+            <?php esc_html_e('Conoce al equipo que imparte cada estilo. Experiencia certificada y mucho ritmo.', 'ryt'); ?>
         </p>
     </div>
 </section>
@@ -33,10 +33,10 @@ $profes = [
 <section class="section bg-white">
     <div class="container mx-auto px-4 max-w-6xl">
         <header class="text-center max-w-3xl mx-auto mb-12">
-            <span class="pre-title">Nuestro equipo</span>
-            <h2 class="text-ink-heading uppercase">Profesionales del baile</h2>
+            <span class="pre-title"><?php esc_html_e('Nuestro equipo', 'ryt'); ?></span>
+            <h2 class="text-ink-heading uppercase"><?php esc_html_e('Profesionales del baile', 'ryt'); ?></h2>
             <p class="text-base text-ink-soft mt-4">
-                Cada estilo, su especialista. Cada grupo, su pareja docente.
+                <?php esc_html_e('Cada estilo, su especialista. Cada grupo, su pareja docente.', 'ryt'); ?>
             </p>
         </header>
 
@@ -68,16 +68,16 @@ $profes = [
 <section class="section bg-paper-alt">
     <div class="container mx-auto px-4 max-w-4xl grid gap-6 md:grid-cols-3 text-center">
         <div class="bg-white rounded-2xl p-6 shadow-card">
-            <h3 class="font-serif text-lg text-ink-heading mb-2">Experiencia certificada</h3>
-            <p class="text-sm text-ink-soft">Equipo titulado y formado en escuelas internacionales.</p>
+            <h3 class="font-serif text-lg text-ink-heading mb-2"><?php esc_html_e('Experiencia certificada', 'ryt'); ?></h3>
+            <p class="text-sm text-ink-soft"><?php esc_html_e('Equipo titulado y formado en escuelas internacionales.', 'ryt'); ?></p>
         </div>
         <div class="bg-white rounded-2xl p-6 shadow-card">
-            <h3 class="font-serif text-lg text-ink-heading mb-2">Toda una vida enseñando</h3>
-            <p class="text-sm text-ink-soft">Más de 20 años de trayectoria al frente de Ritmo y Tumbao.</p>
+            <h3 class="font-serif text-lg text-ink-heading mb-2"><?php esc_html_e('Toda una vida enseñando', 'ryt'); ?></h3>
+            <p class="text-sm text-ink-soft"><?php esc_html_e('Más de 20 años de trayectoria al frente de Ritmo y Tumbao.', 'ryt'); ?></p>
         </div>
         <div class="bg-white rounded-2xl p-6 shadow-card">
-            <h3 class="font-serif text-lg text-ink-heading mb-2">Apreciación de clientes</h3>
-            <p class="text-sm text-ink-soft">Más de 13 reseñas con 5★ en Google. La opinión de los alumnos cuenta.</p>
+            <h3 class="font-serif text-lg text-ink-heading mb-2"><?php esc_html_e('Apreciación de clientes', 'ryt'); ?></h3>
+            <p class="text-sm text-ink-soft"><?php esc_html_e('Más de 13 reseñas con 5★ en Google. La opinión de los alumnos cuenta.', 'ryt'); ?></p>
         </div>
     </div>
 </section>

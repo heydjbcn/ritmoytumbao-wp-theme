@@ -11,65 +11,65 @@
 $salas = [
     [
         'num'   => '01',
-        'name'  => 'Sala 1',
+        'name'  => __('Sala 1', 'ryt'),
         'm2'    => '100',
         'img'   => 'sala-1.jpg',
-        'desc'  => 'Amplia, diáfana y luminosa. La sala principal de la escuela, donde se imparten la mayoría de grupos de salsa y bachata y se montan los workshops.',
-        'specs' => ['Parquet flotante', 'Insonorizada', 'Climatizada (frío/calor)', 'Equipo de sonido profesional', 'Espejo gran formato'],
+        'desc'  => __('Amplia, diáfana y luminosa. La sala principal de la escuela, donde se imparten la mayoría de grupos de salsa y bachata y se montan los workshops.', 'ryt'),
+        'specs' => [__('Parquet flotante', 'ryt'), __('Insonorizada', 'ryt'), __('Climatizada (frío/calor)', 'ryt'), __('Equipo de sonido profesional', 'ryt'), __('Espejo gran formato', 'ryt')],
     ],
     [
         'num'   => '02',
-        'name'  => 'Sala 2',
+        'name'  => __('Sala 2', 'ryt'),
         'm2'    => '45',
         'img'   => 'sala-2.jpg',
-        'desc'  => 'Espaciosa y polivalente. Pensada para grupos reducidos, niveles avanzados, particulares y ensayos de coreográfico.',
-        'specs' => ['Insonorizada', 'Climatizada (frío/calor)', 'Equipo de sonido', 'Espejo'],
+        'desc'  => __('Espaciosa y polivalente. Pensada para grupos reducidos, niveles avanzados, particulares y ensayos de coreográfico.', 'ryt'),
+        'specs' => [__('Insonorizada', 'ryt'), __('Climatizada (frío/calor)', 'ryt'), __('Equipo de sonido', 'ryt'), __('Espejo', 'ryt')],
     ],
 ];
 
 $extras = [
     [
-        'name' => 'Recepción',
-        'desc' => 'Área de atención a alumnos, información y reservas.',
+        'name' => __('Recepción', 'ryt'),
+        'desc' => __('Área de atención a alumnos, información y reservas.', 'ryt'),
         'icon' => '<path d="M3 21V10l9-7 9 7v11h-6v-7h-6v7H3z"/>',
     ],
     [
-        'name' => 'Vestuarios',
-        'desc' => 'Cómodos y equipados para cambiarse antes y después de las clases.',
+        'name' => __('Vestuarios', 'ryt'),
+        'desc' => __('Cómodos y equipados para cambiarse antes y después de las clases.', 'ryt'),
         'icon' => '<path d="M16 11V7a4 4 0 0 0-8 0v4M5 11h14v10H5z"/>',
     ],
     [
-        'name' => 'Baños',
-        'desc' => 'Modernos y accesibles para mayor comodidad de los alumnos.',
+        'name' => __('Baños', 'ryt'),
+        'desc' => __('Modernos y accesibles para mayor comodidad de los alumnos.', 'ryt'),
         'icon' => '<path d="M6 2v8m12-8v8M3 10h18v3a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4v-3zM8 17v4M16 17v4"/>',
     ],
 ];
 
 $stats = [
-    ['n' => '145', 'l' => 'm² útiles'],
-    ['n' => '2',   'l' => 'salas de baile'],
-    ['n' => '5',   'l' => 'espacios'],
-    ['n' => '15+', 'l' => 'años abierta'],
+    ['n' => '145', 'l' => __('m² útiles', 'ryt')],
+    ['n' => '2',   'l' => __('salas de baile', 'ryt')],
+    ['n' => '5',   'l' => __('espacios', 'ryt')],
+    ['n' => '15+', 'l' => __('años abierta', 'ryt')],
 ];
 ?>
 
 <!-- Hero foto cover -->
 <section class="relative overflow-hidden text-white" style="min-height: 480px;">
     <img src="<?php echo esc_url(RYT_URI . '/assets/img/instalaciones/escuela.jpg'); ?>"
-         alt="Instalaciones de Ritmo y Tumbao en Mataró"
+         alt="<?php echo esc_attr__('Instalaciones de Ritmo y Tumbao en Mataró', 'ryt'); ?>"
          class="absolute inset-0 w-full h-full object-cover" loading="eager">
     <div aria-hidden="true" class="absolute inset-0"
          style="background: linear-gradient(100deg, rgba(20,19,18,0.94) 0%, rgba(20,19,18,0.72) 45%, rgba(20,19,18,0.25) 100%);"></div>
 
     <div class="relative z-10 max-w-[1220px] mx-auto px-6 py-[110px] grid gap-10 lg:grid-cols-[1.4fr_1fr] items-center min-h-[480px]">
         <div>
-            <?php ryt_eyebrow('', 'Nuestra escuela'); ?>
+            <?php ryt_eyebrow('', __('Nuestra escuela', 'ryt')); ?>
             <h1 class="text-white mb-5" style="font-size: 58px; line-height: 1.05;">
-                Espacios totalmente
-                <span class="italic font-display text-ryt-mint">equipados</span>
+                <?php esc_html_e('Espacios totalmente', 'ryt'); ?>
+                <span class="italic font-display text-ryt-mint"><?php esc_html_e('equipados', 'ryt'); ?></span>
             </h1>
             <p class="text-[17px] text-[#E6E1DB] leading-[1.7] max-w-[540px]">
-                Dos amplias salas, parquet, insonorización, climatización y equipo de sonido profesional. Más de 145 m² útiles dedicados al baile en pleno centro de Mataró.
+                <?php esc_html_e('Dos amplias salas, parquet, insonorización, climatización y equipo de sonido profesional. Más de 145 m² útiles dedicados al baile en pleno centro de Mataró.', 'ryt'); ?>
             </p>
         </div>
     </div>
@@ -92,20 +92,26 @@ $stats = [
 <section class="bg-white py-[100px] px-6">
     <div class="max-w-[1180px] mx-auto grid gap-[60px] lg:grid-cols-2 items-start">
         <div>
-            <?php ryt_eyebrow('01', 'Un espacio diseñado para el baile'); ?>
+            <?php ryt_eyebrow('01', __('Un espacio diseñado para el baile', 'ryt')); ?>
             <h2 class="text-ink-heading mb-5" style="font-size: 42px; line-height: 1.1;">
-                Más de 20 años bailando<br>en este local
+                <?php esc_html_e('Más de 20 años bailando', 'ryt'); ?><br><?php esc_html_e('en este local', 'ryt'); ?>
             </h2>
             <p class="text-[16px] text-ink-soft leading-[1.8] mb-4">
-                En Ritmo y Tumbao ofrecemos un espacio moderno y totalmente acondicionado para el aprendizaje y la práctica de <strong>salsa y bachata</strong>. Dos salas, vestuarios, recepción y baños, en un entorno cómodo y profesional.
+                <?php
+                printf(
+                    /* translators: %s: "salsa y bachata" en negrita */
+                    esc_html__('En Ritmo y Tumbao ofrecemos un espacio moderno y totalmente acondicionado para el aprendizaje y la práctica de %s. Dos salas, vestuarios, recepción y baños, en un entorno cómodo y profesional.', 'ryt'),
+                    '<strong>' . esc_html__('salsa y bachata', 'ryt') . '</strong>'
+                );
+                ?>
             </p>
             <p class="text-[16px] text-ink-soft leading-[1.8]">
-                Llevamos más de dos décadas enseñando, formando bailarines de todos los niveles y compartiendo nuestra pasión por el baile. Un punto de encuentro para los que aman la pista.
+                <?php esc_html_e('Llevamos más de dos décadas enseñando, formando bailarines de todos los niveles y compartiendo nuestra pasión por el baile. Un punto de encuentro para los que aman la pista.', 'ryt'); ?>
             </p>
         </div>
         <div>
             <img src="<?php echo esc_url(RYT_URI . '/assets/img/instalaciones/escuela-grupo.jpg'); ?>"
-                 alt="Vista de las instalaciones de Ritmo y Tumbao"
+                 alt="<?php echo esc_attr__('Vista de las instalaciones de Ritmo y Tumbao', 'ryt'); ?>"
                  class="rounded-[22px] shadow-[0_24px_60px_rgba(38,37,36,0.16)] w-full h-auto" loading="lazy">
         </div>
     </div>
@@ -116,14 +122,14 @@ $stats = [
     <div class="max-w-[1220px] mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-[1.3fr_1fr] gap-[48px] items-end mb-[56px]">
             <div>
-                <?php ryt_eyebrow('02', 'Dos salas equipadas'); ?>
+                <?php ryt_eyebrow('02', __('Dos salas equipadas', 'ryt')); ?>
                 <h2 class="text-ink-heading" style="font-size: 46px; line-height: 1.08;">
-                    El espacio<br>donde se baila
+                    <?php esc_html_e('El espacio', 'ryt'); ?><br><?php esc_html_e('donde se baila', 'ryt'); ?>
                 </h2>
             </div>
             <div>
                 <p class="text-[16px] leading-[1.7] text-ink-soft">
-                    Dos salas pensadas para grupos de todos los niveles, con todas las garantías técnicas para que el baile sea cómodo y sin interrupciones.
+                    <?php esc_html_e('Dos salas pensadas para grupos de todos los niveles, con todas las garantías técnicas para que el baile sea cómodo y sin interrupciones.', 'ryt'); ?>
                 </p>
             </div>
         </div>
@@ -134,7 +140,7 @@ $stats = [
             <article class="grid gap-0 lg:grid-cols-2 bg-white rounded-[24px] overflow-hidden border border-[#EFEBE6] shadow-[0_18px_50px_rgba(38,37,36,0.07)]">
                 <div class="<?php echo $reverse ? 'lg:order-2' : ''; ?> aspect-[4/3] lg:aspect-auto overflow-hidden">
                     <img src="<?php echo esc_url(RYT_URI . '/assets/img/instalaciones/' . $sala['img']); ?>"
-                         alt="<?php echo esc_attr($sala['name'] . ' — Ritmo y Tumbao Mataró'); ?>"
+                         alt="<?php echo esc_attr(sprintf(__('%s — Ritmo y Tumbao Mataró', 'ryt'), $sala['name'])); ?>"
                          class="w-full h-full object-cover" loading="lazy">
                 </div>
                 <div class="<?php echo $reverse ? 'lg:order-1' : ''; ?> p-[36px] lg:p-[44px] flex flex-col">
@@ -148,7 +154,7 @@ $stats = [
                     <!-- m² gigante -->
                     <div class="flex items-baseline gap-2 mb-5">
                         <span class="font-display text-[70px] text-ryt-mint-dark leading-none"><?php echo esc_html($sala['m2']); ?></span>
-                        <span class="text-[15px] font-bold uppercase tracking-[0.12em] text-ryt-mint">m² útiles</span>
+                        <span class="text-[15px] font-bold uppercase tracking-[0.12em] text-ryt-mint"><?php esc_html_e('m² útiles', 'ryt'); ?></span>
                     </div>
 
                     <p class="text-[15.5px] text-ink-soft leading-[1.75] mb-6">
@@ -178,14 +184,14 @@ $stats = [
     <div class="max-w-[1220px] mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-[1.3fr_1fr] gap-[48px] items-end mb-[48px]">
             <div>
-                <?php ryt_eyebrow('03', '+3 espacios complementarios'); ?>
+                <?php ryt_eyebrow('03', __('+3 espacios complementarios', 'ryt')); ?>
                 <h2 class="text-ink-heading" style="font-size: 38px; line-height: 1.1;">
-                    Todo lo que necesitas<br>para una buena clase
+                    <?php esc_html_e('Todo lo que necesitas', 'ryt'); ?><br><?php esc_html_e('para una buena clase', 'ryt'); ?>
                 </h2>
             </div>
             <div>
                 <p class="text-[16px] leading-[1.7] text-ink-soft">
-                    Más allá de las salas: vestuarios para cambiarse, recepción para resolver tus dudas y baños accesibles.
+                    <?php esc_html_e('Más allá de las salas: vestuarios para cambiarse, recepción para resolver tus dudas y baños accesibles.', 'ryt'); ?>
                 </p>
             </div>
         </div>
