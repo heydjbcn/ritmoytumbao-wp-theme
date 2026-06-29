@@ -670,3 +670,55 @@
   .ryt-faq-item summary::-webkit-details-marker { display: none; }
   .ryt-faq-item summary::marker { content: ''; }
 }
+
+/* ─────────────────────────────────────────────────────────────
+   V9 mobile responsive overrides
+   Muchos heros y secciones usan `style="font-size: NNpx"` inline
+   (54–62 hero / 38–46 sección). En móvil <768px hay que bajarlos
+   con !important porque ganarían al CSS externo. Limitado a <main>
+   para no tocar header/footer.
+   ───────────────────────────────────────────────────────────── */
+
+@media (max-width: 767px) {
+  main h1[style*="font-size"],
+  main .ryt-h1-hero {
+    font-size: clamp(34px, 10vw, 44px) !important;
+    line-height: 1.06 !important;
+  }
+  main h2[style*="font-size"] {
+    font-size: clamp(26px, 7.5vw, 34px) !important;
+    line-height: 1.12 !important;
+  }
+  main h3[style*="font-size"] {
+    font-size: clamp(20px, 5.5vw, 26px) !important;
+    line-height: 1.18 !important;
+  }
+  /* Stats ADLaM gigantes (banda mint instalaciones/alquiler) */
+  main .font-display.text-\[42px\],
+  main .font-display.text-\[44px\],
+  main .font-display.text-\[60px\],
+  main .font-display.text-\[70px\] {
+    font-size: clamp(30px, 9vw, 42px) !important;
+  }
+  /* Texto fantasma tipo "Tumbao" CTA gigante — no excederlo */
+  main section .text-\[20vw\],
+  main section .text-\[21vw\] {
+    font-size: 32vw !important;
+  }
+  /* Hero foto cover: bajar padding vertical */
+  main section.relative.overflow-hidden[style*="min-height"] {
+    min-height: 420px !important;
+  }
+  /* Stats band: forzar 2 columnas en mobile (no 4) */
+  main .grid.grid-cols-2 > div .font-display {
+    font-size: clamp(28px, 8vw, 36px) !important;
+  }
+  /* Hero home: ryt-hero-grid lleva grid-template-columns inline.
+     Forzar 1 columna en móvil con !important para colapsar a 1fr. */
+  main .ryt-hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+    padding-top: 48px !important;
+    padding-bottom: 56px !important;
+  }
+}

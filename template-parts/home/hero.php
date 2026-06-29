@@ -84,8 +84,8 @@ $ticker_msgs = [
             </div>
         </div>
 
-        <!-- Logo sello redondo con radial gradient -->
-        <div class="flex justify-center relative">
+        <!-- Logo sello redondo con radial gradient (oculto en mobile) -->
+        <div class="hidden lg:flex justify-center relative">
             <div aria-hidden="true" class="absolute w-[360px] h-[360px] rounded-full"
                  style="background: radial-gradient(circle, rgba(98,216,172,0.26), transparent 66%);"></div>
             <img src="<?php echo esc_url(RYT_URI . '/assets/img/logo-sello.webp'); ?>"
