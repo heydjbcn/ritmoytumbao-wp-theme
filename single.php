@@ -112,21 +112,27 @@ get_header(); ?>
     <div class="bg-white py-[80px] px-6">
         <div class="max-w-[1180px] mx-auto grid gap-[64px] lg:grid-cols-[1fr_320px] items-start">
 
-            <!-- Contenido -->
-            <div class="prose-ryt ryt-post-content min-w-0">
-                <?php the_content(); ?>
+            <!-- Contenido principal: SOLO el body del post dentro del wrapper prose -->
+            <div class="min-w-0">
+                <div class="prose-ryt ryt-post-content">
+                    <?php the_content(); ?>
+                </div>
 
-                <!-- Tags + share + back -->
-                <div class="not-prose border-t border-[#EFEBE6] mt-12 pt-8 flex flex-col sm:flex-row gap-6 items-start sm:items-center justify-between">
+                <!-- Footer del post (FUERA del prose para no heredar subrayados/colores) -->
+                <div class="ryt-post-footer border-t border-[#EFEBE6] mt-12 pt-8 flex flex-col sm:flex-row gap-6 items-start sm:items-center justify-between">
                     <div class="flex flex-wrap gap-2">
                         <?php if ($post_tags): foreach ($post_tags as $t): ?>
                             <a href="<?php echo esc_url(get_tag_link($t->term_id)); ?>"
-                               class="inline-flex items-center text-[11px] uppercase font-bold tracking-[0.1em] text-ink-soft bg-paper border border-[#EFEBE6] rounded-pill px-3 py-1.5 hover:bg-ryt-mint-soft hover:text-ryt-mint-dark transition-colors no-underline">
+                               class="inline-flex items-center text-[11px] uppercase font-bold tracking-[0.1em] text-ink-soft bg-paper border border-[#EFEBE6] rounded-pill px-3 py-1.5 hover:bg-ryt-mint-soft hover:text-ryt-mint-dark transition-colors">
                                 <?php echo esc_html($t->name); ?>
                             </a>
                         <?php endforeach; endif; ?>
                     </div>
-                    <a href="<?php echo esc_url(home_url('/blog/')); ?>" class="btn btn-outline no-underline">← Volver al blog</a>
+                    <a href="<?php echo esc_url(home_url('/blog/')); ?>"
+                       class="group inline-flex items-center gap-2 text-[13px] font-bold uppercase tracking-[0.1em] text-ink-heading hover:text-ryt-mint-dark transition-colors whitespace-nowrap">
+                        <span class="inline-block transition-transform group-hover:-translate-x-1">←</span>
+                        Volver al blog
+                    </a>
                 </div>
             </div>
 
